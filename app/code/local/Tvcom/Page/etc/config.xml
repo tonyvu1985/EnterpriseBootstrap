@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Tvcom_Page>
+            <version>0.0.1</version>
+        </Tvcom_Page>
+    </modules>
+    <global>
+        <blocks>
+            <page>
+                <rewrite>
+                    <html_topmenu>Tvcom_Page_Block_Html_Topmenu</html_topmenu> 
+                    <html_welcome>Tvcom_Page_Block_Html_Welcome</html_welcome>
+                </rewrite>
+            </page>
+        </blocks>
+    </global>
+</config>
