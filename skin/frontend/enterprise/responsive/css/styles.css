@@ -150,10 +150,6 @@ input.checkbox { margin-right:3px; font-size:11px !important; margin-top:2px; ve
 input.radio { font-size:10px !important; }
 input.qty { width:2.5em !important; }
 input.disabled { background:#f6f6f6 !important; color:#bbb !important; }
-button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
-button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
-
-button.button { border:0; padding:0; margin:0; background:transparent; /* line-height:21px; */ overflow:visible; cursor:pointer; vertical-align:middle; }
 
 a.button,
 button.button span,
@@ -163,7 +159,7 @@ button.button span span { background-color:transparent; background-image:url(../
 a.button,
 button.button span { border:0; padding:0 0 0 10px; margin:0; cursor:pointer; background-position:0 0; display:-moz-inline-stack; display:inline-block; color:#c73615; height:21px; text-decoration:none; }
 a.button span,
-button.button span span { padding:0 15px 1px 5px; color:#c73615; background-position:100% 0; display:-moz-inline-block; display:inline-block; white-space:nowrap; text-transform:uppercase; font:bold 11px/20px Arial, Helvetica, sans-serif; height:20px; }
+
 a.button { line-height:21px; }
 a.button { line-height:20px; }
 .button:active { bottom:-1px; right:-1px; position:relative; z-index:2; }
@@ -610,9 +606,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 .header .form-search { /*float:right; clear:right; padding:5px 0 0; white-space:nowrap; */}
 .header .form-search label { display:none; }
-.header .form-search input.input-text { background:#fff url(../images/bkg_search-input.gif) no-repeat 0 0; padding-left:23px; width:185px; }
 .header .form-search a { display:none; }
-.header .form-search button.button { margin:0 0 0 2px; }
 .header .form-search .search-autocomplete { z-index:999; position:relative!important; top:0 !important; left:0 !important; height:0 !important; overflow:visible !important; }
 .header .form-search .search-autocomplete ul { border:1px solid #c7c7c7; border-top:0; padding-left:0; width:210px; background-color:#fcf8f4; position:absolute; top:-1px; }
 .header .form-search .search-autocomplete li { padding:4px 6px 4px 24px; border-bottom:1px solid #fff; font-size:12px; cursor:pointer; }
@@ -2428,7 +2422,6 @@ p.link-widget-sku a { color:#999; }
 .form-subscribe input.input-text { width:177px; display:block; }
 .form-subscribe button.button { margin:6px 0 0; float:right; }
 .form-subscribe .validation-advice { width:180px; }
-.form-subscribe .v-fix { text-align:left; padding-right:5px; }
 .form-subscribe a { color:#777; }
 
 .footer-container { margin:0 0 20px; text-align:left; background:#f8f8f8; border:1px solid #cfcfcf; padding:14px 17px 12px; }
