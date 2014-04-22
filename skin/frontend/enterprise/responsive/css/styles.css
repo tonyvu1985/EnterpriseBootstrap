@@ -87,7 +87,6 @@ ul,ol         { list-style:none; }
 
 /* Layout ================================================================================ */
 .wrapper { background:#fff; padding-bottom:20px; }
-.page { width:940px; margin:0 auto; text-align:center; }
 .page-print { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
@@ -102,7 +101,7 @@ ul,ol         { list-style:none; }
 /* 1 Column Layout */
 .col1-layout { background-position:-1000px 0; }
 .col1-layout .col-main { float:none; width:auto; padding-top:20px; }
-.col1-layout .breadcrumbs { margin-bottom:0 !important; }
+/*.col1-layout .breadcrumbs { margin-bottom:0 !important; }*/
 
 /* 2 Columns Layout */
 .col2-left-layout { background-position:-573px 0; }
@@ -136,9 +135,6 @@ ul,ol         { list-style:none; }
 /* Global Styles ========================================================================= */
 
 /* Form Elements */
-input,select,textarea,button { font:12px Arial, Helvetica, sans-serif; vertical-align:middle; color:#444; }
-input.input-text,select,textarea { background:#fff; border:1px solid #c7c7c7; background:#fff url(../images/bkg_input.gif) 0 0 repeat-x; }
-input.input-text,textarea { padding:2px 2px; background:#fff url(../images/bkg_input.gif) 0 0 repeat-x; }
 select { padding:1px; }
 select option { padding-right:10px; }
 select.multiselect option { padding:2px 2px; border-bottom:1px solid #bbb; }
@@ -322,12 +318,13 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .std .messages { width:auto; list-style:none !important; padding:0 !important; margin-bottom:0 !important; }
 .std .messages ul { list-style:none !important; padding-left:17px !important; margin:0 0 -11px !important; }
 
-/* BreadCrumbs */
+.breadcrumbs{text-align: left}
+/* BreadCrumbs 
 .breadcrumbs { margin:0; padding:7px 20px 5px; background:#ededed url(../images/bkg_crumbs.gif) no-repeat 0 0; text-align:left; }
 .breadcrumbs li { display:inline; }
 .breadcrumbs li span,
 .breadcrumbs a { color:#888; text-decoration:none; }
-.breadcrumbs a:hover { text-decoration:underline; }
+.breadcrumbs a:hover { text-decoration:underline; }*/
 
 /* Page Heading */
 .page-title { margin-bottom:20px; padding:23px 20px 11px; background:#f6f6f6 url(../images/bkg_page-title.gif) repeat-x 0 0; border-bottom:1px solid #cfcfcf; }
@@ -2419,7 +2416,6 @@ p.link-widget-sku a { color:#999; }
 .form-subscribe { float:left; width:183px; padding: 0 17px 0 0; }
 .form-subscribe-header { color:#d12c01; font-size:11px; font-weight:bold; text-decoration:none; text-transform:uppercase; }
 .form-subscribe label { display:block; margin:6px 0; }
-.form-subscribe input.input-text { width:177px; display:block; }
 .form-subscribe button.button { margin:6px 0 0; float:right; }
 .form-subscribe .validation-advice { width:180px; }
 .form-subscribe a { color:#777; }
