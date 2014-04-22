@@ -31,11 +31,28 @@
  * @see Mage_Page_Block_Html_Topmenu
  */
 ?>
+<?php $narbar_style = 'navbar-default';?>
 <?php $_menu = $this->getHtml('level-top') ?>
 <?php if($_menu): ?>
-<div class="nav-container">
-    <ul id="nav">
+<nav id="default-nav" class="navbar <?php echo $narbar_style ?>" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- company logo -->
+        <?php if(Mage::getStoreConfig('setting/header/logo', Mage::app()->getStore()->getId()) != ''): ?>
+        <a class="navbar-brand" href="<?php echo $this->getBaseUrl(); ?>"><img height="50px" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'logo/' . Mage::getStoreConfig('setting/header/logo') ?>" alt="<?php echo Mage::getStoreConfig('setting/header/logoalt') ?>"></a>
+        <?php else: ?>
+            <a class="navbar-brand" href="<?php echo $this->getBaseUrl(); ?>"><?php echo $logotext ?></a>
+        <?php endif; ?>
+  </div>    
+  <div class="nav-container collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul id="nav" class="nav navbar-nav">
         <?php echo $_menu ?>
     </ul>
 </div>
+</nav>
 <?php endif ?>

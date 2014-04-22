@@ -44,10 +44,10 @@
         <?php echo $this->getChildHtml('breadcrumbsContainer') ?>
         <div class="main col3-layout">
             <div class="col-wrapper col-md-9 col-sm-12">
+                <div class="col-left sidebar col-md-3 col-sm-3"><?php echo $this->getChildHtml('left') ?></div>
                 <div class="col-main col-md-9 col-sm-9">
                     <?php echo $this->getChildHtml('content') ?>
                 </div>
-                <div class="col-left sidebar col-md-3 col-sm-3"><?php echo $this->getChildHtml('left') ?></div>
             </div>
             <div class="col-right sidebar col-md-3 col-sm-12"><?php echo $this->getChildHtml('right') ?></div>
         </div>
