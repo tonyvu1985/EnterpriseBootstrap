@@ -27,24 +27,24 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-<div class="header-container row">
-    <div class="header-panel col-md-6">
-        <div class="switches"><?php echo $this->getChildHtml('switches') ?></div>
-        <div class="col-md-6">
-            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></p>
+<div class="header-container">
+    <div class="header-panel row">
+        <div class="switches col-xs-6"><?php echo $this->getChildHtml('switches') ?></div>
+        <div class="loginbox col-xs-6">
+            <span class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></span>
             <?php echo $this->getChildHtml('accountLinks') ?>
         </div>
     </div>
-    <div class="header">
-        <div class="branding">
+    <div class="header row">
+        <div class="branding col-md-6">
         <?php if ($this->getIsHomePage()):?>
-            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+            <h1 class="logo"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
             <?php else:?>
-            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
             <?php endif?>
             <?php echo $this->getChildHtml('headerCallout') ?>
         </div>
-        <div class="quick-access">
+        <div class="quick-access col-md-6">
             <div class="checkout-link"><?php echo $this->getChildHtml('checkoutLinks') ?></div>
             <?php echo $this->getChildHtml('topCart') ?>
             <?php echo $this->getChildHtml('topLinks') ?>
