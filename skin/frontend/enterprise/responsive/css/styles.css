@@ -90,8 +90,8 @@ ul,ol         { list-style:none; }
 .page-print { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
-.main { margin:0 0 14px; min-height:350px; background-image:url(../images/bkg_cols.gif); background-color:#fff; background-repeat:repeat-y; border:1px solid #cfcfcf; text-align:left; }
-.sidebar { min-height:350px; }
+.main { margin:0 0 14px; min-height:350px; /*background-image:url(../images/bkg_cols.gif); */background-color:#fff; background-repeat:repeat-y; border:1px solid #cfcfcf; text-align:left; }
+.sidebar { min-height:350px; padding-right: 0; padding-left: 0}
 
 /* Base Columns 
 .col-left { float:left; width:182px; padding:0 0 0; margin:0 0 -1px; }
@@ -142,8 +142,8 @@ select.multiselect option:last-child { border-top:0; }
 textarea { overflow:auto; resize:vertical; }
 textarea.default-value { color:#ddd; }
 input.radio,
-input.checkbox { margin-right:3px; font-size:11px !important; margin-top:2px; vertical-align:top; }
-input.radio { font-size:10px !important; }
+input.checkbox { margin-right:3px; font-size:11px !important; margin-top:2px; vertical-align:top; display: inline-block}
+/*input.radio { font-size:10px !important; }*/
 input.qty { width:2.5em !important; }
 input.disabled { background:#f6f6f6 !important; color:#bbb !important; }
 
@@ -616,9 +616,10 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 /* All Levels 
 #nav li.over { z-index:990 !important; }
-#nav li.parent { position:relative; }
-#nav li a span { cursor:pointer; }*/
-
+#nav li.parent { position:relative; }*/
+#nav li a { cursor:pointer; text-transform: uppercase; text-align: left; text-decoration: none}
+#nav li ul li a{text-transform: none}
+#nav-parentlink {color: #e26703;}
 /* 1st Level (Top Level) 
 #nav li.level-top { float:left; height:28px; position:relative; z-index:1; }
 #nav a.level-top { float:left; height:28px; background:url(../images/bkg_nav-item-border.gif) 100% 0 no-repeat; font-weight:bold; font-size:13px; line-height:28px; padding:0 0 0 17px; border-top:1px solid #c0c0c0; text-decoration:none !important; color:#333; }
@@ -919,12 +920,12 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .sidebar .block-list .product-name { font:normal 11px/1.25 Arial, Helvetica, sans-serif; color:#444; }
 .sidebar .block-list .product-name a { color:#444; }
 
-/* Block: Poll */
+/* Block: Poll 
 .block-poll li { margin:5px 0; }
 .block-poll input.radio { float:left; margin:1px -18px 0 0; vertical-align:top; }
 .block-poll .label { display:block; margin-left:18px; }
 .block-poll .answer {}
-.block-poll .votes { float:right; font-weight:bold; margin-left:10px; }
+.block-poll .votes { float:right; font-weight:bold; margin-left:10px; }*/
 
 /* Block: Tags */
 .block-tags ul,
@@ -976,8 +977,8 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 /* View Type: Grid */
 .products-grid { padding:0 0 0 20px; margin:0 0 40px 0; }
-.products-grid li.item { float:left; width:164px; margin-right:20px; }
-.products-grid li.last { margin-right:0; }
+.products-grid li.item {/* float:left; width:164px; margin-right:20px; */}
+.products-grid li.last {/* margin-right:0; */}
 .products-grid .actions {}
 .products-grid .product-image { display:block; text-decoration:none !important; margin:0 auto 10px; position:relative; width:135px; }
 .products-grid .product-name { margin-bottom:7px; word-wrap:break-word; }
@@ -1242,7 +1243,7 @@ a.minimal-price-link:hover { text-decoration:underline; }
 
 /* Add to Links */
 .add-to-links { margin:5px 0 0; font-size:11px; }
-.add-to-links li { margin:2px 0; }
+.add-to-links li { margin-right:5px; float:left}
 .add-to-links a { color:#999; }
 .add-to-links a:hover {}
 .add-to-links .separator { display:none; }
@@ -1545,7 +1546,7 @@ button.btn-cart span {}
 .product-review .details .review-summary-table { margin:10px 0; }
 .product-review .buttons-set { clear:both; padding:25px 0 0; }
 
-.review-product-view .col-main { background:#fff url(../images/bkg_cols.gif) repeat-y -430px 0; padding:0; }
+.review-product-view .col-main { background:#fff /*url(../images/bkg_cols.gif) repeat-y -430px 0*/; padding:0; }
 .review-product-view .col-main .page-title { margin-left:0; margin-right:0; }
 .review-product-view .product-review .product-img-box { padding:0 0 20px 20px; }
 .review-product-view .product-review .details { width:570px; padding:0 20px 20px 0; }

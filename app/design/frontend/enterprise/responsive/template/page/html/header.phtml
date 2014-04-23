@@ -37,18 +37,13 @@
     </div>
     <div class="header row">
         <div class="branding col-md-6">
-        <?php if ($this->getIsHomePage()):?>
-            <h1 class="logo"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-            <?php else:?>
-            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-            <?php endif?>
             <?php echo $this->getChildHtml('headerCallout') ?>
-        </div>
+	        <?php echo $this->getChildHtml('topSearch') ?>
+        </div> 
         <div class="quick-access col-md-6">
             <div class="checkout-link"><?php echo $this->getChildHtml('checkoutLinks') ?></div>
             <?php echo $this->getChildHtml('topCart') ?>
             <?php echo $this->getChildHtml('topLinks') ?>
-            <?php echo $this->getChildHtml('topSearch') ?>
         </div>
     </div>
     <?php echo $this->getChildHtml('topMenu') ?>
