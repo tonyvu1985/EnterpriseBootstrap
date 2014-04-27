@@ -1,0 +1,44 @@
+/*
+*   Author: Tony Vu
+    Date: 08.12.2013
+    Description: Responsive css for hello theme
+
+    Ipad dimension: 768x1024
+    Iphone        : 640x960  
+    Desktop       : 1200
+    Laptop        : 992
+*/
+
+
+/*@media (min-width: 1200px) {}
+@media (min-width: 768px) {}
+@media (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 992px) {}
+@media (min-width: 992px) and (max-width: 1199px) {}*/
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {}
+
+@media (max-width:990px){
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width:768px){
+  
+}
+@media (max-width: 767px) {
+    
+    
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    
+}

@@ -55,6 +55,7 @@ Default layout, loads most of the pages
                 <action method="addItem"><type>skin_js</type><name>js/scripts.js</name></action>
 
                 <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/responsive.css</stylesheet></action>
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>

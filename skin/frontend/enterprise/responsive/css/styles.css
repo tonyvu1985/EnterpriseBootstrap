@@ -190,21 +190,20 @@ p.required { margin:0; padding:5px 0 7px; text-align:right; width:620px; font-si
 .fieldset p { margin:0 0 1.5em; }
 .fieldset h2.legend { margin:0 0 1.5em; color:#000; }
 
-/* Form lists */
+/* Form lists 
 .form-list {}
-
 .form-list li { margin:0 0 9px; vertical-align:top; }
 .form-list label { float:left; width:225px; padding:2px 15px 0 0; font-size:12px; font-weight:bold; color:#444; text-align:right; }
 .form-list .value { float:left; padding:2px 0 0; }
 .form-list .note { clear:both; font-size:11px; width:380px; margin:0; padding:3px 0 0 240px; }
 .form-list span.label { font-weight:normal; }
-.form-list .input-box { float:left; /* width:256px; */ }
+.form-list .input-box { float:left;  width:256px;  }
 .form-list .input-box a { font-size:11px; margin-top:4px; }
 .form-list input.input-text,
 .form-list textarea { float:left; width:374px; vertical-align:top; }
 .form-list textarea { width:374px; height:13em; }
 .form-list select { float:left; width:380px; vertical-align:top; }
-.form-list p { margin:0; padding:0 0 0 240px; }
+.form-list p { margin:0; padding:0 0 0 240px; }*/
 ul.add-row,
 .form-list li.add-row { background:url(../images/bkg_dots.gif) repeat-x 0 0; margin-top:15px; }
 ul.add-row .btn-remove,
@@ -259,9 +258,9 @@ ul.add-row .btn-remove,
 .buttons-set p.back-link { float:left; padding:2px 15px 0 0; text-align:right; margin:0; }
 a.back-link { color:#999; }
 .buttons-set p.back-link a { color:#999; }
-.buttons-set a.button,
+/*.buttons-set a.button,
 .buttons-set button.button { float:right; margin-left:7px; }
-.buttons-set2 { clear:both; margin:5px 0 0; padding:5px; background-color:#ededed; text-align:right; }
+.buttons-set2 { clear:both; margin:5px 0 0; padding:5px; background-color:#ededed; text-align:right; }*/
 
 .form-buttons { margin:0; width:620px; } /* for button containing block under the general form */
 .form-buttons .button { float:right; }
@@ -342,11 +341,11 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .title-buttons .link-print { float:right; margin-top:4px; }
 
 .subtitle { clear:both; padding:10px 0; font-size:18px; color:#d12c01; }
-
+/*
 .page-popup .page-title,
 .col-main .page-title { margin-left:-20px; margin-right:-20px; }
 .col1-layout .col-main .page-title { margin-top:-20px; }
-
+*/
 .sub-title { font-size:16px; font-weight:normal; color:#000; line-height:19px; margin:0 0 10px; }
 .sub-title .separator { font-weight:normal; }
 .sub-title a { font-size:11px; font-weight:normal; text-transform:lowercase; }
@@ -461,7 +460,7 @@ ul.links li.last .separator { display:none; }
 
 /* Reward Points */
 .rewards { margin:-10px 0 20px; }
-.reward-message { display:block; margin:5px -15px 5px -15px; background:#d55721 url(../images/bkg_rewards.gif) 5px 3px no-repeat; padding:3px 5px 3px 32px; font:normal 12px/20px Arial, Helvetica, sans-serif; color:#fff; }
+.reward-message { display:block; margin:5px 0px; background:#d55721; padding:3px 5px 3px 32px; color:#fff; }
 .reward-message p { display:inline; margin:0 !important; }
 .reward-message .limit { display:block; font-size:11px; line-height:1.15; }
 .reward-message a { color:#ffe6dc; text-decoration:underline; }
@@ -2017,26 +2016,24 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .login-only .registered-users { float:none; margin:0 auto; }
 
 .account-login .new-users,
-.account-login .registered-users { width:381px; padding:30px 32px 30px; }
+.account-login .registered-users {padding:30px 32px 30px; }
 .account-login .registered-users p { margin-bottom:1.5em; }
 .account-login .spacer { position:absolute; top:100%; left:447px; margin-top:-1px; width:16px; height:3px; font-size:0; line-height:0; background:#fff; overflow:hidden; }
-.account-login .fieldset { margin:0; }
+/*.account-login .fieldset { margin:0; }*/
 .account-login .fieldset h2 { margin-bottom:.5em; }
-.account-login .form-list label,
-.account-login .form-list span.label { width:98px; }
 .account-login p.required,
 .account-login .btn-only { padding-left:113px; width:230px; text-align:right; }
 .account-login .btn-only a { float:left; white-space:nowrap; }
-.account-login .form-list input.input-text { width:224px; }
+/*.account-login .form-list input.input-text { width:224px; }*/
 .account-login .form-list p { padding:0 0 0 110px; }
-.account-login .form-list li.note { float:left; padding-left:113px; margin:0 0 9px; width:auto; clear:left; }
-.account-login .form-list li.note a { font-size:12px; }
+.account-login .form-list li.note { /*float:left; padding-left:113px; margin:0 0 9px; width:auto; clear:left; */}
+.account-login .form-list li.note a { /*font-size:12px; */}
 .account-login .form-list li.control { float:left; clear:left; }
 li#remember-me-box.control { white-space:nowrap; }
 li#remember-me-box.control label { margin-right:20px; white-space:normal; }
 .account-login .form-list li.control .input-box { margin-left:113px; }
 li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; line-height:16px; padding-top:2px; white-space:normal; }
-.account-login .form-list li.buttons-set { float:right; clear:none; padding-right:38px; padding-top:2px; }
+/*.account-login .form-list li.buttons-set { float:right; clear:none; padding-right:38px; padding-top:2px; }*/
 
 .account-create {}
 
