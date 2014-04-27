@@ -142,7 +142,7 @@ select.multiselect option:last-child { border-top:0; }
 textarea { overflow:auto; resize:vertical; }
 textarea.default-value { color:#ddd; }
 input.radio,
-input.checkbox { margin-right:3px; font-size:11px !important; margin-top:2px; vertical-align:top; display: inline-block}
+input.checkbox {/* margin-right:3px; font-size:11px !important; margin-top:2px; vertical-align:top;*/ display: inline-block}
 /*input.radio { font-size:10px !important; }*/
 input.qty { width:2.5em !important; }
 input.disabled { background:#f6f6f6 !important; color:#bbb !important; }
@@ -213,7 +213,7 @@ ul.add-row .btn-remove,
 .form-list .add-field .input-box { margin-left:240px }
 .form-list .control { position:relative; vertical-align:top; z-index:1; } /* row with checkbox or radio button */
 .form-list .control label { line-height:16px; }
-.form-list .control .input-box { position:absolute; left:0; margin-left:240px; line-height:16px; padding-top:1px; }
+/*.form-list .control .input-box { position:absolute; left:0; margin-left:240px; line-height:16px; padding-top:1px; }*/
 .form-list .control input.radio { margin-top:3px; }
 
 .form-alt label { float:none; display:inline; width:auto; }
