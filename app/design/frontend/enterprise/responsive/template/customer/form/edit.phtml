@@ -76,7 +76,7 @@
                 <label for="current_password"><?php echo $this->__('Current Password') ?></label>
                 <div class="input-box">
                     <!-- This is a dummy hidden field to trick firefox from auto filling the password -->
-                    <input type="text" class="input-text no-display" name="dummy" id="dummy" />
+                    <input type="text" class="form-control input-text no-display" name="dummy" id="dummy" />
                     <input type="password" class="input-text" name="current_password" id="current_password" />
                 </div>
             </div>
@@ -85,13 +85,13 @@
             <div class="field">
                 <label for="password"><?php echo $this->__('New Password') ?></label>
                 <div class="input-box">
-                    <input type="password" class="input-text validate-both-passwords validate-password" name="password" id="password" />
+                    <input type="password" class="form-control input-text validate-both-passwords validate-password" name="password" id="password" />
                 </div>
             </div>
             <div class="field">
                 <label for="confirmation"><?php echo $this->__('Confirm New Password') ?></label>
                 <div class="input-box">
-                    <input type="password" class="input-text validate-both-passwords" name="confirmation" id="confirmation" />
+                    <input type="password" class="form-control input-text validate-both-passwords" name="confirmation" id="confirmation" />
                 </div>
             </div>
         </li>

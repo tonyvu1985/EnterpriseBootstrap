@@ -38,7 +38,7 @@
     <form id="giftcard-form" action="<?php echo $this->getUrl('enterprise_giftcardaccount/cart/add') ?>" method="post">
         <fieldset>
             <label for="giftcard_code"><?php echo $this->__('Enter the gift card code') ?></label>
-            <div class="v-fix"><input class="required-entry input-text control-form" id="giftcard_code" name="giftcard_code" value="" /></div>
+            <div class="v-fix"><input class="required-entry input-text form-control" id="giftcard_code" name="giftcard_code" value="" /></div>
             <button class="button btn btn-default" onclick="giftcardForm.submit()" type="button" value="<?php echo $this->__('Add Gift Card') ?>"><?php echo $this->__('Add Gift Card') ?></button>
             <button class="button check-gc-status btn btn-default" onclick="checkGiftCardStatus();" type="button" value="<?php echo $this->__('Check Gift Card status and balance') ?>"><?php echo $this->__('Check Gift Card status and balance') ?></button>
         </fieldset>

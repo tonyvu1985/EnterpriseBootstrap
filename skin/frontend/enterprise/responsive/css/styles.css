@@ -210,7 +210,7 @@ ul.add-row .btn-remove,
 .form-list li.add-row .btn-remove { font-size:0; line-height:0; padding:5px 5px 0 0; margin:0; text-align:right; }
 .form-list .range input.input-text { float:none; width:64px; vertical-align:middle; }
 
-.form-list .add-field .input-box { margin-left:240px }
+.form-list .add-field .input-box { /*margin-left:240px */}
 .form-list .control { position:relative; vertical-align:top; z-index:1; } /* row with checkbox or radio button */
 .form-list .control label { line-height:16px; }
 /*.form-list .control .input-box { position:absolute; left:0; margin-left:240px; line-height:16px; padding-top:1px; }*/
@@ -579,7 +579,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .loginbox{text-align: right}
 .switch {/* line-height:28px; margin-left:-1px; margin-right:0; display:inline; float:left; background:url(../images/bkg_header-panel.gif) no-repeat 0 -29px; padding-left:13px;*/ }
 .switch label { font-weight:normal; margin-right:0; float:left; }
-.switch .switch-wrapper { float:left; position:relative; z-index:1; padding-left:7px; padding-right:11px; }
+.switch .switch-wrapper {/* float:left; position:relative; z-index:1; padding-left:7px; padding-right:11px; */ text-align: left}
 .switch strong.current { font-weight:normal; }
 .switch .separator { margin:0 2px; font-size:10px; color:#8f8f8f; }
 .switch .switcher {/* color:#1e75b4; cursor:pointer; background:url(../images/bkg_header-panel.gif) no-repeat 100% -73px; padding:0 10px 0 0; margin:0 3px 0 1px; */}
@@ -1669,10 +1669,6 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart-table .item-msg { font-size:10px; }
 .cart-table thead th { vertical-align:bottom; }
 .cart-table tbody td { padding:12px; }
-.cart-table .btn-continue { float:left; background:none; border:none; }
-.cart-table .btn-continue span { background:none; border:none; text-transform:none; color:#444; text-decoration:underline; font-weight:normal; padding:0; }
-.cart-table .btn-update { float:right; margin-left:5px; }
-.cart-table .btn-empty { float:right; }
 .cart-table {background-color: #ffffff;}
 
 /* Shopping Cart Collateral boxes */
