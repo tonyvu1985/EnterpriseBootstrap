@@ -31,7 +31,7 @@
 
 /* Landscape phone to portrait tablet */
 @media (min-width:768px){
-  
+    .navbar-default .navbar-brand{display: none;}
 }
 @media (max-width: 767px) {
     
