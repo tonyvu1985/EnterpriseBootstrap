@@ -28,15 +28,13 @@
  */
 ?>
 <div class="header-container">
-    <div class="header-panel row">
-        <div class="switches col-xs-6"><?php echo $this->getChildHtml('switches') ?></div>
-        <div class="loginbox col-xs-6">
-            <span class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></span>
-            <?php echo $this->getChildHtml('accountLinks') ?>
-        </div>
+    <div class="header-panel row">        
     </div>
     <div class="header row">
         <div class="branding col-md-6">
+            <span class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></span>
+            <?php echo $this->getChildHtml('accountLinks') ?>
+            <div style="clear:both"></div>
             <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>   
             <?php echo $this->getChildHtml('headerCallout') ?>
         </div> 

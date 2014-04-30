@@ -48,6 +48,12 @@
     <ul id="nav" class="nav navbar-nav">
         <?php echo $_menu ?>
     </ul>
+      
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            <?php echo $this->getChildHtml('switches') ?>
+        </li>
+    </ul>
 </div>
 </nav>
 <?php endif ?>

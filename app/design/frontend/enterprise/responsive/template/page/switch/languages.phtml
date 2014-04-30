@@ -31,16 +31,15 @@
  * @see Mage_Page_Block_Switch
  */
 ?>
-
+              
 <?php if(count($this->getStores())>1): ?>
-<div class="switch switcher-language">
-    <label><?php echo $this->__('Language') ?>:</label>
-    <div class="switch-wrapper" id="languageSelect">
-        <strong class="current language-<?php echo $this->escapeHtml(Mage::app()->getStore()->getCode()) ?>">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <span class="current language-<?php echo $this->escapeHtml(Mage::app()->getStore()->getCode()) ?>">
             <?php echo $this->escapeHtml(Mage::app()->getStore()->getName()) ?>
-        </strong>
-        <span class="switcher-holder"><span onclick="popUpMenu(this);" class="switcher"><i class="fa fa-sort-asc"></i></span></span>
-        <ul style="display:none" id="popId-languageSelect">
+        </span><b class="caret"></b>
+        <ul class="dropdown-menu" id="popId-languageSelect">
+            <li class="dropdown-header">LANGUAGE USE</li>
+            <li class="divider"></li>
             <li class="current language-<?php echo $this->escapeHtml(Mage::app()->getStore()->getCode()) ?>">
                 <span><?php echo $this->escapeHtml(Mage::app()->getStore()->getName()) ?></span>
             </li>
@@ -52,6 +51,4 @@
                 <?php endif; ?>
             <?php endforeach; ?>
         </ul>
-    </div>
-</div>
 <?php endif; ?>
