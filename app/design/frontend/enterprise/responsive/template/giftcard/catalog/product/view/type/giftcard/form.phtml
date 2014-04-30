@@ -19,26 +19,24 @@
  * needs please refer to http://www.magentocommerce.com for more information.
  *
  * @category    design
- * @package     base_default
+ * @package     enterprise_default
  * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://www.magentocommerce.com/license/enterprise-edition
  */
 ?>
-<?php $_product = $this->getProduct(); ?>
-<?php $buttonTitle = $this->__('Add to Cart'); ?>
-<?php if($_product->isSaleable()): ?>
-    <div class="add-to-cart">
-        <div class="input-group">
-            <?php if(!$_product->isGrouped()): ?>
-            <span class="input-group-addon">
-            <label for="qty"><?php echo $this->__('Qty:') ?></label>
-            </span>
-            <input type="text" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>" class="form-control input-text qty" />
-            <?php endif; ?>
-            <span class="input-group-btn">
-            <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart btn btn-default" onclick="productAddToCartForm.submit(this)"><?php echo $buttonTitle ?></button>
-            </span>
-            <?php echo $this->getChildHtml('', true, true) ?>
+<li class="fields">
+    <div class="field">
+        <label for="giftcard_sender_name" class="required"><em>*</em><?php echo Mage::helper('enterprise_giftcard')->__('Sender Name'); ?></label>
+        <div class="input-box">
+            <input type="text" id="giftcard_sender_name" name="giftcard_sender_name" class="form-control required-entry input-text" value="<?php echo $this->getCustomerName(); ?>" />
         </div>
     </div>
-<?php endif; ?>
+    <?php if ($this->isEmailAvailable()): ?>
+    <div class="field">
+        <label for="giftcard_sender_email" class="required"><em>*</em><?php echo Mage::helper('enterprise_giftcard')->__('Sender Email'); ?></label>
+        <div class="input-box">
+            <input type="text" id="giftcard_sender_email" name="giftcard_sender_email" class="form-control validate-email required-entry input-text" value="<?php echo $this->getCustomerEmail(); ?>"/>
+        </div>
+    </div>
+    <?php endif; ?>
+</li>
