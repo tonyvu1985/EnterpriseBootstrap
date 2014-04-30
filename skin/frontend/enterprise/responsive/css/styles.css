@@ -870,9 +870,9 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .top-cart .block-content .item .product-name { font-size:11px; line-height:14px; }
 .top-cart .block-content .item .product-name a { font-size:11px; text-decoration:none; color:#444; }
 .top-cart .block-content table { margin:5px 0 0 0; }
-.top-cart .block-content table th { padding:1px 8px; color:#8f8f8f; text-align:right; }
-.top-cart .block-content table td { text-align:left; padding:1px 0; }
-.top-cart .block-content .subtotal { background:#fff url(../images/bkg_dots.gif) repeat-x 0 0; padding:2px 5px; text-align:center; }
+.top-cart .block-content table th {/* padding:1px 8px; color:#8f8f8f; text-align:right; */}
+.top-cart .block-content table td { text-align:right; padding:1px 0; }
+.top-cart .block-content .subtotal { padding:2px 5px; text-align:right; }
 
 .top-cart .actions { background:#e3e3e3 url(../images/bkg_dots.gif) repeat-x 0 -1px; text-align:center; padding:5px 11px; text-align:right; }
 .top-cart .actions a { float:left; line-height:23px; }
@@ -1161,7 +1161,7 @@ p.product-image { cursor:default !important; }
 
 .minimal-price-link { display:block; margin:5px 0; text-decoration:none; }
 a.minimal-price-link:hover { text-decoration:underline; }
-.minimal-price-link .label { font-weight:bold; }
+.minimal-price-link .label { font-weight:bold; color: #333}
 .minimal-price-link .price { font-weight:bold; }
 
 /* Excluding tax */
@@ -1272,7 +1272,7 @@ button.btn-cart span {}*/
 .product-options .options-list {}
 .product-options .options-list li { vertical-align:middle; margin:0; padding:2px 0; line-height:1.315; }
 .product-options .options-list input.radio { float:left; margin:2px -18px 0 0; }
-.product-options .options-list input.checkbox { float:left; margin:2px -20px 0 0; }
+.product-options .options-list input.checkbox { float:left; margin:0px 15px 0 0; }
 .product-options .options-list .label { display:block; margin-left:20px; }
 .product-options .validation-error .options-list,
 .product-options ul.validation-failed { padding:2px 1px !important; position:relative; z-index:2; top:-3px; left:-2px; margin-right:-2px; }
@@ -2536,3 +2536,4 @@ address.copyright { margin-top:6px; }
 .addresses-list .col-2 li:after,
 .product-view .product-shop:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
 /* ======================================================================================= */
+

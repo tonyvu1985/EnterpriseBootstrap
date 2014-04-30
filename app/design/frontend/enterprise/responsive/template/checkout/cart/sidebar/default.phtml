@@ -48,7 +48,7 @@
             <?php echo $this->escapeHtml($this->getProductName()) ?>
         <?php endif; ?>
     </p>
-    <table cellpadding="0">
+    <table class="table" cellpadding="0">
 
         <?php if ($canApplyMsrp): ?>
 
@@ -222,11 +222,11 @@
     <?php endif; ?>
     <?php if ($_item->getProduct()->isVisibleInSiteVisibility()): ?>
         <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo $this->__('Edit item') ?>"
-           class="btn-edit"><?php echo $this->__('Edit item') ?></a>
+           class="btn-edit"><i class="fa fa-pencil-square-o"></i></a>
         |
     <?php endif ?>
     <a href="<?php echo $this->getDeleteUrl() ?>"
        onclick="return confirm('<?php echo $this->__('Are you sure you would like to remove this item from the shopping cart?') ?>');"
-       title="<?php echo $this->__('Remove item') ?>" class="btn-remove"><?php echo $this->__('Remove item') ?></a>
+       title="<?php echo $this->__('Remove item') ?>" class="btn-remove"><i class="fa fa-times"></i></a>
 </div>
 </li>
