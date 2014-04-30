@@ -769,7 +769,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .sidebar .block .actions button.button { float:right; }
 
 .sidebar .block li a.btn-previous,
-.sidebar .block li a.btn-remove { float:right; width:13px; height:0; padding-top:12px; margin-top:3px; overflow:hidden; background:url(../images/btn_remove.gif) no-repeat 0 0; }
+.sidebar .block li a.btn-remove { overflow:hidden; }
 .sidebar .block li a.btn-previous { background:url(../images/bkg_icon-back.png) no-repeat 0 0; }
 
 .col-main .block { background:#fff; }
@@ -811,7 +811,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .sidebar .block-layered-nav dd li { margin:2px 0; }
 .sidebar .block-layered-nav dd a { color:#222; text-decoration:none; }
 .sidebar .block-layered-nav dd a:hover { text-decoration:underline; }
-.sidebar .block-layered-nav .currently { border:1px solid #d1d1d1; border-width:1px 0; padding:10px 10px 10px 17px; margin-bottom:-1px; background:#f4f4f4 url(../images/bkg_currently.gif) repeat-x 0 -20px; }
+.sidebar .block-layered-nav .currently { padding:10px 10px 10px 17px; margin-bottom:-1px; background:#f4f4f4; }
 .sidebar .block-layered-nav .currently .block-subtitle { display:block; margin-bottom:5px; }
 .sidebar .block-layered-nav .currently li { padding:5px 26px 5px 0; color:#444; position:relative; z-index:1; }
 .sidebar .block-layered-nav .currently li .btn-remove { position:absolute; right:-7px; top:4px; }
@@ -938,7 +938,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .category-view .note-msg,
 .category-description { padding:20px; }
 
-.results-view { margin:0 -20px -20px; }
+.results-view { margin:10px 0px; }
 .results-view .recommendations { padding:20px 20px 0; }
 .catalogsearch-result-index .page-title { margin-bottom:0; }
 .catalogsearch-result-index .note-msg { margin:20px 0; }
@@ -1649,24 +1649,24 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 /* Shopping Cart Collateral boxes 
 .cart .cart-collaterals { width:630px; padding:20px 0 10px; }
-.cart .cross-inside { background:url(../images/bkg_crosssell.gif) repeat-y 0 0; }*/
+.cart .cross-inside { background:url(../images/bkg_crosssell.gif) repeat-y 0 0; }
 .cart .cart-collaterals h2 { color:#000; font-weight:normal; margin:0 0 5px; }
 .cart .deals { float:left; width:280px; display:inline; margin:0 0 0 30px; font-size:12px; }
 .cart .deals p,
 .cart .deals label { margin:0 0 7px; display:block; }
-.cart .deals .input-text {/* width:140px; float:left; */margin:0 5px 3px 0; }
+.cart .deals .input-text { width:140px; float:left; margin:0 5px 3px 0; }
 .cart .deals .widget-sku { display:block; margin:0 0 20px; width:264px; }
 .cart .deals .widget-sku .block-title { background:inherit; border:inherit; color:#000; font-size:16px; margin:0 0 5px; padding:0; }
 .cart .deals .widget-sku .block-title strong { font-weight:normal; }
 .cart .deals .widget-sku .block-content { padding:0; }
 .cart .deals .widget-sku .sku-table td input { width:98%; }
-.cart .giftcard { position:relative; z-index:1; }
-.cart .giftcard button.check-gc-status { clear:both; margin-top: 6px}
+.cart .giftcard { position:relative; z-index:1; }*/
+.cart .giftcard button.check-gc-status { clear:both;}
 
 .cart .giftcard,
 .cart .discount { margin:0 0 20px 0; }
 .cart .cancel-btn { margin:5px 30px 0 0; clear:left; }
-.cart .shipping { float:left; margin:0 0 0 30px; display:inline; font-size:12px; width:280px; }
+/*.cart .shipping { float:left; margin:0 0 0 30px; display:inline; font-size:12px; width:280px; }
 .cart .shipping select { width:256px; }
 .cart .shipping .input-text { width:250px; }
 .cart .shipping p { margin:0 0 15px; }
@@ -1674,8 +1674,8 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .shipping .form-list label { float:none; width:auto; text-align:left; padding:0; }
 .cart .shipping .form-list .input-text,
 .cart .shipping .form-list select { display:block; float:none; }
-
-.cart .crosssell { float:left; min-height:400px; width:260px; padding:0 20px 15px 30px; border:1px solid #d9d9d9; border-width:0 1px 0 0; background:#fbf3f0; }
+*/
+.cart .crosssell { min-height:400px; padding:0 20px 15px 30px; border:1px solid #d9d9d9; background:#fbf3f0; }
 .cart .crosssell h2 { font-size:11px; color:#cd3800; font-weight:bold; text-transform:uppercase; }
 .cart .crosssell .item { padding:17px 0 0 ; }
 .cart .crosssell .product-image { float:left; margin:3px -90px 0 0; }

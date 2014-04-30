@@ -97,6 +97,7 @@
                 <tfoot>
                     <tr>
                         <td colspan="50" class="a-right">
+                            <div class="btn-group">
                             <?php if($this->getContinueShoppingUrl()): ?>
                                 <button type="button" title="<?php echo $this->__('Continue Shopping') ?>" class="button btn-continue btn btn-default" onclick="setLocation('<?php echo $this->getContinueShoppingUrl() ?>')"><?php echo $this->__('Continue Shopping') ?></button>
                             <?php endif; ?>
@@ -124,6 +125,7 @@
                             //]]>
                             </script>
                             <![endif]-->
+                            </div>
                         </td>
                     </tr>
                 </tfoot>
@@ -136,8 +138,21 @@
             <script type="text/javascript">decorateTable('shopping-cart-table')</script>
         </fieldset>
     </form>
+    
+    <div class="col-md-8 cart-collaterals<?php if($this->getChildHtml('crosssell')) echo ' cross-inside'; ?>">
+        <?php echo $this->getChildHtml('crosssell') ?>
+        <div class="deals col-md-6">
+            <?php /* Extensions placeholder */ ?>
+            <?php echo $this->getChildHtml('checkout.cart.extra') ?>
+            <?php echo $this->getChildHtml('checkout_cart_widget') ?>
+            <?php echo $this->getChildHtml('coupon') ?>
+            <?php echo $this->getChildHtml('giftcards') ?>
+        </div>
+        <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
+    </div>
+
     <?php echo $this->getChildHtml('shopping.cart.table.after'); ?>
-    <div class="totals">
+    <div class="totals col-md-4">
         <?php echo $this->getChildHtml('totals'); ?>
         <?php if(!$this->hasError()): ?>
         <ul class="checkout-types">
@@ -149,16 +164,4 @@
         </ul>
         <?php endif; ?>
     </div>
-    <div class="col-xs-12 cart-collaterals<?php if($this->getChildHtml('crosssell')) echo ' cross-inside'; ?>">
-        <?php echo $this->getChildHtml('crosssell') ?>
-        <div class="deals">
-            <?php /* Extensions placeholder */ ?>
-            <?php echo $this->getChildHtml('checkout.cart.extra') ?>
-            <?php echo $this->getChildHtml('checkout_cart_widget') ?>
-            <?php echo $this->getChildHtml('coupon') ?>
-            <?php echo $this->getChildHtml('giftcards') ?>
-        </div>
-        <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
-    </div>
-
 </div>
