@@ -35,8 +35,8 @@
     <button type="button" title="<?php echo $this->__('Add New Address') ?>" class="button btn btn-default" onclick="window.location='<?php echo $this->getAddAddressUrl() ?>';"><?php echo $this->__('Add New Address') ?></button>
 </div>
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
-<div class="col2-set addresses-list">
-    <div class="col-1 addresses-primary">
+<div class="col2-set addresses-list row">
+    <div class="col-1 addresses-primary col-md-6 col-sm-12">
         <h2 class="sub-title"><?php echo $this->__('Default Addresses') ?></h2>
         <ol>
         <?php if($_pAddsses = Mage::getSingleton('customer/session')->getCustomer()->getDefaultBilling()): ?>
@@ -68,7 +68,7 @@
         <?php endif ?>
         </ol>
     </div>
-    <div class="col-2 addresses-additional">
+    <div class="col-2 addresses-additional col-md-6 col-sm-12">
         <h2 class="sub-title"><?php echo $this->__('Additional Address Entries') ?></h2>
         <ol>
         <?php if($_pAddsses = $this->getAdditionalAddresses()): ?>

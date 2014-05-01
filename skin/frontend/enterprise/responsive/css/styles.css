@@ -47,9 +47,9 @@ fieldset      { border:0; }
 legend        { display:none; }
 label         { font-weight: normal}
 
-/* Table */
+/* Table 
 table         { border:0; border-collapse:collapse; border-spacing:0; empty-cells:show; font-size:100%; }
-caption,th,td { vertical-align:top; text-align:left; font-weight:normal; }
+caption,th,td { vertical-align:top; text-align:left; font-weight:normal; }*/
 
 /* Content */
 address       { font-style:normal; }
@@ -353,7 +353,7 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .section-title { font-size:14px; font-weight:normal; color:#151515; margin:0 0 5px; }
 
 /* Pager */
-.pager { margin:0; /*font-size:11px; padding:3px 20px; background:#f5f5f5 url(../images/bkg_pager.gif) repeat-x 0 0; border:1px solid #ddd; color:#333; */}
+.pager { }
 .pager p { margin:0 !important; }
 .pager select { padding:0; margin-bottom:1px; }
 .pager .amount { float:left; line-height:20px; }
@@ -401,9 +401,9 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .toolbar-bottom { display:none; }*/
 
 /* Data Table */
-.table-caption { border:1px solid #ddd; border-bottom:0; margin:-1px 0 0; background:#fff url(../images/bkg_block-title.gif) 0 100% repeat-x; font:14px/1.25 Arial, Helvetica, sans-serif; padding:3px 7px 4px; color:#444; }
-.table-caption a { font-size:11px; text-transform:lowercase; }
-.data-table { border:1px solid #d9d9d9; border-bottom:0; width:100%; border-collapse:separate; }
+.table-caption {/* border:1px solid #ddd; border-bottom:0; margin:-1px 0 0; background:#fff url(../images/bkg_block-title.gif) 0 100% repeat-x; font:14px/1.25 Arial, Helvetica, sans-serif; padding:3px 7px 4px;*/ color:#444; }
+.table-caption a {/* font-size:11px; text-transform:lowercase; */}
+.data-table { border:1px solid #d9d9d9; border-bottom:0; width:100%;}
 .data-table th { padding:5px 12px; color:#2d2d2d; border-bottom:1px solid #d9d9d9; font-weight:normal; text-transform:uppercase; white-space:nowrap; }
 .data-table td { padding:5px 12px; }
 .data-table thead {font-size:11px; }
@@ -1981,8 +1981,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 
 /* Account Login/Create Pages ============================================================ */
-.my-account {}
-
+.my-account .page-title{margin-left: -15px}
 .account-login { position:relative; font-size:12px; background:url(../images/bkg_cols.gif) repeat-y 266px 0; min-height:350px; margin-bottom:-20px; }
 
 .login-only { background:none; }
@@ -2059,9 +2058,8 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 /********** < Dashboard */
 .dashboard {}
 .dashboard .welcome-msg,
-.dashboard .col2-set,
-.dashboard .recent-orders { padding:0 0 20px; }
-
+.dashboard .col2-set{ padding: 15px;}
+.dashboard .recent-orders { background: #fff; padding: 15px; margin: 0 0 20px;}
 /* Block: Tags */
 .dashboard .tags { padding:0 0 20px; }
 .dashboard .tags p { display:inline; }
@@ -2411,7 +2409,7 @@ address.copyright { margin-top:6px; }
 /* Some sample data cms styles ================================================================================ */
 .page-head-alt {}
 .page-head,
-.page-head-alt { margin-bottom:20px; padding:23px 20px 11px; background:#f6f6f6 url(../images/bkg_page-title.gif) repeat-x 0 0; border-bottom:1px solid #cfcfcf; }
+.page-head-alt { margin-bottom:20px; padding:23px 20px 11px; background:#f6f6f6; border-bottom:1px solid #cfcfcf; }
 .col-main .page-head,
 .col-main .page-head-alt { margin:0 -20px 20px; }
 .page-head-alt .link-rss { float:right; margin-top:8px; }
