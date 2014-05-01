@@ -33,13 +33,22 @@ $catalogSearchHelper =  $this->helper('catalogsearch');
     <div class="input-group">
         <input id="search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text form-control" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>"/>
         <span class="input-group-btn">
-            <button type="submit" title="<?php echo $this->__('Go') ?>" class="button btn btn-info"><?php echo $this->__('Go') ?></button><a href="<?php echo $catalogSearchHelper->getAdvancedSearchUrl(); ?>"><?php echo $this->__('Advanced Search'); ?></a>
+            <button type="submit" title="<?php echo $this->__('Search') ?>" class="button btn btn-info"><?php echo $this->__('Search') ?></button><a href="<?php echo $catalogSearchHelper->getAdvancedSearchUrl(); ?>"><?php echo $this->__('Advanced Search'); ?></a>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown1" tabindex="-1">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul id="dropdown1" class="dropdown-menu pull-right" role="menu">
+                <li><a href="/catalogsearch/advanced/"><i class="fa fa-search"></i>Advanced Search</a></li>
+                <li class="divider"></li>
+                <li><a href="/catalogsearch/term/popular/"><i class="fa fa-search-plus"></i>Terms Search</a></li>
+            </ul>
         </span>
     </div>
     <div id="search_autocomplete" class="search-autocomplete"></div>
     <script type="text/javascript">
     //<![CDATA[
-        var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('Enter search keyword') ?>');
+        var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('Product Name') ?>');
         searchForm.initAutocomplete('<?php echo $catalogSearchHelper->getSuggestUrl() ?>', 'search_autocomplete');
     //]]>
     </script>

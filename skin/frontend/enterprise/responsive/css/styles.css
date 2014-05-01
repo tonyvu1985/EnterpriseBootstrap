@@ -553,19 +553,21 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 .header-container {margin-top: 60px;}
 .header-container .navbar{min-height: 40px}
-.header {margin:10px 0/* padding:8px 0 9px; min-height:56px; position:relative; z-index:5; width:940px; */}
+.header {margin-bottom: 20px}
 .header .logo {/* text-decoration:none !important; */}
-.header-panel .quick-access { /*width:410px; float:right; padding:10px 0 0; */ text-align: right}
-.header-panel .quick-access .links { /*float:right; line-height:18px; white-space:nowrap; */}
-.header-panel .quick-access .links li { /* float:left; line-height:18px;  padding:0 7px 0 4px; background:url(../images/bkg_sep.gif) no-repeat 100% 4px; */}
-.header-panel .quick-access .links li a {text-transform:uppercase; text-decoration:none; }
-.header-panel .quick-access .links li a:hover { color:#d33911; }
-.header-panel .quick-access .checkout-link{display: inline-block}
-.header-panel .quick-access .checkout-link li { font-weight:bold; padding:0 0 0 12px; background-position:6px 4px; }
-.header-panel .quick-access .cart-link li { font-weight:bold; padding:0 0 0 0px; background:none; }
-.header-panel .user-info{padding-top: 10px; font-size: 13px;}
-.header-panel .user-info a{color:#d12c01}
-.header-panel .quick-access{padding-top: 10px}
+.quick-access {text-align: right}
+.quick-access .links { /*float:right; line-height:18px; white-space:nowrap; */}
+.quick-access .links li { margin: 0 6px}
+.quick-access .links li a {text-transform:uppercase; text-decoration:none; font-weight: normal}
+.quick-access .links li a:hover { color:#d33911; }
+.quick-access .checkout-link{display: inline-block}
+.quick-access .checkout-link li { font-weight:bold; padding:0 0 0 12px; background-position:6px 4px; }
+.quick-access .cart-link li { font-weight:bold; padding:0 0 0 0px; background:none; }
+.quick-search .dropdown-menu{float: right; left: auto; right: 0}
+.quick-search{text-align: right}
+.user-info{padding-top: 10px; font-size: 13px;}
+.user-info a{color:#d12c01}
+.quick-access{padding-top: 10px}
 #popId-languageSelect li{text-align: left}
 #popId-languageSelect li.current{padding: 3px 20px}
 #invitation-send-link { background:url(../images/bkg_sep.gif) no-repeat 100% 50%; padding:0 6px 0 0; margin:0 4px 0 0; font-weight:bold; }

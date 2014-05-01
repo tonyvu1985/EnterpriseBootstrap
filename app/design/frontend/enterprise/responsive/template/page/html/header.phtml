@@ -35,11 +35,11 @@
                 <span class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></span>
                  <?php echo $this->getChildHtml('accountLinks') ?>
           </div>
-          <div class="nav navbar-nav navbar-right quick-access">
+          <ul class="nav navbar-nav navbar-right quick-access">                
                 <div class="checkout-link"><?php echo $this->getChildHtml('checkoutLinks') ?></div>
                 <?php echo $this->getChildHtml('topCart') ?>
                 <?php echo $this->getChildHtml('topLinks') ?>
-          </div>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -50,8 +50,9 @@
             <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>   
             <?php echo $this->getChildHtml('headerCallout') ?>
         </div> 
-        <div class="quick-access col-md-6">
-            <?php echo $this->getChildHtml('topSearch') ?>            
+        <div class="quick-search col-md-6">
+            <?php echo $this->getChildHtml('topSearch') ?>   
+            <?php echo $this->getChildHtml('switches') ?>
         </div>
     </div>
     <?php echo $this->getChildHtml('topMenu') ?>
