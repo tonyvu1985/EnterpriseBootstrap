@@ -139,7 +139,20 @@
         </fieldset>
     </form>
     
-    <div class="col-md-8 cart-collaterals<?php if($this->getChildHtml('crosssell')) echo ' cross-inside'; ?>">
+    <div class="totals col-md-4 col-sm-6 col-xs-12">
+        <?php echo $this->getChildHtml('totals'); ?>
+        <?php if(!$this->hasError()): ?>
+        <ul class="checkout-types">
+        <?php foreach ($this->getMethods('methods') as $method): ?>
+            <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
+            <li><?php echo $methodHtml; ?></li>
+            <?php endif; ?>
+        <?php endforeach; ?>
+        </ul>
+        <?php endif; ?>
+    </div>
+    
+    <div class="col-md-8 col-sm-6 col-xs-12 cart-collaterals<?php if($this->getChildHtml('crosssell')) echo ' cross-inside'; ?>">
         <?php echo $this->getChildHtml('crosssell') ?>
         <div class="deals col-md-6">
             <?php /* Extensions placeholder */ ?>
@@ -152,16 +165,5 @@
     </div>
 
     <?php echo $this->getChildHtml('shopping.cart.table.after'); ?>
-    <div class="totals col-md-4">
-        <?php echo $this->getChildHtml('totals'); ?>
-        <?php if(!$this->hasError()): ?>
-        <ul class="checkout-types">
-        <?php foreach ($this->getMethods('methods') as $method): ?>
-            <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
-            <li><?php echo $methodHtml; ?></li>
-            <?php endif; ?>
-        <?php endforeach; ?>
-        </ul>
-        <?php endif; ?>
-    </div>
+   
 </div>

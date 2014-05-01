@@ -29,7 +29,7 @@
  * @see Enterprise_GiftCardAccount_Block_Checkout_Cart_Giftcardaccount
  */
 ?>
-<div class="giftcard">
+<div class="giftcard col-md-12">
     <h2><?php echo $this->__('Gift Cards') ?></h2>
     <div id="giftcard_balance_lookup"></div>
     <span id="gc-please-wait" class="please-wait" style="display:none;">
@@ -39,8 +39,10 @@
         <fieldset>
             <label for="giftcard_code"><?php echo $this->__('Enter the gift card code') ?></label>
             <div class="v-fix"><input class="required-entry input-text form-control" id="giftcard_code" name="giftcard_code" value="" /></div>
-            <button class="button btn btn-default btn-xs" onclick="giftcardForm.submit()" type="button" value="<?php echo $this->__('Add Gift Card') ?>"><?php echo $this->__('Add Gift Card') ?></button>
-            <button class="button check-gc-status btn btn-default btn-xs" onclick="checkGiftCardStatus();" type="button" value="<?php echo $this->__('Check Gift Card status and balance') ?>"><?php echo $this->__('Check Gift Card status and balance') ?></button>
+            <div class="btn-group btn-group-xs">
+                <button class="button btn btn-default btn-xs" onclick="giftcardForm.submit()" type="button" value="<?php echo $this->__('Add Gift Card') ?>"><?php echo $this->__('Add Gift Card') ?></button>
+                <button class="button check-gc-status btn btn-default btn-xs" onclick="checkGiftCardStatus();" type="button" value="<?php echo $this->__('Check Gift Card status and balance') ?>"><?php echo $this->__('Check Gift Card status and balance') ?></button>
+            </div>
         </fieldset>
     </form>
 

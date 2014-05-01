@@ -53,7 +53,7 @@
         <?php $_items = $this->getRecentItems() ?>
         <?php if(count($_items)): ?>
             <p class="block-subtitle">
-                <span onclick="Enterprise.TopCart.hideCart()" class="close-btn"><?php echo $this->__('Close'); ?></span>
+                <span onclick="Enterprise.TopCart.hideCart()" class="close-btn"><i class="fa fa-times"></i></span>
                 <?php echo $this->__('Recently added item(s)') ?>
             </p>
             <ol id="mini-cart" class="mini-products-list">
@@ -64,7 +64,7 @@
             <script type="text/javascript">decorateList('mini-cart', 'none-recursive')</script>
         <?php else: ?>
             <p class="block-subtitle">
-                <span onclick="Enterprise.TopCart.hideCart()" class="close-btn"><?php echo $this->__('Close'); ?></span>
+                <span onclick="Enterprise.TopCart.hideCart()" class="close-btn"><i class="fa fa-times"></i></span>
                 <?php echo $this->__('Recently added item(s)') ?>
             </p>
             <p class="cart-empty">
