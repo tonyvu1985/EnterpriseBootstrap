@@ -180,7 +180,7 @@ div.validation-passed { background:url(../images/icon_ok.gif) 100% 2px no-repeat
 span.validation-error,
 div.validation-error { background:url(../images/icon_error.gif) 100% 2px no-repeat; padding-right:20px; }
 .required em { color:#f15c22; margin-right:4px; }
-p.required { margin:0; padding:5px 0 7px; text-align:right; width:620px; font-size:11px; color:#f02800; }
+p.required {padding:5px 0 7px; color:#f02800; }
 .form-list .validation-advice { width:250px; margin-right:-250px; }
 /* Expiration date and CVV number validation fix */
 .v-fix { /*float:left; */ padding-bottom: 10px}
@@ -256,9 +256,9 @@ ul.add-row .btn-remove,
 
 /* Buttons */
 .buttons-set { clear:both; margin:15px 0; } /* general for button containing block */
-.buttons-set p.back-link { float:left; padding:2px 15px 0 0; text-align:right; margin:0; }
+.buttons-set p.back-link {text-align:left; }
 a.back-link { color:#999; }
-.buttons-set p.back-link a { color:#999; }
+.buttons-set p.back-link a { }
 /*.buttons-set a.button,
 .buttons-set button.button { float:right; margin-left:7px; }
 .buttons-set2 { clear:both; margin:5px 0 0; padding:5px; background-color:#ededed; text-align:right; }*/
@@ -558,7 +558,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .quick-access {text-align: right}
 .quick-access .links { /*float:right; line-height:18px; white-space:nowrap; */}
 .quick-access .links li { margin: 0 6px}
-.quick-access .links li a {text-transform:uppercase; text-decoration:none; font-weight: normal}
+.quick-access .links li a {text-transform:normal; text-decoration:none; font-weight: normal}
 .quick-access .links li a:hover { color:#d33911; }
 .quick-access .checkout-link{display: inline-block}
 .quick-access .checkout-link li { font-weight:bold; padding:0 0 0 12px; background-position:6px 4px; }
@@ -859,8 +859,8 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 /* Top Shopping Cart */
 .top-cart { /*float:right;  width:360px; position:relative; padding-left:7px; */ display: inline-block}
-.top-cart .block-title { white-space:nowrap; /* _width:242px; min-width:242px; */ cursor:pointer; background:#fff url(../images/bkg_topcart.gif) 0 3px no-repeat; color:#1e75b4; font-weight:bold; font-size:11px; text-transform:uppercase; padding:0 0 0 18px; line-height:18px; height:18px; }
-.top-cart .block-title strong { display:block; padding-right:10px;color:#d12c01; text-decoration:none; }
+.top-cart .block-title { white-space:nowrap; /* _width:242px; min-width:242px; */ cursor:pointer; color:#1e75b4; font-weight:bold; font-size:11px; text-transform:uppercase; padding:0 0 0 18px; line-height:18px; height:18px; }
+.top-cart .block-title strong { display:block; padding-right:10px;color:#d12c01; text-decoration:none; text-transform: none}
 .top-cart .block-title.expanded { background-position:0 3px !important; }
 .top-cart .block-title.expanded strong { background-position:100% -126px !important; color:#d33911; }
 /* .top-cart .no-items { cursor:default; }
@@ -900,7 +900,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .block-list li.item { padding:5px 10px 5px 13px; }
 .block-list .actions { padding:5px 0 0; }
 .sidebar .block-list .product-name { font:normal 11px/1.25 Arial, Helvetica, sans-serif; color:#444; }
-.sidebar .block-list .product-name a { color:#444; }
+.sidebar .block-list .product-name a:HOVER { color:#d12c01; }
 
 /* Block: Poll 
 .block-poll li { margin:5px 0; }
@@ -1225,12 +1225,8 @@ a.minimal-price-link:hover { text-decoration:underline; }
 .product-pricing li .benefit { font-weight:bold; }
 
 /* Add to Links */
-.add-to-links { margin:5px 0 0; font-size:11px; }
+.add-to-links { margin:5px 0 0; }
 .add-to-links li { margin-right:5px; float:left}
-.add-to-links a { color:#999; }
-.add-to-links a:hover {}
-.add-to-links .separator { display:none; }
-
 /* Add to Cart 
 .add-to-cart {}
 .add-to-cart label { font-size:12px; vertical-align:middle; font-weight:bold; margin-right:5px; text-transform:capitalize; }

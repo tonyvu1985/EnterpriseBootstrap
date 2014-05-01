@@ -33,8 +33,8 @@
 /** @var $this Mage_Checkout_Block_Onepage_Login */
 ?>
 <?php echo $this->getChildHtml('login_before')?>
-<div class="col2-set<?php if (!$this->helper('customer')->isRegistrationAllowed() && !$this->getQuote()->isAllowedGuestCheckout()) echo ' login-only' ?>">
-    <div class="col-1">
+<div class="row col2-set<?php if (!$this->helper('customer')->isRegistrationAllowed() && !$this->getQuote()->isAllowedGuestCheckout()) echo ' login-only' ?>">
+    <div class="col-1 col-md-6">
         <h4><?php echo $this->__('Login') ?></h4>
         <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
         <form id="login-form" action="<?php echo $this->getPostAction() ?>" method="post">
@@ -55,20 +55,24 @@
                     </div>
                 </li>
                 <?php echo $this->getChildHtml('form.additional.info'); ?>
-                <li class="note">
+            </ul>
+            
+            <div class="row">
+                 <div class="note col-md-6">
                     <a href="<?php echo $this->helper('customer')->getForgotPasswordUrl()?>"><?php echo $this->__('Forgot Your Password?') ?></a>
-                </li>
-                <?php echo $this->getChildHtml('persistent.remember.me'); ?>
-                <li class="buttons-set">
+                    <?php echo $this->getChildHtml('persistent.remember.me'); ?>
+                </div>
+                
+                <div class="col-md-6" style="text-align: right">
                     <input name="context" type="hidden" value="checkout" />
                     <button type="button" class="button btn btn-default" onclick="loginForm.submit()"><?php echo $this->__('Login') ?></button>
-                </li>
-            </ul>
+                </div>
+            </div>
         </fieldset>
         </form>
     </div>
     <?php if ( $this->getQuote()->isAllowedGuestCheckout() || $this->helper('customer')->isRegistrationAllowed() ): ?>
-    <div class="col-2">
+    <div class="col-2 col-md-6">
         <h4>
             <?php if( $this->getQuote()->isAllowedGuestCheckout() && $this->helper('customer')->isRegistrationAllowed() ): ?>
                 <?php echo $this->__('Checkout as a Guest or Register') ?>

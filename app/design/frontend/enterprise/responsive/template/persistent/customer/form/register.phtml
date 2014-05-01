@@ -185,11 +185,13 @@
             </ul>
             <?php echo $this->getChildHtml('persistent.remember.me.tooltip'); ?>
         </div>
-        <div class="buttons-set form-buttons">
-            <p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
-            <button type="submit" class="button btn btn-default" title="<?php echo $this->__('Submit') ?>"><?php echo $this->__('Submit') ?></button>
+        <div class="buttons-set form-buttons row">
+            <p class="back-link col-xs-6"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
+            <div class="col-xs-6" style="text-align: right">
+                <button type="submit" class="button btn btn-default" title="<?php echo $this->__('Submit') ?>"><?php echo $this->__('Submit') ?></button>
+                <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+            </div>
         </div>
-        <p class="required"><?php echo $this->__('* Required Fields') ?></p>
         <?php if (Mage::helper('checkout')->isContextCheckout()): ?>
             <input name="context" type="hidden" value="checkout" />
         <?php endif; ?>
