@@ -467,10 +467,10 @@ ul.links li.last .separator { display:none; }
 .reward-message a { color:#ffe6dc; text-decoration:underline; }
 .reward-message a:hover { color:#ffe6dc; text-decoration:none; }
 .reward-message .price { font-size:1em; font-weight:normal; }
-/* Reward Points types rewrites */
+/* Reward Points types rewrites 
 .reward-review,
 .reward-tag,
-.reward-checkout { margin:0; }
+.reward-checkout { margin:0; }*/
 
 /* Class: std - styles for admin-controlled content */
 .std ul,
@@ -1086,7 +1086,8 @@ p.product-image { cursor:default !important; }
 .product-view .product-shop .ratings { margin:10px 0; }
 .product-view .product-shop .ratings p { margin:0; }
 .product-view .product-shop .product-ids { margin:4px 0 10px; color:#999; display:none; }
-.product-view .product-shop .availability { font-size:12px; }
+.product-view .product-shop .availability { font-size:12px; font-weight: normal}
+.product-view .product-shop .availability span{color: #1e75b4}
 .product-view .product-shop .price-box { margin:10px 0; }
 .product-view .product-shop .price-box .price-label { font-size:11px; }
 .product-view .product-shop .price-box .price-as-configured .price-label { font-size:12px; }
@@ -2380,6 +2381,7 @@ p.link-widget-sku a { color:#999; }
 /* Footer ================================================================================ */
 .footer-before-container { margin:0 0 3px; text-align:center; }
 .form-subscribe-header { color:#d12c01; font-size:11px; font-weight:bold; text-decoration:none; text-transform:uppercase; }
+.form-subscribe input{margin: 4px 0 10px 0}
 /*
 .form-subscribe { float:left; width:183px; padding: 0 17px 0 0; }
 .form-subscribe label { display:block; margin:6px 0; }
