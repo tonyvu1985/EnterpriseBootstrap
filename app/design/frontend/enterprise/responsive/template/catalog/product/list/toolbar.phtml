@@ -39,7 +39,7 @@
         <p class="view-mode col-xs-6">
             <?php $_modes = $this->getModes(); ?>
             <?php if($_modes && count($_modes)>1): ?>
-            <?php echo $this->__('View as') ?>
+            <?php echo $this->__('View') ?>
             <?php $_i=1; $_fix=''; foreach ($this->getModes() as $_code=>$_label): ?>
                 <?php if ($_i==1 && strtolower($_code)=='list') $_fix='-fix'; ?>
                 <?php if($this->isModeActive($_code)): ?>
@@ -71,7 +71,7 @@
     <?php endif; ?>
 
     <div class="pager">
-        <p class="amount">
+        <p class="amount col-xs-6">
             <?php if($this->getLastPageNum()>1): ?>
                 <?php echo $this->__('Items %s-%s of %s', $this->getFirstNum(), $this->getLastNum(), $this->getTotalNum()) ?>
             <?php else: ?>
@@ -79,7 +79,7 @@
             <?php endif; ?>
         </p>
 
-        <div class="limiter">
+        <div class="limiter col-xs-6">
             <?php echo $this->__('Show') ?>
             <select onchange="setLocation(this.value)">
             <?php foreach ($this->getAvailableLimit() as  $_key=>$_limit): ?>
