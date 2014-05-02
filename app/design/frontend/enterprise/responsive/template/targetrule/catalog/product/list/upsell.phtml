@@ -34,7 +34,7 @@
         <?php if ($i++ % $this->getColumnCount() == 0): ?>
             <ul class="products-grid">
         <?php endif ?>
-                <li class="item<?php if (($i - 1) % $this->getColumnCount() == 0):?> first<?php elseif ($i % $this->getColumnCount() == 0):?> last<?php endif;?>">
+                <li class="col-md-3 item<?php if (($i - 1) % $this->getColumnCount() == 0):?> first<?php elseif ($i % $this->getColumnCount() == 0):?> last<?php endif;?>">
                     <?php
                         $itemBlock = $this->getChild('catalog.product.upsell.item')->setItem($_item)->setPosition($i);
                         echo $itemBlock->toHtml();
