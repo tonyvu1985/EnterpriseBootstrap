@@ -367,7 +367,7 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .pager .pages .i-next { text-decoration:none !important; vertical-align:middle; }
 .pager-only { clear:both; }
 .pager-only .pages { margin:0; }*/
-.pager .limiter { text-align: right}
+.pager .limiter { text-align: right; display: none}
 .pager .amount { text-align: left; display: none}
 .pager li>a, .pager li>span{border-radius: 0}
 /* Sorter 

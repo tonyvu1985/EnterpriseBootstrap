@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Tvcom_Catalog>
+            <version>0.0.1</version>
+        </Tvcom_Catalog>
+    </modules>
+    <global>
+        <blocks>
+            <catalog>
+                <rewrite>
+                    <product_list_toolbar>Tvcom_Catalog_Block_Product_List_Toolbar</product_list_toolbar>
+                </rewrite>
+            </catalog>
+        </blocks>
+    </global>
+</config>
