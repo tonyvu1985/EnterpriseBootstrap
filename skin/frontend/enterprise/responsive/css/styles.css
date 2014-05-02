@@ -394,7 +394,8 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .sorter .view-mode a.grid-fix { background-position:-24px -58px; }
 .sorter .view-mode strong.grid-fix { background-position:-24px -87px;; }
 .sorter .link-feed {}*/
-.sorter .sort-by { text-align: right }
+.sorter .view-mode{display: none}
+.sorter .sort-by { text-align: text }
 /* Toolbar  */
 .toolbar { margin:10px 0; }
 /*.toolbar .pager { margin:0 0 0; border-width:1px 0; }
@@ -955,11 +956,11 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .category-image { text-align:left;}
 .category-image img { /*display:block; */margin:0 auto; }
 
-.category-products { padding:25px 0 0; }
+/*.category-products { padding:25px 0 0; }*/
 .category-products .price-box { font-size:12px; }
 
 /* View Type: Grid */
-.products-grid { padding:0 0 0 20px; margin:0 0 40px 0; }
+.products-grid {/* padding:0 0 0 20px; margin:0 0 40px 0; */}
 .products-grid li.item {/* float:left; width:164px; margin-right:20px; */}
 .products-grid li.last {/* margin-right:0; */}
 .products-grid .actions {}

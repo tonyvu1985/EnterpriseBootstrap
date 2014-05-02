@@ -93,11 +93,12 @@
 
 <?php $_collectionSize = $_productCollection->count() ?>
 <?php $_columnCount = $this->getColumnCount(); ?>
+<ul class="products-grid row">
 <?php $i=0; foreach ($_productCollection as $_product): ?>
     <?php if ($i++%$_columnCount==0): ?>
-    <ul class="products-grid row">
+   <!-- <ul class="products-grid row">-->
     <?php endif ?>
-        <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?> col-xs-4">
+        <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?> col-md-4 col-sm-6 col-xs-12">
             <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img class="img-responsive" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
             <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h2>
             <?php if($_product->getRatingSummary()): ?>
@@ -125,9 +126,10 @@
             </div>
         </li>
     <?php if ($i%$_columnCount==0 || $i==$_collectionSize): ?>
-    </ul>
+  <!--  </ul> -->
     <?php endif ?>
     <?php endforeach ?>
+  </ul>
     <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
 <?php endif; ?>
 </div>

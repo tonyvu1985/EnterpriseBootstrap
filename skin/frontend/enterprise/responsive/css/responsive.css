@@ -41,9 +41,12 @@
     
     /* bootstrap 3 fix the scroll bar of Navbar on Mobile device */
     .navbar-collapse {max-height: none;}
+    
+    .block-tags{display: none}
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    
+    /* catalog category */
+    .block-compare, .block-poll, .block-viewed, .paypal-logo, .block-wishlist{display: none}
 }
