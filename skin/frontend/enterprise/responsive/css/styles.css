@@ -327,10 +327,10 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .breadcrumbs a:hover { text-decoration:underline; }*/
 
 /* Page Heading */
-.page-title { margin-bottom:20px; padding:23px 20px 11px; background:#f6f6f6 url(../images/bkg_page-title.gif) repeat-x 0 0; border-bottom:1px solid #cfcfcf; }
+.page-title { margin-bottom:20px; padding:23px 20px 11px; background:#f6f6f6; border-bottom:1px solid #cfcfcf; }
 .page-title .link-rss { float:right; margin-top:8px; }
 .page-title h1,
-.page-title h2 { font:normal 22px/27px Arial, Helvetica, sans-serif; color:#d12c01; }
+.page-title h2 { font:normal 22px/27px Arial, Helvetica, sans-serif; color:#d12c01; margin-top: 0}
 
 .title-buttons { text-align:right; }
 .title-buttons h1,
@@ -368,7 +368,7 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .pager-only { clear:both; }
 .pager-only .pages { margin:0; }*/
 .pager .limiter { text-align: right}
-.pager .amount { text-align: left}
+.pager .amount { text-align: left; display: none}
 .pager li>a, .pager li>span{border-radius: 0}
 /* Sorter 
 .sorter { font-size:11px; margin:0 0 0; padding:3px 20px; background:#f5f5f5 url(../images/bkg_pager.gif) repeat-x 0 0; border-top:1px solid #ddd; color:#333; }
@@ -902,14 +902,15 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .sidebar .block-list .product-name { font:normal 11px/1.25 Arial, Helvetica, sans-serif; color:#444; }
 .sidebar .block-list .product-name a:HOVER { color:#d12c01; }
 
-/* Block: Poll 
+/* Block: Poll */
 .block-poll li { margin:5px 0; }
-.block-poll input.radio { float:left; margin:1px -18px 0 0; vertical-align:top; }
-.block-poll .label { display:block; margin-left:18px; }
+.block-poll input.radio { float:left; margin:-2px 0px 0 0; vertical-align:top; }
+.block-poll label { display:block; margin-left:18px; }
 .block-poll .answer {}
-.block-poll .votes { float:right; font-weight:bold; margin-left:10px; }*/
+.block-poll .votes { float:right; font-weight:bold; margin-left:10px; }
 
 /* Block: Tags */
+.block-tags {margin-top: 15px;}
 .block-tags ul,
 .block-tags li { display:inline; }
 
@@ -1120,7 +1121,7 @@ p.product-image { cursor:default !important; }
 
 /* Availability */
 .availability { font-weight:bold; }
-.availability.in-stock { color:#1b6800; }
+.availability.in-stock { color:#333; }
 .availability.out-of-stock { color:#cf3a00; }
 
 .availability-only { margin:10px 0 7px; line-height:16px; background:url(../images/i_availability_only.gif) 0 50% no-repeat; padding-left:15px; }
@@ -1227,6 +1228,7 @@ a.minimal-price-link:hover { text-decoration:underline; }
 /* Add to Links */
 .add-to-links { margin:5px 0 0; }
 .add-to-links li { margin-right:5px; float:left}
+.add-to-links li a{color: #1b6800}
 /* Add to Cart 
 .add-to-cart {}
 .add-to-cart label { font-size:12px; vertical-align:middle; font-weight:bold; margin-right:5px; text-transform:capitalize; }
@@ -1992,21 +1994,18 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .account-login .registered-users {padding:30px 32px 30px; }
 .account-login .registered-users p { margin-bottom:1.5em; }
 .account-login .spacer { position:absolute; top:100%; left:447px; margin-top:-1px; width:16px; height:3px; font-size:0; line-height:0; background:#fff; overflow:hidden; }
-/*.account-login .fieldset { margin:0; }*/
 .account-login .fieldset h2 { margin-bottom:.5em; }
 .account-login p.required,
-.account-login .btn-only { padding-left:113px; width:230px; text-align:right; }
+.account-login .btn-only { text-align:left; padding-top: 0}
 .account-login .btn-only a { float:left; white-space:nowrap; }
-/*.account-login .form-list input.input-text { width:224px; }*/
 .account-login .form-list p { padding:0 0 0 110px; }
-.account-login .form-list li.note { /*float:left; padding-left:113px; margin:0 0 9px; width:auto; clear:left; */}
-.account-login .form-list li.note a { /*font-size:12px; */}
+.account-login .form-list li.note {padding:5px 0;}
 .account-login .form-list li.control { float:left; clear:left; }
 li#remember-me-box.control { white-space:nowrap; }
 li#remember-me-box.control label { margin-right:20px; white-space:normal; }
 .account-login .form-list li.control .input-box { margin-left:113px; }
+.account-login .form-list li label{padding: 10px 0}
 li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; line-height:16px; padding-top:2px; white-space:normal; }
-/*.account-login .form-list li.buttons-set { float:right; clear:none; padding-right:38px; padding-top:2px; }*/
 
 .account-create {}
 
