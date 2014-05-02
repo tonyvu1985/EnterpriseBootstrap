@@ -35,6 +35,7 @@
 }
 @media (max-width: 767px) {
     .cart > form{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; border: 1px solid #dddddd; display: inline-block}
+    .cart-table .product-name{margin-top: 0}
     /* My Dashboard */
     .order-history-wrapper, .recent-orders{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; border: 1px solid #dddddd; display: inline-block}
     

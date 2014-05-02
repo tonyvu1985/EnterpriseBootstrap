@@ -1645,7 +1645,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .title-buttons .checkout-types li { float:left; margin:0 0 5px 5px; }
 
 /* Shopping Cart Table */
-.cart-table { border-width:1px 0; }
+.cart-table { border-width:0; }
 .cart-table .item-msg { font-size:10px; }
 .cart-table thead th { vertical-align:bottom; }
 .cart-table tbody td { padding:12px; }
@@ -1668,10 +1668,10 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .giftcard button.check-gc-status { clear:both;}*/
 
 .cart .giftcard,
-.cart .discount { margin:0 0 20px 15px; border: 1px solid #ccc}
+.cart .discount, .cart .shipping { margin:0 0 20px 15px; border: 1px solid #ccc; padding: 0px 10px 15px 10px;}
 .cart .cancel-btn { margin:5px 30px 0 0; clear:left; }
-/*.cart .shipping { float:left; margin:0 0 0 30px; display:inline; font-size:12px; width:280px; }
-.cart .shipping select { width:256px; }
+ 
+/*.cart .shipping select { width:256px; }
 .cart .shipping .input-text { width:250px; }
 .cart .shipping p { margin:0 0 15px; }
 .cart .shipping .buttons-set { width:256px; }
@@ -1679,8 +1679,8 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .shipping .form-list .input-text,
 .cart .shipping .form-list select { display:block; float:none; }
 */
-.cart .crosssell { padding:0 15px 15px 15px; border:1px solid #d9d9d9; background:#fbf3f0; }
-.cart .crosssell h2 { font-size:11px; color:#cd3800; font-weight:bold; text-transform:uppercase; }
+.cart .crosssell { padding:0 15px 15px 15px; border:1px     solid #d9d9d9; background:#fbf3f0; }
+.cart .crosssell h2 { font-size:11px; color:#cd3800;}
 .cart .crosssell .item { padding:17px 0 0 ; }
 .cart .crosssell .product-image { float:left; margin:3px -90px 0 0; }
 .cart .crosssell .product-shop { margin-left:90px; }

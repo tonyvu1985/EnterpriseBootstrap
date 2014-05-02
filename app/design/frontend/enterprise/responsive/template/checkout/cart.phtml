@@ -138,32 +138,32 @@
             <script type="text/javascript">decorateTable('shopping-cart-table')</script>
         </fieldset>
     </form>
-    
-    <div class="totals col-md-4 col-sm-6 col-xs-12">
-        <?php echo $this->getChildHtml('totals'); ?>
-        <?php if(!$this->hasError()): ?>
-        <ul class="checkout-types">
-        <?php foreach ($this->getMethods('methods') as $method): ?>
-            <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
-            <li><?php echo $methodHtml; ?></li>
+    <div class="col-xs-12">
+        <div class="totals col-md-4 col-sm-6 col-xs-12">
+            <?php echo $this->getChildHtml('totals'); ?>
+            <?php if(!$this->hasError()): ?>
+            <ul class="checkout-types">
+            <?php foreach ($this->getMethods('methods') as $method): ?>
+                <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
+                <li><?php echo $methodHtml; ?></li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+            </ul>
             <?php endif; ?>
-        <?php endforeach; ?>
-        </ul>
-        <?php endif; ?>
-    </div>
-    
-    <div class="col-md-8 col-sm-6 col-xs-12 cart-collaterals<?php if($this->getChildHtml('crosssell')) echo ' cross-inside'; ?>">
-        <?php echo $this->getChildHtml('crosssell') ?>
-        <div class="deals col-md-6">
-            <?php /* Extensions placeholder */ ?>
-            <?php echo $this->getChildHtml('checkout.cart.extra') ?>
-            <?php echo $this->getChildHtml('checkout_cart_widget') ?>
-            <?php echo $this->getChildHtml('coupon') ?>
-            <?php echo $this->getChildHtml('giftcards') ?>
         </div>
-        <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
-    </div>
 
+        <div class="col-md-8 col-sm-6 col-xs-12 cart-collaterals<?php if($this->getChildHtml('crosssell')) echo ' cross-inside'; ?>">
+            <?php echo $this->getChildHtml('crosssell') ?>
+            <div class="deals col-md-6">
+                <?php /* Extensions placeholder */ ?>
+                <?php echo $this->getChildHtml('checkout.cart.extra') ?>
+                <?php echo $this->getChildHtml('checkout_cart_widget') ?>
+                <?php echo $this->getChildHtml('coupon') ?>
+                <?php echo $this->getChildHtml('giftcards') ?>
+                <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
+            </div>
+        </div>
+    </div>
     <?php echo $this->getChildHtml('shopping.cart.table.after'); ?>
    
 </div>
