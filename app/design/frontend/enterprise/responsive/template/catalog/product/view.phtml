@@ -83,6 +83,32 @@
                     <?php endif;?>
 
                     <?php echo $this->getChildHtml('other');?>
+                    
+                    <div class="product-collateral">
+                    <?php if ($detailedInfoGroup = $this->getChildGroup('detailed_info', 'getChildHtml')):?>
+                    <dl id="collateral-tabs" class="collateral-tabs">
+                    <?php foreach ($detailedInfoGroup as $alias => $html):?>
+                    <dt class="tab"><span><?php echo $this->escapeHtml($this->getChildData($alias, 'title')) ?></span></dt>
+                    <dd class="tab-container">
+                       <div class="tab-content"><?php echo $html ?></div>
+                    </dd>
+                    <?php endforeach;?>
+                    </dl>
+                    <script type="text/javascript">
+                    //<![CDATA[
+                    var collateralTabs = new Enterprise.Tabs('collateral-tabs');
+                    Event.observe(window, 'load', function() {
+                        collateralTabs.select();
+                    });
+                    //]]>
+                    </script>
+                    <?php endif; ?>
+                    <?php if ($this->canEmailToFriend()): ?>
+                    <p class="emailto-link"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
+                    <?php endif; ?>
+                    </div>
+                    
+                    
                 </div>
 
                 <div class="product-img-box col-md-6 col-xs-12">
@@ -90,29 +116,7 @@
                 </div>
 
         </div>
-        <div class="product-collateral">
-            <?php if ($detailedInfoGroup = $this->getChildGroup('detailed_info', 'getChildHtml')):?>
-                <dl id="collateral-tabs" class="collateral-tabs">
-                <?php foreach ($detailedInfoGroup as $alias => $html):?>
-                    <dt class="tab"><span><?php echo $this->escapeHtml($this->getChildData($alias, 'title')) ?></span></dt>
-                    <dd class="tab-container">
-                       <div class="tab-content"><?php echo $html ?></div>
-                    </dd>
-                <?php endforeach;?>
-                </dl>
-                <script type="text/javascript">
-                //<![CDATA[
-                    var collateralTabs = new Enterprise.Tabs('collateral-tabs');
-                    Event.observe(window, 'load', function() {
-                        collateralTabs.select();
-                    });
-                //]]>
-                </script>
-            <?php endif; ?>
-            <?php if ($this->canEmailToFriend()): ?>
-                <p class="emailto-link"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
-            <?php endif; ?>
-        </div>
+        
         <div class="clearer"></div>
         <?php if ($_product->isSaleable() && $this->hasOptions() && $this->getChildChildHtml('container2') ):?>
             <div class="options-container-big">
