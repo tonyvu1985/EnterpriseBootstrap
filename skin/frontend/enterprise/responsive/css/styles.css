@@ -45,8 +45,8 @@ h6            { font-size:11px; font-weight:bold; }
 form          { display:inline; }
 fieldset      { border:0; }
 legend        { display:none; }
-label         { font-weight: normal}
-
+label, .label { font-weight: normal; color: #444}
+          
 /* Table 
 table         { border:0; border-collapse:collapse; border-spacing:0; empty-cells:show; font-size:100%; }
 caption,th,td { vertical-align:top; text-align:left; font-weight:normal; }*/
@@ -285,15 +285,13 @@ a.back-link { color:#999; }
 .col3-layout .form-buttons { width:445px; }
 
 /* Global Messages */
-.messages { width:100%; overflow:hidden; text-align:left; margin-top:10px; }
+.messages {text-align:left; margin-top:10px; }
 .messages li { margin:0 0 10px; padding:0; word-wrap:break-word; }
-.messages ul { padding:10px 17px 18px; margin:0 0 -11px; background-position:35px 100%; background-repeat:no-repeat; position:relative; }
+.messages ul { padding:10px 17px 18px; margin:0 0 -11px;}
 .messages ul li { margin:0; padding:0 0 3px; }
 .messages a { text-decoration:underline; }
 .messages a:hover { text-decoration:none; }
 
-.messages li.success-msg,
-.messages li.note-msg,
 .messages li.notice-msg { border-style:solid !important; border-width:1px !important; font-size:12px !important; }
 p.error-msg { border-style:solid !important; padding:10px; border-width:1px !important; font-size:12px !important; margin:10px 0; }
 /* Error Message */
@@ -302,16 +300,9 @@ p.error-msg { border-style:solid !important; padding:10px; border-width:1px !imp
 .messages li.error-msg ul { /* background-image:url(../images/bkg_msg-error.gif); */ }
 p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 /* Success Message */
-.messages li.success-msg { border-color:#446423; background-color:#eff5ea; color:#3d6611; }
-.messages li.success-msg a { color:#3d6611; }
-.messages li.success-msg ul { /* background-image:url(../images/bkg_msg-success.gif); */ }
-/* Notification Message */
-.messages li.note-msg,
-.messages li.notice-msg { border-color:#fcd344; background-color:#fafaec; color:#3d6611; }
-.messages li.note-msg a,
-.messages li.notice-msg a { color:#3d6611; }
-.messages li.note-msg ul,
-.messages li.notice-msg ul { /* background-image:url(../images/bkg_msg-note.gif); */ }
+.messages li.success-msg {padding: 5px; border: 1px solid transparent; border-radius: 4px; background-color: #dff0d8; border-color: #d6e9c6; color: #3c763d;}
+.messages li.note-msg {padding: 5px; border: 1px solid #fcd344; border-radius: 4px; background-color: #fafaec; border-color: #d6e9c6; color: #3d6611;}
+
 
 /* std class reset */
 .std .messages { margin-top:0; }
@@ -576,6 +567,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 #cartHeader:hover{color:#d12c01}
 #popId-languageSelect li{text-align: left}
 #popId-languageSelect li.current{padding: 3px 20px}
+#popId-languageSelect li.current span{color: #ccc}
 #invitation-send-link { background:url(../images/bkg_sep.gif) no-repeat 100% 50%; padding:0 6px 0 0; margin:0 4px 0 0; }
 #invitation-send-link a { background:url(../images/bkg_invitation-link.gif) no-repeat 3px 0px; padding-left:23px; display:inline-block; }
 .send-invitation-div{padding-right: 0; text-align: right}
@@ -1981,12 +1973,12 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 #invitationForm p.required { padding-bottom:20px; }
 #invitationForm .back-link{padding-left: 0}
 
-/* Compare popup ========================================================================= */
+/* Compare popup ========================================================================= 
 .catalog-product-compare-index tr.last a,
 .catalog-product-compare-index tr.first a { color:#999; }
 .catalog-product-compare-index tr.last p,
 .catalog-product-compare-index tr.first p { margin:10px 0; }
-.catalog-product-compare-index tr.first .product-name a { color:#333; }
+.catalog-product-compare-index tr.first .product-name a { color:#333; }*/
 
 
 /* Account Login/Create Pages ============================================================ */
