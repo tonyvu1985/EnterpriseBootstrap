@@ -26,14 +26,20 @@
 ?>
 <div class="footer-container">
     <div class="footer row">
-        <div class="col-md-4">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <?php echo $this->getChildHtml('newsletter') ?>
         </div>
-        <div class="col-md-4">
+        <div class="footer-cms-links col-md-3 col-sm-6 col-xs-12">
+            <h5>cms links</h5>
+            <?php echo $this->getChildHtml('cms_footer_links') ?>
+        </div>
+        <div class="footer-links col-md-3 col-sm-6 col-xs-12">
+            <h5>customer cares</h5>
             <?php echo $this->getChildHtml('footer_links')?>
         </div>
         
-        <div class="col-md-4">
+        <div class="footer-store-switcher col-md-3 col-sm-6 col-xs-12">
+            <h5>switch store</h5>
             <?php echo $this->getChildHtml('store_switcher')?>
         </div>
     </div>
