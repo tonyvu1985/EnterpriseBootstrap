@@ -91,7 +91,7 @@ ul,ol         { list-style:none; }
 .page-print { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
-.main { margin:0 0 14px; min-height:350px; /*background-image:url(../images/bkg_cols.gif); */background-color:#fff; background-repeat:repeat-y; border:1px solid #cfcfcf; text-align:left; }
+.main { margin:0 0 14px; min-height:350px; background-color:#fff; border:1px solid #cfcfcf; text-align:left; }
 .sidebar { /*min-height:350px; */padding-right: 0; padding-left: 0}
 
 /* Base Columns 
@@ -554,13 +554,14 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 .header-container {margin-top: 60px;}
 .header-container .navbar{min-height: 40px}
- .header-container ul.links li{text-transform: uppercase}
+ .header-container ul.links li{text-transform: uppercase;}
+ .header-container ul.links li a{color: #444}
 .header {margin-bottom: 20px}
 .header .logo {/* text-decoration:none !important; */}
 .quick-access {text-align: right; padding-right: 0}
 .quick-access .links { /*float:right; line-height:18px; white-space:nowrap; */}
 .quick-access .links li { margin: 0 6px}
-.quick-access .links li a {text-transform:normal; text-decoration:none; font-weight: normal}
+.quick-access .links li a {text-transform:normal; text-decoration:none; font-weight: normal; color: #444}
 .quick-access .links li a:hover { color:#d33911; }
 .quick-access .checkout-link{display: inline-block}
 .quick-access .checkout-link li {padding:0px; }
@@ -571,7 +572,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .user-info  li.first{padding-right: 10px}
 /*.user-info a{color:#d12c01}*/
 .quick-access{padding-top: 10px}
-#cartHeader{color: #428bca; text-transform: uppercase}
+#cartHeader{color: #444; text-transform: uppercase}
 #cartHeader:hover{color:#d12c01}
 #popId-languageSelect li{text-align: left}
 #popId-languageSelect li.current{padding: 3px 20px}
