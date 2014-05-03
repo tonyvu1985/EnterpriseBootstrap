@@ -41,16 +41,16 @@
         <ul class="form-list">
             <?php $_perRow = ceil($maxPerSend/3); for($_index = 1; $_index <= $maxPerSend; $_index ++): ?>
             <li>
-                <label for="email_<?php echo $_index ?>"<?php if ($_index == 1) echo ' class="required"' ?>><?php if ($_index == 1) echo '<em>*</em>' ?><?php echo $_index; ?>:</label>
-                <div class="input-box">
+                <div class="input-group invitation-row">
+                    <span for="email_<?php echo $_index ?>"<?php if ($_index == 1) { echo 'class="input-group-addon required"'; } else {echo 'class="input-group-addon"'; } ?>><?php if ($_index == 1) echo '<em>*</em>' ?><?php echo $_index; ?>:</span>
                     <input tabindex="<?php echo $_index ?>" name="email[]" id="email_<?php echo $_index ?>" title="<?php echo Mage::helper('enterprise_invitation')->__('Email') ?>" value="" class="<?php if ($_index == 1): ?>required-entry <?php endif;?>input-text validate-email form-control" type="text" />
                 </div>
             </li>
             <?php endfor; ?>
         <?php if (Mage::helper('enterprise_invitation')->isInvitationMessageAllowed()): ?>
             <li>
-                <label for="message"><?php echo Mage::helper('enterprise_invitation')->__('Message');?>: </label>
-                <div class="input-box">
+                <div class="input-group">
+                    <span class="input-group-addon" for="message"><?php echo Mage::helper('enterprise_invitation')->__('Message');?></span>
                     <textarea tabindex="<?php echo $_index+1 ?>" name="message" id="message" title="<?php echo Mage::helper('enterprise_invitation')->__('Message') ?>"  class="input-text form-control"></textarea>
                 </div>
             </li>
@@ -59,8 +59,8 @@
     </div>
     <div class="buttons-set form-buttons row">
         <p class="back-link col-xs-6"><a href="<?php echo Mage::helper('enterprise_invitation')->getCustomerInvitationUrl() ?>"><small>&laquo; </small><?php  echo Mage::helper('enterprise_invitation')->__('Back to Invitations') ?></a></p>
-        <div class="col-xs-6" style="text-align: right">
-            <button class="button btn btn-default" type="submit"><?php echo Mage::helper('enterprise_invitation')->__('Send Invitations') ?></button>
+        <div class="col-xs-6 send-invitation-div">
+            <button class="button btn btn-default btn-sm" type="submit"><?php echo Mage::helper('enterprise_invitation')->__('Send Invitations') ?></button>
             <p class="required"><?php echo Mage::helper('enterprise_invitation')->__('* Required Fields') ?></p>
         </div>
     </div>

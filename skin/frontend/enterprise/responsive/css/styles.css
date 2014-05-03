@@ -577,10 +577,10 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 #popId-languageSelect li.current{padding: 3px 20px}
 #invitation-send-link { background:url(../images/bkg_sep.gif) no-repeat 100% 50%; padding:0 6px 0 0; margin:0 4px 0 0; }
 #invitation-send-link a { background:url(../images/bkg_invitation-link.gif) no-repeat 3px 0px; padding-left:23px; display:inline-block; }
-
+.send-invitation-div{padding-right: 0; text-align: right}
 #invitation-send-link a, x:-moz-any-link { background-position:3px -2px; }/* FireFox 2 fix */
 #invitation-send-link a, x:-moz-any-link, x:default { background-position:3px 6px; }/* FireFox 3 restore */
-
+.invitation-row{margin-bottom: 10px}
 .loginbox{text-align: right}
 
 .list-opened { background-position:100% -129px !important; color:#d33911 !important; }
@@ -1807,7 +1807,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 .opc .buttons-set
 .opc .form-buttons { width:auto; text-align:right; }
-.opc .buttons-set p.back-link { text-align:left; }
+.opc .buttons-set p.back-link { text-align:left;}
 .opc .form-buttons { width:auto; text-align:right; }
 .opc .buttons-set .button,
 .opc .form-buttons .button { float:right; margin:0; }
@@ -1978,7 +1978,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 /* Invitation page ======================================================================= */
 #invitationForm p.required { padding-bottom:20px; }
-
+#invitationForm .back-link{padding-left: 0}
 
 /* Compare popup ========================================================================= */
 .catalog-product-compare-index tr.last a,
