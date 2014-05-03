@@ -556,7 +556,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .header-container .navbar{min-height: 40px}
 .header {margin-bottom: 20px}
 .header .logo {/* text-decoration:none !important; */}
-.quick-access {text-align: right}
+.quick-access {text-align: right; padding-right: 0}
 .quick-access .links { /*float:right; line-height:18px; white-space:nowrap; */}
 .quick-access .links li { margin: 0 6px}
 .quick-access .links li a {text-transform:normal; text-decoration:none; font-weight: normal}
@@ -964,7 +964,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 /* View Type: Grid */
 .products-grid {/* padding:0 0 0 20px; margin:0 0 40px 0; */}
-.products-grid li.item {/* float:left; width:164px; margin-right:20px; */}
+.products-grid li.item {/* float:left; width:164px; margin-right:20px; */ border: 1px solid; height: 100%} 
 .products-grid li.last {/* margin-right:0; */}
 .products-grid .actions {}
 .products-grid .product-image {/* display:block; text-decoration:none !important; margin:0 auto 10px; position:relative; width:135px; */}
