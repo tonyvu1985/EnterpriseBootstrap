@@ -921,7 +921,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 /* Block: Reorder */
 .block-reorder li { padding:5px 0; }
 .block-reorder input.checkbox { float:left; margin:3px -20px 0 0; }
-.block-reorder .product-name { margin-left:20px; font-size:11px; font-weight:normal; }
+.block-reorder .product-name { margin-left:20px; font-weight:normal; display: block; padding-top: 4px}
 
 /* Block: Banner */
 .block-banner { border:0; margin:10px 0; }
@@ -1243,7 +1243,6 @@ a.minimal-price-link:hover { text-decoration:underline; }
 .add-to-cart-alt .button { vertical-align:middle; }
 
 button.btn-cart span {}*/
-
 /* On product view */
 .product-view .product-essential button.btn-cart span,
 .add-to-cart button.btn-cart span { background-image:url(../images/bkg_btn-co.gif); padding:0 0 0 13px !important; height:27px!important; }
@@ -2162,7 +2161,6 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 #wishlist-table td:first-child { padding-left:10px; padding-right:0; }
 #wishlist-table td p { margin:5px 0 15px; }
 #wishlist-table td.last { padding:4px 2px; width:1px; }
-#wishlist-table td .price-box { font-size:12px; }
 #wishlist-table td .price-box p { margin:0 0 5px; }
 #wishlist-table td .truncated { float:left; width:auto; margin-right:10px; line-height:18px; }
 #wishlist-table td .truncated .show .item-options { top:-40px; right:100%; left:auto; margin-right:15px; line-height:1.2; }
@@ -2173,10 +2171,10 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 #wishlist-table .item-manage .split-button:last-child { margin-right:0; }
 .wishlist-empty { font-size:12px; padding:15px 10px; text-align:center; }
 p.wishlist-empty {border:1px solid #d0d0d0;}
-/* Multiple Wishlist */
+/* Multiple Wishlist 
 
 .link-edit { padding-left:18px; line-height:18px; background:url(../images/bkg_link-edit.png) no-repeat 0 0; display:inline-block; }
-.wishlist-management .link-edit { width:16px; padding:0; margin:0 5px; height:16px; text-indent:-999em; overflow:hidden; vertical-align:middle; }
+.wishlist-management .link-edit { width:16px; padding:0; margin:0 5px; height:16px; text-indent:-999em; overflow:hidden; vertical-align:middle; }*/
 .wishlist-management .btn-create { float:right; margin-bottom:10px; }
 .wishlist-management .sub-title { float:left;  max-width:100%; }
 .wishlist-management .sub-title h2 { word-wrap:break-word; }
