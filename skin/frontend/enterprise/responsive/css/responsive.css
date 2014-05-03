@@ -47,7 +47,7 @@
     
     /* quick access nav */
     .header-container .myaccount-text, .header-container .logout-text, .header-container .login-text, .header-container .register-text, .header-container .cart-text, .header-container .checkout-text{display: none}
-    .header .myaccount-icon, .header .logout-icon, .header .login-icon, .header-container .register-icon, .header-container .cart-icon, .header-container .checkout-icon{font-size: 1.5em}
+    .header-container .myaccount-icon, .header-container .logout-icon, .header-container .login-icon, .header-container .register-icon, .header-container .cart-icon, .header-container .checkout-icon{font-size: 1.5em}
 }
  
 /* Landscape phones and down */

@@ -29,7 +29,7 @@ body          { background:#fff; font:11px/1.35 Arial, Helvetica, sans-serif; co
 
 img           { border:0; vertical-align:top; }
 
-a             { color:#444; text-decoration:none; }
+/*a             { color:#444; text-decoration:none; }*/
 a:hover       { text-decoration:none; }
 :focus        { outline:0; }
 
@@ -562,11 +562,12 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .quick-access .links li a {text-transform:normal; text-decoration:none; font-weight: normal}
 .quick-access .links li a:hover { color:#d33911; }
 .quick-access .checkout-link{display: inline-block}
-.quick-access .checkout-link li { font-weight:bold; padding:0 0 0 12px; background-position:6px 4px; }
-.quick-access .cart-link li { font-weight:bold; padding:0 0 0 0px; background:none; }
+.quick-access .checkout-link li {padding:0px; }
+.quick-access .cart-link li {padding:0}
 /*.quick-search .dropdown-menu{float: right; left: auto; right: 0}*/
 .quick-search{text-align: right}
-.user-info{padding-top: 10px; font-size: 13px;}
+.user-info{padding-top: 10px; text-align: left}
+.user-info  li.first{padding-right: 10px}
 /*.user-info a{color:#d12c01}*/
 .quick-access{padding-top: 10px}
 #popId-languageSelect li{text-align: left}
@@ -1096,7 +1097,7 @@ p.product-image { cursor:default !important; }
 .product-view .product-shop .price-box .price-including-tax .price,
 .product-view .product-shop .price-box .regular-price .price { color:#111; font-size:14px; }
 .product-view .product-shop .price-box .special-price .price-label,
-.product-view .product-shop .price-box .special-price .price { font-size:14px; color:#c73615; }
+.product-view .product-shop .price-box .special-price .price { font-size:14px; }
 .product-view .product-shop .price-box .price-as-configured .price-including-tax .price { color:#e55100; }
 .product-view .product-shop .price-box .price-as-configured .price-excluding-tax .price { color:#222; font-size:11px; }
 .product-view .product-shop .price-box p { margin:4px 0; }
@@ -1161,7 +1162,7 @@ p.product-image { cursor:default !important; }
 
 /* Special price */
 .special-price {}
-.special-price .price-label { white-space:nowrap; color:#c73615; font-weight:bold; }
+.special-price .price-label { /*white-space:nowrap; color:#c73615; font-weight:bold;*/ }
 .special-price .price { font-weight:bold; color:#c73615; }
 .sidebar .special-price .price-label { display:none !important; }
 

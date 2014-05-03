@@ -55,7 +55,7 @@ Default layout, loads most of the pages
             <remove name="top.container"/>
         </reference> -->
         <reference name="account.links">
-            <action method="addLink" translate="label title before_text" module="customer"><label><![CDATA[<i class="register-icon fa fa-users"></i> <span class="register-text">Register</span>]]></label><url helper="customer/getRegisterUrl" /><title>Register</title><prepare/><urlParams/><position>100</position><li/><a/><before_text> or </before_text><after_text>.</after_text></action>
+            <action method="addLink" translate="label title before_text" module="customer"><label><![CDATA[<i class="register-icon fa fa-users"></i> <span class="register-text">Register</span>]]></label><url helper="customer/getRegisterUrl" /><title>Register</title><prepare/><urlParams/><position>100</position><li/><a/><before_text></before_text><after_text></after_text></action>
         </reference>
     </default>
 
