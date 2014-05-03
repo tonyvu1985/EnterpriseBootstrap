@@ -34,9 +34,9 @@
 <div class="top-cart">
 <?php $_cartQty = $this->getSummaryCount() ?>
 <?php if ($_cartQty > 0): ?>
-    <?php $_myCart = $this->__('My Cart %s', '<span>' . $_cartQty . '</span><b class="caret"></b>') ?>
+    <?php $_myCart = $this->__('<i class="cart-icon fa fa-shopping-cart"></i> <span class="cart-text">My Cart</span> %s', '<span>' . $_cartQty . '</span><b class="caret"></b>') ?>
 <?php else: ?>
-    <?php $_myCart = $this->__('My Cart %s', '<b class="caret"></b>') ?>
+    <?php $_myCart = $this->__('<i class="cart-icon fa fa-shopping-cart"></i> <span class="cart-text">My Cart</span> %s', '<b class="caret"></b>') ?>
 <?php endif ?>
 <?php if ($this->getIsLinkMode() || !$this->getIsNeedToDisplaySideBar()):?>
     <div class="block-title no-items">

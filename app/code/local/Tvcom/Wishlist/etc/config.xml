@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Tvcom_Wishlist>
+            <version>0.0.1</version>
+        </Tvcom_Wishlist>
+    </modules>
+    <global>
+        <blocks>
+            <enterprise_wishlist>
+                <rewrite>
+                    <links>Tvcom_Wishlist_Block_Links</links>
+                </rewrite>
+            </enterprise_wishlist>
+        </blocks>
+    </global>
+</config>

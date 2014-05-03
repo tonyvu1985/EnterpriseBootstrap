@@ -567,12 +567,12 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 /*.quick-search .dropdown-menu{float: right; left: auto; right: 0}*/
 .quick-search{text-align: right}
 .user-info{padding-top: 10px; font-size: 13px;}
-.user-info a{color:#d12c01}
+/*.user-info a{color:#d12c01}*/
 .quick-access{padding-top: 10px}
 #popId-languageSelect li{text-align: left}
 #popId-languageSelect li.current{padding: 3px 20px}
-#invitation-send-link { background:url(../images/bkg_sep.gif) no-repeat 100% 50%; padding:0 6px 0 0; margin:0 4px 0 0; font-weight:bold; }
-#invitation-send-link a { background:url(../images/bkg_invitation-link.gif) no-repeat 3px 6px; padding-left:23px; display:inline-block; }
+#invitation-send-link { background:url(../images/bkg_sep.gif) no-repeat 100% 50%; padding:0 6px 0 0; margin:0 4px 0 0; }
+#invitation-send-link a { background:url(../images/bkg_invitation-link.gif) no-repeat 3px 0px; padding-left:23px; display:inline-block; }
 
 #invitation-send-link a, x:-moz-any-link { background-position:3px -2px; }/* FireFox 2 fix */
 #invitation-send-link a, x:-moz-any-link, x:default { background-position:3px 6px; }/* FireFox 3 restore */
@@ -860,7 +860,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 /* Top Shopping Cart */
 .top-cart { /*float:right;  width:360px; position:relative; padding-left:7px; */ display: inline-block}
-.top-cart .block-title { white-space:nowrap; /* _width:242px; min-width:242px; */ cursor:pointer; color:#1e75b4; font-weight:bold; font-size:11px; text-transform:uppercase; padding:0 0 0 18px; line-height:18px; height:18px; }
+.top-cart .block-title { white-space:nowrap; cursor:pointer;}
 .top-cart .block-title strong { display:block; padding-right:10px;color:#d12c01; text-decoration:none; text-transform: none}
 .top-cart .block-title.expanded { background-position:0 3px !important; }
 .top-cart .block-title.expanded strong { background-position:100% -126px !important; color:#d33911; }
