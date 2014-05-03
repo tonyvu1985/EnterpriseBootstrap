@@ -33,13 +33,13 @@ $catalogSearchHelper =  $this->helper('catalogsearch');
         <input id="search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text form-control" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>"/>
         <div class="input-group-btn">
             <button type="submit" title="<?php echo $this->__('Search') ?>" class="button btn btn-info"><?php echo $this->__('Search') ?></button><a href="<?php echo $catalogSearchHelper->getAdvancedSearchUrl(); ?>"><?php echo $this->__('Advanced Search'); ?></a>
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+          <!--  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
               <span class="caret"></span>
               <span class="sr-only">Toggle Dropdown</span></button>
             <ul id="dropdown" class="dropdown-menu pull-right" role="menu">
                 <li><a href=""><i class="fa fa-search"></i>Advanced Search</a></li>
                 <li><a href=""><i class="fa fa-search-plus"></i>Terms Search</a></li>
-            </ul>
+            </ul>-->
         </div>
     </div>
     <div id="search_autocomplete" class="search-autocomplete"></div>

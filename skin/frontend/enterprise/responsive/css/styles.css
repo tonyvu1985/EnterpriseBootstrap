@@ -554,6 +554,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 .header-container {margin-top: 60px;}
 .header-container .navbar{min-height: 40px}
+ .header-container ul.links li{text-transform: uppercase}
 .header {margin-bottom: 20px}
 .header .logo {/* text-decoration:none !important; */}
 .quick-access {text-align: right; padding-right: 0}
@@ -570,7 +571,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .user-info  li.first{padding-right: 10px}
 /*.user-info a{color:#d12c01}*/
 .quick-access{padding-top: 10px}
-#cartHeader{color: #428bca}
+#cartHeader{color: #428bca; text-transform: uppercase}
 #cartHeader:hover{color:#d12c01}
 #popId-languageSelect li{text-align: left}
 #popId-languageSelect li.current{padding: 3px 20px}
