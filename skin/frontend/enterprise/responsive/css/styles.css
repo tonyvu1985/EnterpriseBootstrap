@@ -219,7 +219,7 @@ ul.add-row .btn-remove,
 
 .form-alt label { float:none; display:inline; width:auto; }
 .form-alt li { margin:0 0 5px; line-height:16px; }
-.form-alt select { width:496px; }
+/*.form-alt select { width:496px; }
 .form-alt .input-box { width:496px; margin-top:5px; padding-bottom:11px; }
 .form-alt .input-text { width:480px; }
 
@@ -229,7 +229,7 @@ ul.add-row .btn-remove,
 .form-list-narrow textarea { width:285px; }
 .form-list-narrow .wide { width:auto; }
 .form-list-narrow .add-field .input-box { margin-left:120px; }
-.form-list-narrow .control .input-box { margin-left:120px; }
+.form-list-narrow .control .input-box { margin-left:120px; }*/
 
 .inner-form { margin:10px 0 5px; padding:10px 0 0; border:1px dashed #d1d1d1; border-width:1px; background:#f7f7f7; }
 .inner-form .form-alt label { padding-left:5px; }
@@ -570,6 +570,8 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .user-info  li.first{padding-right: 10px}
 /*.user-info a{color:#d12c01}*/
 .quick-access{padding-top: 10px}
+#cartHeader{color: #428bca}
+#cartHeader:hover{color:#d12c01}
 #popId-languageSelect li{text-align: left}
 #popId-languageSelect li.current{padding: 3px 20px}
 #invitation-send-link { background:url(../images/bkg_sep.gif) no-repeat 100% 50%; padding:0 6px 0 0; margin:0 4px 0 0; }
@@ -1776,9 +1778,9 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .opc .order-review .authentication { margin:0 auto; width:570px; }
 .opc .order-review .warning-message { color:#222; font-weight:bold; text-align:center; padding:10px 10px 0; }
 
-/* Steps */
+/* Steps 
 .opc .form-alt .input-box { width:695px; }
-.opc .form-alt .input-box select { width:695px; }
+.opc .form-alt .input-box select { width:695px; }*/
 
 #checkout-step-login { height:auto !important; min-height:0 !important; padding:0; }
 #checkout-step-login .col2-set { padding:20px 20px 30px; background:#fcfcfc url(../images/bkg_cols.gif) repeat-y 195px 0; height:auto !important; min-height:0 !important; }
@@ -2303,10 +2305,10 @@ p.wishlist-empty {border:1px solid #d0d0d0;}
 .btn-gift-registry .input-box { margin:0 0 7px; }
 .btn-gift-registry select { width:100%; }
 .gift-registry-name { background:url(../images/i_gift-registry2.gif) 0 0 no-repeat; margin:3px 0 0; padding:0 0 0 20px; line-height:18px; }
-/* Block: Gift Registry Search */
+/* Block: Gift Registry Search 
 .sidebar .block-gr-search .form-alt .input-box { width:148px; margin:3px 0 0; padding:0; }
 .sidebar .block-gr-search .form-alt input.input-text { width:142px; }
-.sidebar .block-gr-search .form-alt select { width:148px; }
+.sidebar .block-gr-search .form-alt select { width:148px; }*/
 .block-gr-search p.note { margin:0 0 3px; text-align:right; color:#f15c22; }
 
 /* Order By SKU */

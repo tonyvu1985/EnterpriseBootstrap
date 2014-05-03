@@ -46,8 +46,9 @@
     .block-tags{display: none}
     
     /* quick access nav */
-    .header-container .myaccount-text, .header-container .logout-text, .header-container .login-text, .header-container .register-text, .header-container .cart-text, .header-container .checkout-text{display: none}
-    .header-container .myaccount-icon, .header-container .logout-icon, .header-container .login-icon, .header-container .register-icon, .header-container .cart-icon, .header-container .checkout-icon{font-size: 1.5em}
+    .header-container .myaccount-text, .header-container .logout-text, .header-container .login-text, .header-container .register-text, .header-container .cart-text, .header-container .checkout-text, .header-container .wishlist-text{display: none}
+    .header-container .myaccount-icon, .header-container .logout-icon, .header-container .login-icon, .header-container .register-icon, .header-container .cart-icon, .header-container .checkout-icon, .header-container .wishlist-icon{font-size: 1.5em}
+    .header .logo{margin-bottom: 10px; display: block}
 }
  
 /* Landscape phones and down */
