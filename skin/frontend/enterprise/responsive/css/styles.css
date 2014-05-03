@@ -964,12 +964,12 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 /* View Type: Grid */
 .products-grid {/* padding:0 0 0 20px; margin:0 0 40px 0; */}
-.products-grid li.item {/* float:left; width:164px; margin-right:20px; */ border: 1px solid; height: 100%} 
+.products-grid li.item {height: 305px; display: block} 
 .products-grid li.last {/* margin-right:0; */}
 .products-grid .actions {}
 .products-grid .product-image {/* display:block; text-decoration:none !important; margin:0 auto 10px; position:relative; width:135px; */}
 .products-grid .product-name { margin-bottom:7px; word-wrap:break-word; }
-.products-grid .ratings { text-align:left; line-height:13px; }
+.products-grid .ratings { text-align:left; }
 .products-grid .rating-links { display:block; padding:2px 0 0; clear:both; }
 .products-grid .price-box { margin:5px 0 10px; clear:both; }
 
