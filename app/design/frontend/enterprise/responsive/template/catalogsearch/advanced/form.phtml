@@ -37,7 +37,7 @@
 </div>
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 <form action="<?php echo $this->getSearchPostUrl() ?>" method="get" id="form-validate">
-    <div class="fieldset advanced-search">
+    <div class="fieldset advanced-search col-xs-12">
         <h2 class="legend"><?php echo $this->__('Search Settings') ?></h2>
         <ul class="form-list" id="advanced-search-list">
             <?php foreach ($this->getSearchableAttributes() as $_attribute): ?>
@@ -84,9 +84,9 @@
             <?php endforeach; ?>
         </ul>
         <script type="text/javascript">decorateList('advanced-search-list')</script>
-    </div>
-    <div class="buttons-set">
-        <button type="submit" title="<?php echo $this->__('Search') ?>" class="button btn btn-default"><?php echo $this->__('Search') ?></button>
+        <div class="buttons-set">
+            <button type="submit" title="<?php echo $this->__('Search') ?>" class="button btn btn-default"><?php echo $this->__('Search') ?></button>
+        </div>
     </div>
 </form>
 <script type="text/javascript">
