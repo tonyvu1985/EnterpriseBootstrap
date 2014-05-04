@@ -181,7 +181,6 @@ span.validation-error,
 div.validation-error { background:url(../images/icon_error.gif) 100% 2px no-repeat; padding-right:20px; }
 .required em { color:#f15c22; margin-right:4px; }
 p.required {padding:5px 0 7px; color:#f02800; }
-.form-list .validation-advice { width:250px; margin-right:-250px; }
 /* Expiration date and CVV number validation fix */
 .v-fix { /*float:left; */ padding-bottom: 10px}
 .v-fix .validation-advice { display:block; width:12em; margin-right:-12em; position:relative; }
@@ -191,9 +190,10 @@ p.required {padding:5px 0 7px; color:#f02800; }
 .fieldset p { margin:0 0 1.5em; }
 .fieldset h2.legend { margin:0 0 1.5em; color:#000; }
 
-/* Form lists 
-.form-list {}
-.form-list li { margin:0 0 9px; vertical-align:top; }
+/* Form lists */
+.form-list .validation-advice { width:250px; margin-right:-250px; }
+.form-list li{padding: 5px 0}
+/*.form-list li { margin:0 0 9px; vertical-align:top; }
 .form-list label { float:left; width:225px; padding:2px 15px 0 0; font-size:12px; font-weight:bold; color:#444; text-align:right; }
 .form-list .value { float:left; padding:2px 0 0; }
 .form-list .note { clear:both; font-size:11px; width:380px; margin:0; padding:3px 0 0 240px; }
@@ -1169,7 +1169,7 @@ p.product-image { cursor:default !important; }
 
 .minimal-price-link { display:block; margin:5px 0; text-decoration:none; }
 a.minimal-price-link:hover { text-decoration:underline; }
-.minimal-price-link .label { font-weight:bold; color: #333}
+.minimal-price-link .label { color: #333}
 .minimal-price-link .price { font-weight:bold; }
 
 /* Excluding tax */
