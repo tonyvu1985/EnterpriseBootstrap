@@ -2377,9 +2377,8 @@ p.link-widget-sku a { color:#999; }
 /* Footer ================================================================================ */
 .footer-before-container { margin:0 0 3px; text-align:center; }
 .form-subscribe-header { color:#d12c01; font-size:11px; font-weight:bold; text-decoration:none; text-transform:uppercase; }
-.form-subscribe input{margin: 4px 0 10px 0}
+.form-subscribe {padding: 0 0px 15px 0; }
 /*
-.form-subscribe { float:left; width:183px; padding: 0 17px 0 0; }
 .form-subscribe label { display:block; margin:6px 0; }
 .form-subscribe button.button { margin:6px 0 0; float:right; }
 .form-subscribe .validation-advice { width:180px; }
@@ -2389,12 +2388,13 @@ p.link-widget-sku a { color:#999; }
 .footer {/* background:url(../images/bkg_footer.gif) repeat-y 200px 0; */}
 .footer a {}
 .footer a:hover { text-decoration:none; }
-.footer ul,
-.footer ul.links { display:block; float:left; }
+/*.footer ul,
+.footer ul.links { display:block; float:left; }*/
 .footer ul.links li,
 .footer ul li { display:block; }
 .footer h5{text-transform: uppercase; margin-top: 0; font-weight: normal; font-size: 11px}
 address.copyright { margin-top:6px; }
+.footer-links{padding-bottom: 15px}
 /*
 .footer .switcher-store { float:right; width:184px; background:url(../images/bkg_store-switch.gif) no-repeat 0 3px; padding-top:21px; }
 .footer .switcher-store label { display:none; }

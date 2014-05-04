@@ -29,8 +29,12 @@
     <div class="form-subscribe-header">
         <label for="newsletter"><?php echo $this->__('Sign Up Newsletter') ?></label>
     </div>
-        <input name="email" type="text" id="newsletter" value="<?php echo $this->__('Enter your email address') ?>" onclick="this.value=='<?php echo $this->__('Enter your email address') ?>'?this.value='':''" onblur="this.value==''?this.value='<?php echo $this->__('Enter your email address') ?>':''" class="input-text required-entry validate-email form-control" />
-        <button type="submit" class="button btn btn-info" title="<?php echo $this->__('Subscribe') ?>"><?php echo $this->__('Subscribe') ?></button>
+        <div class="input-group">
+            <input name="email" type="text" id="newsletter" value="<?php echo $this->__('Your email') ?>" onclick="this.value=='<?php echo $this->__('Enter your email address') ?>'?this.value='':''" onblur="this.value==''?this.value='<?php echo $this->__('Enter your email address') ?>':''" class="input-text required-entry validate-email form-control" />
+            <span class="input-group-btn">
+                <button type="submit" class="button btn btn-info" title="<?php echo $this->__('Subscribe') ?>"><?php echo $this->__('Subscribe') ?></button>
+            </span>
+        </div>
     </div>
 </form>
 <script type="text/javascript">

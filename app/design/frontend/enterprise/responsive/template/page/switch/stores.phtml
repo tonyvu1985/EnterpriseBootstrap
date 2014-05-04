@@ -33,7 +33,7 @@
 ?>
 <?php if(count($this->getGroups())>1): ?>
 <div class="switcher-store">
-    <label><?php echo $this->__('Select Store') ?>:</label>
+    <h5><?php echo $this->__('Select Store') ?></h5>
     <ul id="select-store">
     <?php foreach ($this->getGroups() as $_group): ?>
         <?php /* $_selected = ($_group->getId()==$this->getCurrentGroupId()) ? ' class="current"' : '' */ ?>
