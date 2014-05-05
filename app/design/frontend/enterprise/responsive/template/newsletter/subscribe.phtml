@@ -27,7 +27,7 @@
 <form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="newsletter-validate-detail">
     <div class="form-subscribe">
     <div class="form-subscribe-header">
-        <label for="newsletter"><?php echo $this->__('Sign Up Newsletter') ?></label>
+        <h5 for="newsletter"><?php echo $this->__('Sign Up Newsletter') ?></h5>
     </div>
         <div class="input-group">
             <input name="email" type="text" id="newsletter" value="<?php echo $this->__('Your email') ?>" onclick="this.value=='<?php echo $this->__('Enter your email address') ?>'?this.value='':''" onblur="this.value==''?this.value='<?php echo $this->__('Enter your email address') ?>':''" class="input-text required-entry validate-email form-control" />
