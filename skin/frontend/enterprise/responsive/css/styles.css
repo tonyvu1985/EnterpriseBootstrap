@@ -1751,6 +1751,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 /* Block: Checkout Progress */
 .opc-progress-container .opc-block-progress {margin-top: 15px}
+.opc-progress-container .opc-block-progress  .panel-heading{text-transform: uppercase}
 .opc-progress-container .opc-block-progress .panel-body{padding: 0}
 .opc-progress-container .opc-block-progress dt {margin:2px 0 8px; padding: 10px 4px 10px 8px; background: #f5f5f5; font-weight: normal; font-size: 13px}
 .opc-progress-container .opc-block-progress dt.complete { font-weight:bold; }
