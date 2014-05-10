@@ -759,7 +759,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .sidebar .callout { display:block; margin:10px 0; }
 
 /* Generic Block */
-.sidebar .block { border-bottom:1px solid #cfcfcf; background:#f5f5f5 url(../images/bkg_block.gif) repeat-x 0 0; }
+.sidebar .block { border-bottom:1px solid #cfcfcf; background:#f5f5f5; }
 .sidebar .block .block-title { padding:17px 17px 5px 17px; }
 .sidebar .block .block-title strong { display:block; font:14px/1.25 Arial, Helvetica, sans-serif; padding:0; color:#222; }
 .sidebar .block .block-title strong span {}
@@ -959,7 +959,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 /* View Type: Grid */
 .products-grid {/* padding:0 0 0 20px; margin:0 0 40px 0; */}
-.products-grid li.item {height: 305px; display: block} 
+.products-grid li.item {padding: 12px 10px 10px} 
 .products-grid li.last {/* margin-right:0; */}
 .products-grid .actions {}
 .products-grid .product-image {/* display:block; text-decoration:none !important; margin:0 auto 10px; position:relative; width:135px; */}
@@ -1079,7 +1079,7 @@ p.product-image { cursor:default !important; }
 .jqZoomWindow { border:1px solid #ccc; background-color:#fff; }
 
 /* Product Shop */
-.product-view .product-shop {/* float:right; width:416px; padding:0 30px; border-bottom:1px solid #cfcfcf;margin-left: -15px;*/ background:#f5f5f5; }
+.product-view .product-shop {}
 .product-view .product-shop .product-main-info {/* margin:0 -30px 30px; padding:20px 30px 5px;*/  }
 .product-view .product-shop p,
 .product-view .product-shop .ratings { margin:10px 0; }
@@ -1777,7 +1777,9 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .opc .order-review {}
 .opc .order-review .authentication { margin:0 auto; width:570px; }
 .opc .order-review .warning-message { color:#222; font-weight:bold; text-align:center; padding:10px 10px 0; }
-
+.opc .form-list .control label{padding: 4px 0px 0px 10px}
+.opc input[type="radio"], .opc input[type="checkbox"]{float: left}
+.opc .address-select{position: relative; z-index: 2; float: left; width: 100%; margin-bottom: 0;padding: 10px 5px; margin: 10px 0px;}
 /* Steps 
 .opc .form-alt .input-box { width:695px; }
 .opc .form-alt .input-box select { width:695px; }*/
@@ -1873,12 +1875,12 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 /********** < Common Checkout Styles */
 /* Shipping and Payment methods */
-.sp-methods dt { font-weight:bold; margin-bottom:5px; }
+.sp-methods dt {clear: both}
 .sp-methods dd { margin:0 0 7px; }
 .sp-methods dd li { margin:5px 0; }
-.sp-methods .price { font-weight:bold; }
-.sp-methods .form-list { padding-left:20px; margin:15px 0; }
-.sp-methods .form-list .input-text { width:250px; }
+.sp-methods .price {}
+.sp-methods label{margin: 4px 0 0 10px}
+.sp-methods .form-list {/* padding-left:20px; margin:15px 0; */}
 .sp-methods .form-list select { width:256px; }
 .sp-methods .form-list label { width:155px; }
 
@@ -1909,13 +1911,14 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 /* Tooltip */
 .tool-tip { border:1px solid #ddd; background-color:#f6f6f6; padding:5px; position:absolute; z-index:9999; }
-.tool-tip .btn-close { text-align:right; }
+.tool-tip .btn-close { text-align:right;fv }
 .tool-tip .tool-tip-content { padding:5px; }
 
 /* Gift Messages */
 .add-gift-message { padding:20px 0; }
 .add-gift-message h3 { font-size:16px; font-weight:normal; color:#000; line-height:19px; margin:0 0 10px; }
 .add-gift-message p { margin:10px 0; }
+.add-gift-message label{margin: 4px 0 0 10px}
 
 .gift-message-form { border:1px solid #d1d1d1; background:#f5f5f5 url(../images/bkg_block.gif) repeat-x 0 0; }
 .gift-message-form .fieldset { padding:10px 0 10px; }
@@ -2172,6 +2175,7 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 #wishlist-table .item-manage .split-button { margin:10px 9px 0 0; }
 #wishlist-table .item-manage .split-button .change { margin-left:2px; }
 #wishlist-table .item-manage .split-button:last-child { margin-right:0; }
+#wishlist-table input{margin-bottom: 7px}
 .wishlist-empty { font-size:12px; padding:15px 10px; text-align:center; }
 p.wishlist-empty {border:1px solid #d0d0d0;}
 /* Multiple Wishlist 
