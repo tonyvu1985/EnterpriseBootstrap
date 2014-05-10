@@ -1749,16 +1749,13 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .opc-wrapper .page-title { margin:0; position:relative; z-index:1; }
 .opc-wrapper .page-title .callout { position:absolute; top:7px; right:20px; z-index:1; }
 
-/* Block: Checkout Progress 
-.opc-progress-container { float:left; width:182px; }*/
-.opc-progress-container .opc-block-progress { background:#fff; }
-.opc-progress-container .opc-block-progress .block-title { padding:17px 11px 10px 17px; background:none; border:0; border-bottom:1px solid #cfcfcf; }
-.opc-progress-container .opc-block-progress .block-title strong { font:18px/1.1 Arial, Helvetica, sans-serif; padding:0; color:#111; }
-.opc-progress-container .opc-block-progress .block-content {/* padding:17px 11px 17px 17px; */}
-.opc-progress-container .opc-block-progress dt { font-weight:normal; margin:2px 0 8px; font-size: 13px;}
-.opc-progress-container .opc-block-progress dt.complete { font-weight:bold; margin:2px 0 4px; }
+/* Block: Checkout Progress */
+.opc-progress-container .opc-block-progress {margin-top: 15px}
+.opc-progress-container .opc-block-progress .panel-body{padding: 0}
+.opc-progress-container .opc-block-progress dt {margin:2px 0 8px; padding: 10px 4px 10px 8px; background: #f5f5f5; font-weight: normal; font-size: 13px}
+.opc-progress-container .opc-block-progress dt.complete { font-weight:bold; }
 .opc-progress-container .opc-block-progress dt.complete a { font-weight:normal; text-transform:lowercase; }
-.opc-progress-container .opc-block-progress dd.complete { margin:5px 0 8px; padding:5px; }
+.opc-progress-container .opc-block-progress dd.complete { margin:5px 0 8px; padding:5px 5px 5px 10px; }
 .opc-progress-container .block-progress .cards-list dd { padding:0; }
 .opc-progress-container .block-progress .cards-list .info-table th { font-weight:normal; }
 
