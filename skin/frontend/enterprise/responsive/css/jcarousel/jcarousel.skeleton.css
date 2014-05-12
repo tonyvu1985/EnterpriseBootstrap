@@ -1,0 +1,3 @@
+.jcarousel-vertical{position: relative; overflow: hidden; height: 105px}
+.jcarousel-vertical ul{position: relative; list-style: none;}
+.crosssell .jcarousel-prev, .crosssell .jcarousel-next{padding: 2px 9px; border: 1px solid #cec3b6; background: #fafaec; cursor: pointer; display: inline-block}

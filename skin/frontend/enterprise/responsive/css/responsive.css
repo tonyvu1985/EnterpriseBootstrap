@@ -49,6 +49,11 @@
     .header-container .myaccount-text, .header-container .logout-text, .header-container .login-text, .header-container .register-text, .header-container .cart-text, .header-container .checkout-text, .header-container .wishlist-text{display: none}
     .header-container .myaccount-icon, .header-container .logout-icon, .header-container .login-icon, .header-container .register-icon, .header-container .cart-icon, .header-container .checkout-icon, .header-container .wishlist-icon{font-size: 1.5em}
     .header .logo{margin-bottom: 10px; display: block}
+    
+    /* cart page */
+    .cart .cart-collaterals{padding-right: 0}
+    .cart .crosssell{margin-top: 15px}
+    .cart .giftcard, .cart .shipping{margin-left: 15px}
 }
  
 /* Landscape phones and down */

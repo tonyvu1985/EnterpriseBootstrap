@@ -153,14 +153,19 @@
         </div>
 
         <div class="col-md-8 col-sm-6 col-xs-12 cart-collaterals<?php if($this->getChildHtml('crosssell')) echo ' cross-inside'; ?>">
-            <?php echo $this->getChildHtml('crosssell') ?>
-            <div class="deals col-md-6">
-                <?php /* Extensions placeholder */ ?>
-                <?php echo $this->getChildHtml('checkout.cart.extra') ?>
-                <?php echo $this->getChildHtml('checkout_cart_widget') ?>
-                <?php echo $this->getChildHtml('coupon') ?>
-                <?php echo $this->getChildHtml('giftcards') ?>
-                <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
+            <div class="row">
+                <div class="col-md-6">
+                    <?php echo $this->getChildHtml('crosssell') ?>
+                    <?php echo $this->getChildHtml('coupon') ?>
+                </div>
+            
+                <div class="deals col-md-6">
+                    <?php /* Extensions placeholder */ ?>
+                    <?php echo $this->getChildHtml('checkout.cart.extra') ?>
+                    <?php echo $this->getChildHtml('checkout_cart_widget') ?>
+                    <?php echo $this->getChildHtml('giftcards') ?>
+                    <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
+                </div>
             </div>
         </div>
     </div>
