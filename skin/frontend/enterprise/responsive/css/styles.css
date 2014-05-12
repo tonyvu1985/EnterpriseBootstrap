@@ -408,7 +408,7 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .data-table tr.last th,
 .data-table tr.last td { border-bottom:1px solid #d9d9d9; }
 .data-table tr:last-child td,
-.data-table tr:last-child th { border-bottom:1px solid #d9d9d9; }
+.data-table tr:last-child th {}
 .data-table tbody tr:nth-child(odd),
 .data-table tr.odd { background-color:#fff; }
 .data-table tbody tr:nth-child(even),
@@ -1014,8 +1014,8 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .product-collateral .emailto-link { /*font-size:11px; margin:0; background:url(../images/bkg_arrow-bullet.gif) no-repeat 0 4px; padding-left:12px; */ padding: 15px }
 
 .box-collateral { background:#fff; }
-.box-collateral .box-title { background:#f5f5f5; border:1px solid #e1e1e1; padding:5px 20px 5px;}
-.box-collateral .box-title h2 { font-size:14px; font-weight:bold; }
+.box-collateral .box-title { padding:5px 20px 5px;}
+.box-collateral .box-title h2 { font-size:14px; /*font-weight:bold; */}
 .box-collateral .box-content { padding:20px; }
 .collateral-tabs { padding:15px;}
 
