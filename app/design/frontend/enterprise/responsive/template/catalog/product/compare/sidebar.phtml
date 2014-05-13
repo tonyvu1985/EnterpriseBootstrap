@@ -29,15 +29,14 @@
 $_helper = $this->helper('catalog/product_compare');
 $_items = $_helper->getItemCount() > 0 ? $_helper->getItemCollection() : null;
 ?>
-<div class="block block-list block-compare">
-    <div class="block-title">
-        <strong><span><?php echo $this->__('Compare Products') ?>
+<div class="block block-list block-compare panel panel-default">
+    <div class="block-title panel-heading">
+        <?php echo $this->__('Compare Products') ?>
             <?php if($_helper->getItemCount() > 0): ?> 
                 <small><?php echo $this->__('(%d)', $_helper->getItemCount()) ?></small>
             <?php endif; ?>
-        </span></strong>
     </div>
-    <div class="block-content">
+    <div class="block-content panel-body">
     <?php if($_helper->getItemCount() > 0): ?>
         <ol id="compare-items">
         <?php foreach($_items as $_index => $_item): ?>

@@ -39,12 +39,12 @@
     }
 //]]>
 </script>
-<div class="block block-poll">
-    <div class="block-title">
-        <strong><span><?php echo $this->__('Community Poll') ?></span></strong>
+<div class="block block-poll panel panel-default">
+    <div class="block-title panel-heading">
+        <?php echo $this->__('Community Poll') ?>
     </div>
     <form id="pollForm" action="<?php echo $action ?>" method="post" onsubmit="return validatePollAnswerIsSelected();">
-        <div class="block-content">
+        <div class="block-content panel-body">
             <p class="block-subtitle"><?php echo $this->escapeHtml($poll->getPollTitle()); ?></p>
             <?php if( $poll_answers ): ?>
             <ul id="poll-answers">

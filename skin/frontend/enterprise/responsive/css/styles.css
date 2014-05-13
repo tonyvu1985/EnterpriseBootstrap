@@ -91,8 +91,8 @@ ul,ol         { list-style:none; }
 .page-print { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
-.main { margin:0 0 14px; min-height:350px; background-color:#fff; border:1px solid #cfcfcf; text-align:left; }
-.sidebar { /*min-height:350px; */padding-right: 0; padding-left: 0}
+.main { margin:0 0 14px; min-height:350px; background-color:#fff; /*border:1px solid #cfcfcf; */text-align:left; }
+.sidebar { /*min-height:350px; padding-right: 0; padding-left: 0*/}
 
 /* Base Columns 
 .col-left { float:left; width:182px; padding:0 0 0; margin:0 0 -1px; }
@@ -760,13 +760,13 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 /* Generic Block */
 .sidebar .block { border-bottom:1px solid #cfcfcf; background:#f5f5f5; }
-.sidebar .block .block-title { padding:17px 17px 5px 17px; }
+.sidebar .block .block-title {/* padding:17px 17px 5px 17px; */text-transform: uppercase}
 .sidebar .block .block-title strong { display:block; font:14px/1.25 Arial, Helvetica, sans-serif; padding:0; color:#222; }
 .sidebar .block .block-title strong span {}
 .sidebar .block .block-title strong small { font-size:12px; color:#777; }
 .sidebar .block .block-subtitle,
 .sidebar .block h3 { font-size:1em; font-weight:bold; color:#555; }
-.sidebar .block .block-content { padding:10px 17px 17px; color:#555; }
+.sidebar .block .block-content {/* padding:10px 17px 17px; color:#555; */}
 .sidebar .block .btn-remove { color:#222; margin-right:3px; }
 .sidebar .block .btn-remove a { color:#222 !important; text-decoration:none !important; }
 .sidebar .block .actions { margin:8px 0 0; text-align:right; }
@@ -938,7 +938,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 /* Category Page ========================================================================= 
 .category-view { margin:0 -20px -20px; }*/
 
-.category-title { margin-bottom:0; border:1px solid #cfcfcf; border-bottom:0; text-align:left; }
+.category-title { margin-bottom:0; border:1px solid #cfcfcf; border-bottom:0; text-align:left; display: none}
 .category-title .rss-feed { float:right; margin:7px 0 0; padding-left:17px; line-height:12px; background:url(../images/icon_rss.gif) 0 0 no-repeat; white-space:nowrap; text-decoration:none; }
 .category-title .rss-feed:hover { text-decoration:underline; }
 
