@@ -86,25 +86,29 @@
                     
                     <div class="product-collateral">
                     <?php if ($detailedInfoGroup = $this->getChildGroup('detailed_info', 'getChildHtml')):?>
-                    <dl id="collateral-tabs" class="collateral-tabs">
+                    <ul id="collateral-tabs" class="collateral-tabs nav nav-tabs">
                     <?php foreach ($detailedInfoGroup as $alias => $html):?>
-                    <dt class="tab"><span><?php echo $this->escapeHtml($this->getChildData($alias, 'title')) ?></span></dt>
-                    <dd class="tab-container">
-                       <div class="tab-content"><?php echo $html ?></div>
-                    </dd>
+                        <li class="tab <?php if($alias == 'description'){ echo 'active'; } ?>"><a href="#<?php echo $alias?>" data-toggle="tab"><?php echo $this->escapeHtml($this->getChildData($alias, 'title')) ?></a></li>
                     <?php endforeach;?>
-                    </dl>
+                    </ul>
+                        
+                    <div id="ProductTabContent" class="tab-content">
+                        <?php foreach ($detailedInfoGroup as $alias => $html):?>
+                            <div class="tab-content tab-pane fade <?php if($alias == 'description'){ echo 'in active'; } ?>" id="<?php echo $alias ?>"><?php echo $html ?></div>
+                        <?php endforeach;?>    
+                    </div>
+                        
                     <script type="text/javascript">
                     //<![CDATA[
-                    var collateralTabs = new Enterprise.Tabs('collateral-tabs');
+                  /*  var collateralTabs = new Enterprise.Tabs('collateral-tabs');
                     Event.observe(window, 'load', function() {
                         collateralTabs.select();
-                    });
+                    });*/
                     //]]>
                     </script>
                     <?php endif; ?>
                     <?php if ($this->canEmailToFriend()): ?>
-                    <p class="emailto-link"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
+                        <p class="emailto-link"><a class="btn btn-info" href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
                     <?php endif; ?>
                     </div>
                     
@@ -127,9 +131,9 @@
     
     <ul id="myTab" class="nav nav-tabs">
       <li class="active"><a href="#relatedproduct" data-toggle="tab">Related products</a></li>
-      <li class=""><a href="#upsells" data-toggle="tab">Upsells products</a></li>
-      <li class=""><a href="#tags" data-toggle="tab">Product Tags</a></li>
-      <li class=""><a href="#additional" data-toggle="tab">Additional data</a></li>
+      <li><a href="#upsells" data-toggle="tab">Upsells products</a></li>
+      <li><a href="#tags" data-toggle="tab">Product Tags</a></li>
+      <li><a href="#additional" data-toggle="tab">Additional data</a></li>
     </ul>
     
     <div id="ProductTabContent" class="tab-content">

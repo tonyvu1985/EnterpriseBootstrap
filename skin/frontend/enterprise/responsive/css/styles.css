@@ -1017,14 +1017,14 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .box-collateral .box-title { padding:5px 20px 5px;}
 .box-collateral .box-title h2 { font-size:14px; /*font-weight:bold; */}
 .box-collateral .box-content { padding:20px; }
-.collateral-tabs { padding:15px;}
+.collateral-tabs { padding:15px 0;}
 
 .tab-list { position:relative; }
 .tab-list .tab { float:left; cursor:pointer; }
 .tab-list .last {}
 .tab-list .active { cursor:default }
 .tab-list .tab-container { position:absolute; left:0; width:100%; }
-
+/*
 .collateral-tabs { padding-bottom:20px; margin:0; }
 .collateral-tabs .tab { position:relative; z-index:2; margin-right:3px; background:#dedede url(../images/bkg_collateral-tabs.gif) no-repeat 0 -39px; color:#222; padding:0 0 0 17px; font-size:12px; }
 .collateral-tabs .tab span {padding:0 17px 0 0; line-height:24px; float:left; }
@@ -1036,7 +1036,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .collateral-tabs .tab-content { padding:30px 25px; background:#fff; border:1px solid #c4c4c4; font-size:12px; }
 .collateral-tabs .tab-content object,
 .collateral-tabs .tab-content embed { width:100% !important; height:auto !important; }
-
+*/
 /* Product Images */
 .product-view .product-img-box {/* float:left; width:370px; padding:26px 46px 26px 45px; */}
 .product-view .product-img-box .product-image img { background:#fff; } /*IE8 PNG Fix */
@@ -1149,7 +1149,7 @@ p.product-image { cursor:default !important; }
 
 /* Regular price */
 .regular-price {}
-.regular-price .price { font-weight:bold; }
+.regular-price .price { font-weight:normal; }
 
 /* Old price */
 .old-price { text-decoration:line-through; color:#989696; }
@@ -2109,10 +2109,10 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 .order-info dt { padding:6px 20px 0 10px; color:#6c6c6c; float:left; }
 .order-info dd { float:left; }
 .order-info ul { float:left; }
-.order-info li { float:left; position:relative; z-index:2; margin-right:3px; background:#dedede url(../images/bkg_collateral-tabs.gif) no-repeat 0 -39px; color:#222; padding:0 0 0 17px; font-size:12px; }
+.order-info li { float:left; position:relative; z-index:2; margin-right:3px; background:#dedede; color:#222; padding:0 0 0 17px; font-size:12px; }
 .order-info li strong,
-.order-info li a { text-decoration:none; background:url(../images/bkg_collateral-tabs.gif) no-repeat 100% -39px; padding:0 17px 0 0; line-height:24px; float:left; }
-.order-info li.current { margin-bottom:-1px; color:#000; font-weight:bold; z-index:3; border-bottom:0; background:#fff url(../images/bkg_collateral-tabs.gif) 0 0 no-repeat; }
+.order-info li a { text-decoration:none; padding:0 17px 0 0; line-height:24px; float:left; }
+.order-info li.current { margin-bottom:-1px; color:#000; font-weight:bold; z-index:3; border-bottom:0; }
 .order-info li.current strong { background-position:100% 0; padding-bottom:1px; }
 .order-info dt { font-weight:bold; }
 
