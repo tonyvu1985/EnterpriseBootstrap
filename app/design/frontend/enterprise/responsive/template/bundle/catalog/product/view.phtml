@@ -41,10 +41,10 @@ $_product = $this->getProduct();
 </script>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
 <div id="bundle-product-wrapper">
-    <div id="bundleProduct">
-        <div id="productView" class="product-view">
-            <div class="product-essential">
-                <div class="product-shop">
+    <div id="bundleProduct" class="row">
+        <div id="productView" class="product-view col-xs-12">
+            <div class="product-essential col-md-6">
+                <div class="product-shop col-md-6">
                     <div class="product-main-info">
                         <div class="product-name">
                             <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
@@ -74,11 +74,11 @@ $_product = $this->getProduct();
                     <?php echo $this->getChildHtml('other');?>
 
                 </div>
-                <div class="product-img-box">
+                <div class="product-img-box col-md-6">
                     <?php echo $this->getChildHtml('media') ?>
                 </div>
             </div>
-            <div class="product-collateral">
+            <div class="product-collateral col-md-6">
                 <?php $_description = $this->getChildHtml('description') ?>
                 <?php $_additional = $this->getChildHtml('additional') ?>
                 <?php if($_description || $_additional):?>
