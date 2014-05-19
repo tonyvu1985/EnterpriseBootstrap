@@ -2388,7 +2388,7 @@ p.link-widget-sku a { color:#999; }
 .form-subscribe .validation-advice { width:180px; }
 .form-subscribe a { color:#777; }
 */
-.footer-container { margin:0 0 20px; text-align:left; background:#f8f8f8; border:1px solid #cfcfcf; padding:14px 17px 12px; }
+.footer-container { margin:0 0 20px; text-align:left; padding:30px 0px 0px; }
 .footer {/* background:url(../images/bkg_footer.gif) repeat-y 200px 0; */}
 .footer a {color: #333;}
 .footer a:hover { text-decoration:none; color: #428bca}
@@ -2411,9 +2411,9 @@ address.copyright { margin-top:6px; }
 /* Some sample data cms styles ================================================================================ */
 .page-head-alt {}
 .page-head,
-.page-head-alt { margin-bottom:20px; padding:23px 20px 11px; background:#f6f6f6; border-bottom:1px solid #cfcfcf; }
+.page-head-alt { margin-bottom:20px; padding:23px 20px 11px;}
 .col-main .page-head,
-.col-main .page-head-alt { margin:0 -20px 20px; }
+.col-main .page-head-alt {}
 .page-head-alt .link-rss { float:right; margin-top:8px; }
 .page-head h2,
 .page-head h3,
