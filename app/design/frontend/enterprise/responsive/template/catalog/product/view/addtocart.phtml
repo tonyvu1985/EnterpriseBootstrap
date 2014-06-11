@@ -31,7 +31,7 @@
         <div class="input-group">
             <?php if(!$_product->isGrouped()): ?>
             <span class="input-group-addon">
-            <label for="qty"><?php echo $this->__('Qty:') ?></label>
+            <?php echo $this->__('Qty') ?>
             </span>
             <input type="text" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>" class="form-control input-text qty" />
             <?php endif; ?>

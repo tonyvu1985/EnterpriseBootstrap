@@ -42,8 +42,8 @@ $_product = $this->getProduct();
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
 <div id="bundle-product-wrapper">
     <div id="bundleProduct" class="row">
-        <div id="productView" class="product-view col-xs-12">
-            <div class="product-essential col-md-6">
+        <div id="productView" class="product-view">
+            <div class="product-essential">
                 <div class="product-shop col-md-6">
                     <div class="product-main-info">
                         <div class="product-name">
@@ -56,7 +56,7 @@ $_product = $this->getProduct();
                     </div>
                     <?php echo $this->getChildHtml('tierprices') ?>
                     <?php echo $this->getChildHtml('extrahint') ?>
-                    <?php echo $this->getChildHtml('customize_button') ?>
+                    <?php //echo $this->getChildHtml('customize_button') ?>
                     <?php if (!$this->hasOptions()):?>
                         <?php if($_product->isSaleable()): ?>
                             <button type="button" onclick="window.location='<?php echo Mage::getBaseUrl().$_product->getRequestPath();?>?startcustomization=1'" class="button btn-cart btn btn-danger"><?php echo $this->__("Customize and Add to Cart") ?></button>
@@ -78,7 +78,7 @@ $_product = $this->getProduct();
                     <?php echo $this->getChildHtml('media') ?>
                 </div>
             </div>
-            <div class="product-collateral col-md-6">
+            <div class="product-collateral">
                 <?php $_description = $this->getChildHtml('description') ?>
                 <?php $_additional = $this->getChildHtml('additional') ?>
                 <?php if($_description || $_additional):?>
@@ -122,17 +122,17 @@ $_product = $this->getProduct();
                 <input type="hidden" name="related_product" id="related-products-field" value="" />
             </div>
             <?php if ($_product->isSaleable() && $this->hasOptions()): ?>
-            <div id="options-container" style="display:none">
+            <div id="options-container">
                 <div id="customizeTitle" class="page-title title-buttons">
                     <h1><?php echo $this->__('Customize %s', $_helper->productAttribute($_product, $_product->getName(), 'name')) ?></h1>
-                    <a href="#" onclick="Enterprise.Bundle.end(); return false;"><small>&lsaquo;</small> Go back to product detail</a>
-                </div>
-                <?php echo $this->getChildHtml('bundleSummary') ?>
+               <!--     <a href="#" onclick="Enterprise.Bundle.end(); return false;"><small>&lsaquo;</small> Go back to product detail</a>-->
+                </div>                
                 <?php if ($this->getChildChildHtml('container1')):?>
                     <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
                 <?php elseif ($this->getChildChildHtml('container2')):?>
                     <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
                 <?php endif;?>
+                <?php echo $this->getChildHtml('bundleSummary') ?>
             </div>
             <?php endif;?>
         </form>
