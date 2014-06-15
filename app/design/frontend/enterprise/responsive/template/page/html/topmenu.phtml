@@ -31,8 +31,15 @@
  * @see Mage_Page_Block_Html_Topmenu
  */
 ?>
-<?php $narbar_style = 'navbar-default';?>
 <?php $_menu = $this->getHtml('level-top') ?>
+<?php
+    $narbar_style = Mage::getStoreConfig('setting/header/navbar', Mage::app()->getStore()->getId());
+    if ($narbar_style ==''){
+        // navbar-default is an option in the setting/header/navbar
+        $narbar_style = 'navbar-default';
+    }
+?>
+
 <?php if($_menu): ?>
 <nav id="default-nav" class="navbar <?php echo $narbar_style ?>" role="navigation">
     <div class="navbar-header">
