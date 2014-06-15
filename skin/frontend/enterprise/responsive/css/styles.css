@@ -23,9 +23,9 @@
  * @license     http://www.magentocommerce.com/license/enterprise-edition
  */
 /* Reset ================================================================================= */
-* { margin:0; padding:0; }
 
-body          { background:#fff; font:11px/1.35 Arial, Helvetica, sans-serif; color:#444; text-align:center; }
+.usp .table tr td{border:0}
+* { margin:0; padding:0; }
 
 img           { border:0; vertical-align:top; }
 

@@ -1,0 +1,38 @@
+<?php
+/* 
+ * Authod       Tony Vu
+ * Date         12.12.2013
+ * Description  3 Sectors Block
+ */
+?>
+
+<?php if (Mage::getStoreConfig('block/sectors/yes_no', Mage::app()->getStore()->getId()) == 1) : ?>
+<div class='row mainblocks'>
+    <!-- Left block -->
+    <div class='l_block col-md-4 col-xs-12'>
+        <?php 
+            if (Mage::getStoreConfig('block/sectors/l_image', Mage::app()->getStore()->getId()) != NULL) { 
+                echo '<a href="' . Mage::getStoreConfig('block/sectors/l_link', Mage::app()->getStore()->getId()) . '"/><img class="img-responsive" src="' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . 'media/blockimage/' . Mage::getStoreConfig('block/sectors/l_image', Mage::app()->getStore()->getId()) . '" alt="" /></a>';
+            }
+        ?>
+    </div>
+    <!-- Middle block -->
+    <div class='m_block col-md-4 col-xs-12'>
+        <?php 
+            if (Mage::getStoreConfig('block/sectors/m_image', Mage::app()->getStore()->getId()) != NULL) { 
+                echo '<a href="' . Mage::getStoreConfig('block/sectors/m_link', Mage::app()->getStore()->getId()) . '"/><img class="img-responsive" src="' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . 'media/blockimage/' . Mage::getStoreConfig('block/sectors/m_image', Mage::app()->getStore()->getId()) . '" alt="" /></a>';
+            }
+        ?>
+    </div>
+    <!-- Right block -->
+    <div class='r_block col-md-4 col-xs-12'>
+        <?php 
+            if (Mage::getStoreConfig('block/sectors/r_image', Mage::app()->getStore()->getId()) != NULL) { 
+                echo '<a href="' . Mage::getStoreConfig('block/sectors/r_link', Mage::app()->getStore()->getId()) . '"/><img class="img-responsive" src="' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . 'media/blockimage/' . Mage::getStoreConfig('block/sectors/r_image', Mage::app()->getStore()->getId()) . '" alt="" /></a>';
+            }
+        ?>
+    </div>
+</div>
+
+    
+<?php endif;?>

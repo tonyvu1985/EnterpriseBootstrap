@@ -1,0 +1,97 @@
+<?php
+/* 
+ * Authod       Tony Vu
+ * Date         12.12.2013
+ * Description  Css Config from backend theme
+ */
+?>
+<?php
+    /* theme background */    
+    $theme_bgcolor = '#' . Mage::getStoreConfig('setting/themebg/bgcolor', Mage::app()->getStore()->getId());
+    $theme_bgimage = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'bgimage/' . Mage::getStoreConfig('setting/themebg/bgimage', Mage::app()->getStore()->getId());
+    $theme_bgpositionx = Mage::getStoreConfig('setting/themebg/bgpositionx', Mage::app()->getStore()->getId());
+    $theme_bgpositiony = Mage::getStoreConfig('setting/themebg/bgpositiony', Mage::app()->getStore()->getId());
+    $theme_bgpositionrepeat = Mage::getStoreConfig('setting/themebg/bgrepeat', Mage::app()->getStore()->getId());
+    
+    /* page background */
+    $is_transparent_pagegb = Mage::getStoreConfig('setting/pagebg/transparent', Mage::app()->getStore()->getId());
+    if ($is_transparent_pagegb == false){
+        $page_bgcolor = '#' . Mage::getStoreConfig('setting/pagebg/bgcolor', Mage::app()->getStore()->getId());
+        $page_bgimage = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'bgimage/' . Mage::getStoreConfig('setting/pagebg/bgimage', Mage::app()->getStore()->getId());
+        $page_bgpositionx = Mage::getStoreConfig('setting/pagebg/bgpositionx', Mage::app()->getStore()->getId());
+        $page_bgpositiony = Mage::getStoreConfig('setting/pagebg/bgpositiony', Mage::app()->getStore()->getId());
+        $page_bgpositionrepeat = Mage::getStoreConfig('setting/pagebg/bgrepeat', Mage::app()->getStore()->getId());
+    }
+    
+    /* theme font */
+    $fontfm = Mage::getStoreConfig('setting/themefont/fontfamily', Mage::app()->getStore()->getId());
+    // if $fontsize == null then fontsize is 14px from bootstrap theme
+    $fontsize = Mage::getStoreConfig('setting/themefont/fontsize', Mage::app()->getStore()->getId());
+    $textcolor = '#' . Mage::getStoreConfig('setting/themefont/textcolor', Mage::app()->getStore()->getId());
+    
+    /* header */
+    $header_bgcolor = '#' . Mage::getStoreConfig('setting/header/bgcolor', Mage::app()->getStore()->getId()); 
+    $header_link_color = '#' . Mage::getStoreConfig('setting/header/link_color', Mage::app()->getStore()->getId());
+    $header_link_size = Mage::getStoreConfig('setting/header/link_size', Mage::app()->getStore()->getId());
+    $header_hoverlink_color = '#' . Mage::getStoreConfig('setting/header/hoverlink_color', Mage::app()->getStore()->getId());
+    $header_hoverlink_size = Mage::getStoreConfig('setting/header/hoverlink_size', Mage::app()->getStore()->getId());
+ 
+    /* body */
+    $container_bgcolor = '#' . Mage::getStoreConfig('setting/body/bgcolor', Mage::app()->getStore()->getId());
+    $container_bgimage = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'bgimage/' . Mage::getStoreConfig('setting/body/bgimage', Mage::app()->getStore()->getId());
+    $container_bgpositionx = Mage::getStoreConfig('setting/body/bgpositionx', Mage::app()->getStore()->getId());
+    $container_bgpositiony = Mage::getStoreConfig('setting/body/bgpositiony', Mage::app()->getStore()->getId());
+    $container_bgpositionrepeat = Mage::getStoreConfig('setting/body/bgrepeat', Mage::app()->getStore()->getId());
+    
+    /* footer */
+    $footer_bgcolor = '#' . Mage::getStoreConfig('setting/footer/bgcolor', Mage::app()->getStore()->getId());
+    $footer_link_color = '#' . Mage::getStoreConfig('setting/footer/link_color', Mage::app()->getStore()->getId());
+    $footer_link_size = Mage::getStoreConfig('setting/footer/link_size', Mage::app()->getStore()->getId());
+    
+    // get default size 
+    if ($footer_link_size == ''){
+        $footer_link_size = $fontsize;
+    }
+    
+    $footer_title_color = '#' . Mage::getStoreConfig('setting/footer/title_color', Mage::app()->getStore()->getId());
+    $footer_title_size = Mage::getStoreConfig('setting/footer/title_size', Mage::app()->getStore()->getId());
+    // get default size 
+    if ($footer_title_size == ''){
+        $footer_title_size = $fontsize;
+    }
+    
+    $footer_text_color = '#' . Mage::getStoreConfig('setting/footer/text_color', Mage::app()->getStore()->getId());
+    $footer_text_size = Mage::getStoreConfig('setting/footer/text_size', Mage::app()->getStore()->getId());
+    // get default size 
+    if ($footer_text_size == ''){
+        $footer_text_size = $fontsize;
+    }
+    
+    $footer_line_color = '#' . Mage::getStoreConfig('setting/footer/line_color', Mage::app()->getStore()->getId());
+    $footer_line_size = Mage::getStoreConfig('setting/footer/line_size', Mage::app()->getStore()->getId());
+    // get default size 10px
+    if ($footer_line_size == ''){
+        $footer_line_size = '10px';
+    }
+    
+?>
+
+<style type="text/css">
+    
+body{ background:<?php echo $theme_bgcolor ?> url(<?php echo $theme_bgimage ?>) <?php echo $theme_bgpositionx ?> <?php echo $theme_bgpositiony ?> <?php echo $theme_bgpositionrepeat ?>; font-family: <?php echo $fontfm ?>; font-size:<?php echo $fontsize ?>; color: <?php echo $textcolor ?>; text-align:center}
+.page {background:<?php echo $page_bgcolor ?> url(<?php echo $page_bgimage ?>) <?php echo $page_bgpositionx ?> <?php echo $page_bgpositiony ?> <?php echo $page_bgpositionrepeat ?>;}
+
+.header{padding: 10px 0px; background: <?php echo $header_bgcolor ?>}
+.header .links a { color:<?php echo $header_link_color ?>; font-size: <?php echo $header_link_size ?>;}
+.header .links a:hover { color:<?php echo $header_hoverlink_color ?>; font-size: <?php echo $header_hoverlink_size ?>;}
+.header .links .top-link-cart i{margin-left: 5px;}
+.navbar-header .navbar-brand{text-transform: uppercase}
+.main-container {background:<?php echo $container_bgcolor ?> url(<?php echo $container_bgimage ?>) <?php echo $container_bgpositionx ?> <?php echo $container_bgpositiony ?> <?php echo $container_bgpositionrepeat ?>;  }
+.footer { /*width:930px; margin:0 auto; */padding:10px 10px 50px; background: <?php echo $footer_bgcolor ?>; color:<?php echo $footer_text_color ?>; font-size: <?php echo $footer_text_size ?>; border-top:<?php echo $footer_line_size ?> solid <?php echo $footer_line_color ?>; text-align:left}
+.footer a { color:<?php echo $footer_link_color ?>; text-decoration:none; font-size: <?php echo $footer_link_size ?>}
+.footer .title{color:<?php echo $footer_title_color ?>; font-size: <?php echo $footer_title_size ?>; font-weight:bold; text-transform: uppercase; padding: 2px 0}
+.footer address a { color:<?php echo $footer_link_color ?>; text-decoration:underline; font-size: <?php echo $footer_link_size ?>}
+
+.product-options .options-list label { font-weight:normal; color: <?php echo $textcolor?>; font-size:11px}
+</style>
+    

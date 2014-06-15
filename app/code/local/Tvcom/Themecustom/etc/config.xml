@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Tvcom_Themecustom>
+            <version>0.0.2</version>
+        </Tvcom_Themecustom>
+    </modules>
+    
+    <global>
+        <helpers>
+            <themecustom>
+                  <class>Tvcom_Themecustom_Helper</class>
+            </themecustom>
+        </helpers>
+        
+        <models>
+            <themecustom>
+                <class>Tvcom_Themecustom_Model</class>
+            </themecustom>    
+        </models>
+        
+        <blocks>
+            <themecustom>
+                <class>Tvcom_Themecustom_Block</class>
+            </themecustom>
+        </blocks>
+          
+    </global>
+   
+     <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <setting translate="label" module="themecustom"> <!-- setting section -->
+                                            <title>Setting Section</title>
+                                        </setting>
+                                        
+                                        <layout translate="label" module="themecustom"> <!-- layout section -->
+                                            <title>Layout Section</title>
+                                        </layout>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>  
+        
+        <layout> <!-- layout upadte -->
+            <updates>
+                <themecustom>
+                    <file>colorpicker.xml</file>
+                </themecustom>
+            </updates>
+        </layout>
+        
+    </adminhtml>
+    
+   
+          
+
+</config>

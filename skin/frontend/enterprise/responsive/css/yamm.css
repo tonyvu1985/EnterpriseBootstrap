@@ -1,0 +1,36 @@
+/* 
+    Document   : yamm
+    Created on : 24/02/2014, 4:47:00 PM
+    Author     : tony vu
+    Description: Mega menu
+*/
+.yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown{position: static; text-align: left}
+.yamm .container{position: relative;}
+.yamm .dropdown-menu{left: auto;}
+.yamm .nav.navbar-right .dropdown-menu {left: auto;right: 0;}
+.yamm .yamm-content {padding: 20px 30px;}
+.yamm .dropdown.yamm-fw .dropdown-menu {left: 0;right: 0;}
+
+
+.yamm .navbar-nav li .dropdown-toggle{text-transform: uppercase}
+
+.yamm .navbar-nav li .title{text-transform: uppercase; color: #1e7ec8; border-bottom: 1px dashed #ccc; width: 100%; display: inline-block; padding: 10px 0; margin-bottom: 10px}
+
+.yamm .navbar-nav li ul{padding-left: 7px; }
+.yamm .navbar-nav li ul li a{color: #777 }
+.yamm .navbar-nav .showall{text-align: right; border-top: 1px dashed #ccc; margin-top: 10px}
+.yamm .navbar-nav .showall .btnviewall{margin-top: 20px; text-transform: uppercase}
+.yamm .price{color: #1e7ec8}
+.yamm .description{font-size: 12px;}
+.yamm .salelists{text-transform: uppercase; color: #1e7ec8;}
+@media (min-width:768px){
+    .yamm-categories{width: 700px;}
+}
+
+@media (max-width: 767px) and  (min-width: 480px){
+    .yamm-categories{width: 550px;}
+}
+
+@media (max-width:990px){
+ /*  .yamm .megamenu_cat_3 .banner{display: none}*/
+}

@@ -44,23 +44,27 @@
       </div>
     </div>
     
-
-    <div class="row" style="margin-bottom: 15px">
-        <div class="col-xs-6" style="text-align: left">
-            <?php echo $this->getChildHtml('switches') ?>
-        </div>
-        <div class="col-xs-6"  style="text-align: right">
-            <span class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></span>
-        </div>    
-    </div>
-    
     <div class="header row">
         <div class="branding col-sm-6 col-xs-12">
-            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>   
+	<!-- company logo -->
+            <?php if(Mage::getStoreConfig('setting/header/logo', Mage::app()->getStore()->getId()) != ''): ?>
+            <a href="<?php echo $this->getBaseUrl(); ?>"><img class="img-responsive" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'logo/' . Mage::getStoreConfig('setting/header/logo') ?>" alt="<?php echo Mage::getStoreConfig('setting/header/logoalt') ?>"></a>
+            <?php else: ?>
+                <a class="navbar-brand" href="<?php echo $this->getBaseUrl(); ?>">Logo Example Here</a>
+            <?php endif; ?>
+            <div style="clear: both"></div>
+            <?php if(Mage::getStoreConfig('setting/header/usp_yesno', Mage::app()->getStore()->getId()) == 1): ?>
+                <div class="usp">
+                    <?php echo Mage::getStoreConfig('setting/header/usp', Mage::app()->getStore()->getId())?>
+                </div>
+            <?php endif; ?>
+  
             <?php echo $this->getChildHtml('headerCallout') ?>
         </div> 
         <div class="quick-search col-sm-6 col-xs-12">
+            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></p>
             <?php echo $this->getChildHtml('topSearch') ?>   
+            <?php echo $this->getChildHtml('switches') ?>
         </div>
     </div>
     <?php echo $this->getChildHtml('topMenu') ?>

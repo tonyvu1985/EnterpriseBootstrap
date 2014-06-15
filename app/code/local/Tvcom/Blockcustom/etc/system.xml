@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <sections>
+        <block tranlate="label" module="blockcustom">
+            <label>Promotion Blocks</label>
+            <tab>tvcomthemecustom</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>450</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups translate="label" module="slider">
+                <newarrival translate="label">
+                    <label>New Arrival List</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>Add product sku to show them in HOMEPAGE > NEW ARRIVAL</comment>
+                    <fields>    
+                        <yes_no translate="label">
+                                <label>Show New Arrival Block ?</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>10</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </yes_no>
+                  
+                        <product translate="comment">
+                            <label>Add product sku</label>
+                            <frontend_model>mega/textfields</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product>      
+                    </fields>
+                </newarrival>    
+                
+                <bestsale translate="label">
+                    <label>Best Sale List</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>Add product sku to show them in HOMEPAGE > NEW ARRIVAL</comment>
+                    <fields>               
+                        
+                        <yes_no translate="label">
+                                <label>Show Best Sale Block ?</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>10</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </yes_no>
+                               
+                        <product translate="comment">
+                            <label>Add product sku</label>
+                            <frontend_model>mega/textfields</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product>      
+                    </fields>
+                </bestsale>    
+                
+                <sectors translate="label">
+                    <label>3 Blocks</label>
+                    <frontend_type>label</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>               
+                        <yes_no translate="label">
+                            <label>Show 3 Blocks ?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </yes_no>
+                        
+                        <left translate="label">
+                            <label><![CDATA[<span style="color:red">Left Block</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </left>
+                        <l_image translate="label">
+                            <label>Image</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">blockimage</upload_dir>
+                            <base_url type="media" scope_info="1">blockimage</base_url>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </l_image>      
+                        <l_link translate="label">
+                            <label>Link</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Example:https://www.example.com/</comment>
+                        </l_link>
+                        
+                         <middle translate="label">
+                            <label><![CDATA[<span style="color:red">Middle Block</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </middle>
+                        
+                        <m_image translate="label">
+                            <label>Image</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">blockimage</upload_dir>
+                            <base_url type="media" scope_info="1">blockimage</base_url>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </m_image>     
+                         
+                        <m_link translate="label">
+                            <label>Link</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>48</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </m_link>
+                        
+                        <right translate="label">
+                            <label><![CDATA[<span style="color:red">Right Block</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </right>
+                        
+                        <r_image translate="label">
+                            <label>Right Block</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">blockimage</upload_dir>
+                            <base_url type="media" scope_info="1">blockimage</base_url>
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </r_image>      
+                        
+                        <r_link translate="label">
+                            <label>Link</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </r_link>
+
+                    </fields>
+                </sectors> 
+              </groups>
+        </block>
+    </sections>
+</config>

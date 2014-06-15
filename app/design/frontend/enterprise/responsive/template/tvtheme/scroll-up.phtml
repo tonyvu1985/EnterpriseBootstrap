@@ -1,0 +1,24 @@
+<?php
+/* 
+ * Authod       Tony Vu
+ * Date         24.2.2014
+ * Description  Scroll to top of website on catalog page
+ */
+?>
+<div id='scroll-div'><a id='top'><i class="fa fa-arrow-circle-up fa-3x"></i></a></div>
+
+<script type='text/javascript' defer>
+    
+    jQuery(window).scroll(function(){
+        if(jQuery(document).scrollTop() == 0){
+            jQuery('#scroll-div').hide();
+        }else{
+            jQuery('#scroll-div').show();
+        }
+    });
+    
+    jQuery("#top").click(function() {
+       jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+       return false;
+   });
+</script>

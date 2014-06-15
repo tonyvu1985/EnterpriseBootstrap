@@ -1,0 +1,628 @@
+<?xml version="1.0"?>
+
+<config>
+    <tabs> <!-- create a new tab in system / configuration -->
+        <tvcomthemecustom translate="label" module="themecustom">
+            <label>TVcom Theme Custom</label>
+            <sort_order>1</sort_order>
+        </tvcomthemecustom>
+    </tabs>
+    
+   <sections>        
+        <setting translate="label" module="themecustom"> <!-- setting section -->
+            <label>Setting</label>
+            <tab>tvcomthemecustom</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>305</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <themebg translate="label"> <!-- theme background -->
+                    <label>Theme Background</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <bgcolor translate="label">
+                            <label>Bg color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                             
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgcolor>     
+                        
+                        <bgimage translate="label"> <!-- body background image -->
+                            <label>Bg image</label>                           
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">bgimage</upload_dir>
+                            <base_url type="media" scope_info="1">bgimage</base_url>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgimage>    
+                                    
+                        <bgpositionx translate="label"> <!-- background position x -->
+                            <label>Bg position x</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgpositionx>
+                                               
+                        <bgpositiony translate="label"> <!-- background position y -->
+                            <label>Bg position y</label>
+                            <fronend_type>text</fronend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>        
+                        </bgpositiony>
+                        
+                        <bgrepeat translate="label"> <!-- background repeat -->
+                            <label>Bg repeat</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>themecustom/option_repeat</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgrepeat>
+                        
+                    </fields>
+                </themebg>      
+                
+                <pagebg translate="label"> <!-- page background -->
+                    <label>Page Background</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        
+                        <transparent translate="label"> <!-- page transparent background -->
+                            <label>Is transparent bg</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>yes for transparent background</comment>
+                        </transparent>
+
+                        <bgcolor translate="label">
+                            <label>Bg color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                             
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgcolor>     
+                        
+                        <bgimage translate="label"> <!-- body background image -->
+                            <label>Bg image</label>                           
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">bgimage</upload_dir>
+                            <base_url type="media" scope_info="1">bgimage</base_url>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgimage>    
+                                    
+                        <bgpositionx translate="label"> <!-- background position x -->
+                            <label>Bg position x</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgpositionx>
+                                               
+                        <bgpositiony translate="label"> <!-- background position y -->
+                            <label>Bg position y</label>
+                            <fronend_type>text</fronend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>        
+                        </bgpositiony>
+                        
+                        <bgrepeat translate="label"> <!-- background repeat -->
+                            <label>Bg repeat</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>themecustom/option_repeat</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgrepeat>  
+                        
+                    </fields>
+                </pagebg>      
+                
+                <themefont translate="label"> <!-- theme font -->
+                    <label>Font</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>    
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <fontfamily translate="label">
+                            <label>Font family</label>
+                            <fontend_type>text</fontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fontfamily>
+                        
+                        <fontsize translate="label">
+                            <label>Font size</label>
+                            <font_type>text</font_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fontsize>
+                        
+                         <textcolor translate="label">
+                            <label>Font color</label>
+                            <font_type>text</font_type>
+                            <validate>color</validate> 
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </textcolor>
+                    </fields>
+                </themefont>         
+                
+                <header translate="label"> <!-- header -->
+                    <label>Header</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <logo translate="label">
+                            <label>Company logo</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">logo</upload_dir>
+                            <base_url type="media" scope_info="1">logo</base_url>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>    
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </logo>
+                        
+                        <logoalt translate="label">
+                            <label>Logo alt</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>    
+                        </logoalt>
+
+                        <navbar translate="label">
+                            <label>Navigation bar</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>themecustom/option_narbar</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                        
+                        </navbar>
+                        
+                        <bgcolor translate="label"> <!-- header background color -->
+                            <label>Bg color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                             
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>  
+                        </bgcolor>
+                        
+                        <link translate="label">
+                            <label><![CDATA[<span style="color:red">a link</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                
+                        </link>
+                        
+                        <link_color translate="label"> <!-- header link color -->
+                            <label>Color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                  
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color>                        
+                        
+                        <link_size translate="label"> <!-- header link color -->
+                            <label>Font size</label>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If empty, It will take the default font size</comment>
+                        </link_size>                        
+                                                
+                        <hoverlink translate="label">
+                            <label><![CDATA[<span style="color:red">a link hover</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                
+                        </hoverlink>
+                        
+                        <hoverlink_color translate="label"> <!-- header link color -->
+                            <label>Color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                  
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </hoverlink_color>                        
+                        
+                        <hoverlink_size translate="label"> <!-- header link color -->
+                            <label>Font size</label>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                        
+                        </hoverlink_size>                        
+                        
+                        
+                        <text translate="label"> <!-- text style -->
+                            <label><![CDATA[<span style="color:red">Text</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                
+                        </text>
+                        
+                        <text_color translate="label"> <!-- footer text color -->
+                            <label>Color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                  
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_color>                        
+                        
+                        <text_size translate="label"> <!-- footer link color -->
+                            <label>Font size</label>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If empty, It will take the default font size</comment>
+                        </text_size>                  
+                        
+                        <usp_label translate="label">
+                            <label><![CDATA[<span style="color:red">Usp</span>]]></label>
+                            <frontend_type>label</frontend_type>                 
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </usp_label>         
+                        
+                        <usp_yesno translate="label"> 
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>190</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </usp_yesno>
+                        
+                        <usp translate="label">
+                            <label>Code</label>
+                            <frontend_type>textarea</frontend_type>                 
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </usp>         
+                        
+                    </fields>
+                </header>
+                
+                <body translate="label"> <!-- body -->
+                    <label>Body</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>    
+                    <fields>
+                        <bgcolor translate="label">
+                            <label>Bg color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                             
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                       
+                        </bgcolor>
+                        
+                        <bgimage translate="label"> <!-- body background image -->
+                            <label>Bg image</label>                           
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">bgimage</upload_dir>
+                            <base_url type="media" scope_info="1">bgimage</base_url>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgimage>    
+                                    
+                        <bgpositionx translate="label"> <!-- background position x -->
+                            <label>Bg position x</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgpositionx>
+
+                        <bgpositiony translate="label"> <!-- background position y -->
+                            <label>Bg position y</label>
+                            <fronend_type>text</fronend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>        
+                        </bgpositiony>
+
+                        <bgrepeat translate="label"> <!-- background repeat -->
+                            <label>Bg repeat</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>themecustom/option_repeat</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgrepeat>
+                    
+                    </fields>
+                </body>
+                
+                 <footer translate="label"> <!-- footer -->
+                    <label>Footer</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>    
+                    <fields>
+                        <bgcolor translate="label">
+                            <label>Bg color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                             
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bgcolor>
+                        
+                        <title translate="label">
+                            <label><![CDATA[<span style="color:red">Title</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                
+                        </title>
+                        
+                        <title_color translate="label"> <!-- footer title color -->
+                            <label>Color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                  
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title_color>                        
+                        
+                        <title_size translate="label"> <!-- footer title color -->
+                            <label>Font size</label>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If empty, It will take the default font size</comment>
+                        </title_size>  
+                        
+                        <link translate="label">
+                            <label><![CDATA[<span style="color:red">a link</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                
+                        </link>
+                        
+                        <link_color translate="label"> <!-- footer link color -->
+                            <label>Color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                  
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color>                        
+                        
+                        <link_size translate="label"> <!-- footer link color -->
+                            <label>Font size</label>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_size>                        
+                        
+                        <text translate="label"> <!-- text style -->
+                            <label><![CDATA[<span style="color:red">Text</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                
+                        </text>
+                        
+                        <text_color translate="label"> <!-- footer text color -->
+                            <label>Color</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                  
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_color>                        
+                        
+                        <text_size translate="label"> <!-- footer link color -->
+                            <label>Font size</label>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_size>                  
+                        
+                        <line translate="label"> <!-- line style -->
+                            <label><![CDATA[<span style="color:red">Line</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                
+                        </line>
+                        
+                        <line_color translate="label"> <!-- line color -->
+                            <label>Color</label>
+                            <frontend_type>text</frontend_type>                            
+                            <validate>color</validate>                  
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </line_color>                  
+                        
+                        <line_size translate="label"> <!-- footer line size -->
+                            <label>Size</label>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If empty, It will take 10px as default line size</comment>
+                        </line_size>                  
+                        
+                        <contact translate="label">
+                            <label>Contact details</label>
+                            <frontend_type>textarea</frontend_type>                            
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Information about Address, Phone and Email</comment>
+                        </contact>
+                        
+                        <socialshare translate="label">
+                            <label><![CDATA[<span style="color:red">Social share</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                
+                        </socialshare>
+                        
+                        <facebook translate="label"> <!-- facebook link -->
+                            <label>Facebook link</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>    
+                             <comment><![CDATA[Example: https://www.facebook.com/username]]></comment>
+                        </facebook>
+                        
+                        <twitter translate="label"> <!-- twitter link -->
+                            <label>Twitter link</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>    
+                             <comment><![CDATA[Example: https://www.twitter.com/username]]></comment>
+                        </twitter>
+                        
+                        <youtube translate="label"> <!-- youtube link -->
+                            <label>Youtube link</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>    
+                             <comment><![CDATA[Example: https://www.youtube.com/user/username]]></comment>
+                        </youtube>
+                        
+                    </fields>
+                </footer>
+                
+                <general translate="label"> <!-- general setting -->
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>6</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                         <googleanalytics translate="label"> <!-- google analytics -->
+                            <label>Google Analytics</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Example: Google Analytics Content Experiment code]]></comment>
+                        </googleanalytics>
+                    </fields>
+                </general>
+                
+            </groups>
+        </setting>
+    </sections>
+</config>

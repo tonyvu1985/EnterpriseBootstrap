@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Tvcom_Blockcustom>
+            <version>0.0.2</version>
+        </Tvcom_Blockcustom>
+    </modules>
+    
+    <global>
+        <helpers>
+            <blockcustom>
+                  <class>Tvcom_Blockcustom_Helper</class>
+            </blockcustom>
+        </helpers>
+          
+    </global>
+   
+     <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <block translate="label" module="themecustom"> 
+                                            <title>promotion Blocks</title>
+                                        </block>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>  
+    </adminhtml>
+    
+   
+          
+
+</config>

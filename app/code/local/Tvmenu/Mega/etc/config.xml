@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Tvmenu_Mega>
+            <version>0.0.1</version>
+        </Tvmenu_Mega>
+    </modules>
+    
+    <frontend>
+        <layout>
+            <updates>
+                <tvmenu_mega>
+                    <file>yamm.xml</file>
+                </tvmenu_mega>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <global>
+        <helpers>
+            <mega>
+                <class>Tvmenu_Mega_Helper</class>
+            </mega>
+        </helpers>        
+        <blocks>
+            <mega>
+                <class>Tvmenu_Mega_Block</class>
+            </mega>
+        </blocks>
+    </global>
+    
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <yamm translate="label" module="mega"> 
+                                            <title>Mega Menu Section</title>
+                                        </yamm>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml> 
+</config>

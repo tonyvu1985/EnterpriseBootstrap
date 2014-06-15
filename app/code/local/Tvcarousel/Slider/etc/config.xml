@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Tvcarousel_Slider>
+            <version>0.0.1</version>
+        </Tvcarousel_Slider>
+    </modules>
+    
+    <frontend>
+        <layout>
+            <updates>
+                <tvcarousel_slider>
+                    <file>carousel.xml</file>
+                </tvcarousel_slider>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <global>
+        <helpers>
+            <slider>
+                <class>Tvcarousel_Slider_Helper</class>
+            </slider>
+        </helpers>
+        
+        <models>
+            <slider>
+                <class>Tvcarousel_Slider_Model</class>
+            </slider>
+        </models>
+    </global>
+    
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <carousel translate="label" module="slider"> <!-- setting section -->
+                                            <title>Carousel Section</title>
+                                        </carousel>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

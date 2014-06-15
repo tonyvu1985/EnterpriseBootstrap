@@ -1,0 +1,52 @@
+<?php
+/* 
+ * Authod       Tony Vu
+ * Date         12.12.2013
+ * Description  Product Best Sale Block
+ */
+?>
+
+<?php if (Mage::getStoreConfig('block/bestsale/yes_no', Mage::app()->getStore()->getId()) == 1) : ?>
+    <div class="bestsale">
+        <div class="row heading">
+            <div class="col-xs-8">
+                <h3>Best Sales</h3>
+            </div>
+
+            <div class="col-xs-4" style="text-align: right">
+                <a class="bestsale-jcarousel-prev"><i class="fa fa-angle-left fa-2x"></i></a>
+                <a class="bestsale-jcarousel-next"><i class="fa fa-angle-right fa-2x"></i></a>
+            </div>
+        </div>
+
+        <div class="col-xs-12 bestsale-jcarousel"><!-- row 1 example data -->
+        <?php 
+            //get feature products from getstoreconfig
+            $product_arr = unserialize(Mage::getStoreConfig('block/bestsale/product', Mage::app()->getStore()->getId()));
+            if (!empty($product_arr)){
+                $new_arrival = array();
+                foreach($product_arr as $product){
+                    array_push($new_arrival ,trim($product['product_sku']));
+                }
+                echo Mage::helper('blockcustom/data')->getProducts($new_arrival);
+            }
+        ?>
+        </div>
+    </div>
+
+    <script>
+    jQuery(function() {
+        // create instance
+        jQuery('.bestsale-jcarousel').jcarousel();
+
+        jQuery('.bestsale-jcarousel-prev').click(function() {
+            jQuery('.bestsale-jcarousel').jcarousel('scroll', '-=1');
+        });
+
+        jQuery('.bestsale-jcarousel-next').click(function() {
+            jQuery('.bestsale-jcarousel').jcarousel('scroll', '+=1');
+        });
+    });
+    </script>
+    
+<?php endif;?>

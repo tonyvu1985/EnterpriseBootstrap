@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <sections>
+        <carousel tranlate="label" module="slider">
+            <label>Carousel Config</label>
+            <tab>tvcomthemecustom</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>307</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups translate="label" module="slider">
+                <setting translate="label">
+                    <label>Carousel Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>    
+                    <fields>
+                        <yes_no translate="label">
+                                <label>Show carousel ?</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>1</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <comment>yes to show carousel</comment>
+                        </yes_no>
+                        
+                        <wrap translate="label">
+                                <label>Loop</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>2</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <comment>carousel continuously loops or stops</comment>
+                        </wrap>
+                        
+                        <path translate="data">
+                            <label>Path Folder</label>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>4</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <comment><![CDATA[carousel images inside media folder<br/><b>Example</b>: shoes/men]]></comment>
+                        </path>
+                        
+                        <transition translate="label">
+                                <label>Transition option</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>slider/option_transition</source_model>
+                                <sort_order>5</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </transition>
+                        
+                        <interval translate="data">
+                            <label>Interval</label>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>6</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <comment><![CDATA[time between transition<br/><b>Example</b>: 1s = 1000]]></comment>
+                        </interval>
+                        
+                    </fields>
+                </setting>
+              </groups>
+        </carousel>
+    </sections>
+</config>

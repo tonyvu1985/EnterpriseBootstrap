@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout version="0.1.0">
+    <default translate="label" module="page">
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/yamm.css</stylesheet></action>
+        </reference>
+        
+        <reference name="top.menu">
+            <block type="core/template" name="mega.menu" template="tvtheme/yamm.phtml" />                
+            <action method="unsetChild" ifconfig="yamm/setting/yes_no"><name>catalog.topnav</name></action>
+        </reference>
+    </default>
+</layout>
