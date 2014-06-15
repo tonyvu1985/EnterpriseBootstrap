@@ -2381,9 +2381,9 @@ p.link-widget-sku a { color:#999; }
 .footer-before-container { margin:0 0 3px; text-align:center; }
 /*.form-subscribe-header { color:#d12c01; font-size:11px; font-weight:bold; text-decoration:none; text-transform:uppercase; }*/
 .form-subscribe {padding: 0 0px 15px 0; }
+.form-subscribe button { margin:10px 0 0; }
 /*
 .form-subscribe label { display:block; margin:6px 0; }
-.form-subscribe button.button { margin:6px 0 0; float:right; }
 .form-subscribe .validation-advice { width:180px; }
 .form-subscribe a { color:#777; }
 */
