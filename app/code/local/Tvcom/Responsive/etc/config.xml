@@ -9,9 +9,9 @@
 	<page>
 	      <layouts>
 		<Full_Grid translate="label">
-		  <label>LAYOUT_NAME</label>
+		  <label>Full Grid</label>
 		  <template>page/fullgrid.phtml</template>
-		  <layout_handle>fullgrid.xml</layout_handle>
+	<!--	  <layout_handle>fullgrid.xml</layout_handle>-->
 		</Full_Grid>
 	      </layouts>
 	    </page>

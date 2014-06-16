@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Tvcom_Responsive>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Tvcom_Responsive>
+    </modules>
+</config> 
