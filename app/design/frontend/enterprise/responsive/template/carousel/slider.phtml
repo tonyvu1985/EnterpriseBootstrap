@@ -1,0 +1,73 @@
+<?php
+/**
+ * Bootstrap Carousel
+ * Tony Vu
+ * 29.01.2014
+ */
+?>
+
+<?php 
+    $i = 0;
+    $j = 0;
+    
+    /*Magento Config*/
+    $is_carousel = Mage::getStoreConfig('carousel/setting/yes_no');
+    if($is_carousel == 0 || $is_carousel == 0){
+        return;
+    }
+    
+    // auto loop carousel
+    $is_loop = Mage::getStoreConfig('carousel/setting/wrap');
+    
+    // path folder contains images
+    $path_folder = "media/" . Mage::getStoreConfig('carousel/setting/path') . "/*.*" ;
+    $TotalImages = count(glob($path_folder));
+    
+    // transition option
+    $transition  = Mage::getStoreConfig('carousel/setting/transition');
+    if($transition == null){
+        $transition = 'slide';
+    }
+    
+    // transition time
+    $interval = Mage::getStoreConfig('carousel/setting/interval');
+    if($interval == null || $interval == 0){
+        $interval = 5000;
+    }
+?>
+<div id="tvcarousel" data-interval="<?php echo $interval ?>" data-wrap="<?php echo $is_loop ?>" class="carousel <?php echo $transition ?>" data-ride="carousel" style="margin-bottom: 20px;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <?php 
+        while ($i < $TotalImages) {
+            if($i == 0){
+                echo '<li data-target="#tvcarousel" data-slide-to="' . $i . '" class="active"></li>';
+            }else{
+                echo '<li data-target="#tvcarousel" data-slide-to="' . $i . '"></li>';
+            }   
+            $i++;
+        } 
+     ?>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <?php
+        foreach (glob($path_folder) as $filename) {
+            if($j == 0){
+               echo '<div class="item active"><img src="' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . '" /><div class="carousel-caption"></div></div>' ;
+            }else{
+               echo '<div class="item"><img src="' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . '" /><div class="carousel-caption"></div></div>' ;
+            }   
+            $j++;
+        }
+    ?>  
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#tvcarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#tvcarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
