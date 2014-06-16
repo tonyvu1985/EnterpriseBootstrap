@@ -137,9 +137,7 @@
                 <?php if($this->isDefaultBilling()): ?>
                     <p><strong><?php echo $this->__('Default Billing Address') ?></strong></p>
                 <?php elseif($this->canSetAsDefaultBilling()): ?>
-                    <div class="input-box">
-                        <input type="checkbox" id="primary_billing" name="default_billing" value="1" class="checkbox" />
-                    </div>
+                     <input type="checkbox" id="primary_billing" name="default_billing" value="1" class="checkbox" />
                     <label for="primary_billing"><?php echo $this->__('Use as my default billing address') ?></label>
                 <?php else: ?>
                     <input type="hidden" name="default_billing" value="1" />
@@ -149,9 +147,7 @@
                 <?php if($this->isDefaultShipping()): ?>
                     <p><strong><?php echo $this->__('Default Shipping Address') ?></strong></p>
                 <?php elseif($this->canSetAsDefaultShipping()): ?>
-                    <div class="input-box">
-                        <input type="checkbox" id="primary_shipping" name="default_shipping" value="1" class="checkbox" />
-                    </div>
+                     <input type="checkbox" id="primary_shipping" name="default_shipping" value="1" class="checkbox" />
                     <label for="primary_shipping"><?php echo $this->__('Use as my default shipping address') ?></label>
                 <?php else: ?>
                     <input type="hidden" name="default_shipping" value="1" />
@@ -159,11 +155,15 @@
             </li>
         </ul>
     </div>
-    <div class="buttons-set form-buttons">
-        <p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Go back') ?></a></p>
-        <button type="submit" class="button btn btn-default" title="<?php echo $this->__('Save Address') ?>"><?php echo $this->__('Save Address') ?></button>
+    <div class="buttons-set form-buttons row">
+	<div class="col-xs-6">
+		<p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Go back') ?></a></p>
+	</div>
+	<div class="col-xs-6" style="text-align:right">
+		<p class="required"><?php echo $this->__('* Required Fields') ?></p>
+		<button type="submit" class="button btn btn-default" title="<?php echo $this->__('Save Address') ?>"><?php echo $this->__('Save Address') ?></button>
+	</div>
     </div>
-    <p class="required"><?php echo $this->__('* Required Fields') ?></p>
 </form>
 <script type="text/javascript">
 //<![CDATA[

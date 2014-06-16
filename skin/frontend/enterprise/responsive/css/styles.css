@@ -180,7 +180,7 @@ div.validation-passed { background:url(../images/icon_ok.gif) 100% 2px no-repeat
 span.validation-error,
 div.validation-error { background:url(../images/icon_error.gif) 100% 2px no-repeat; padding-right:20px; }
 .required em { color:#f15c22; margin-right:4px; }
-p.required {padding:5px 0 7px; color:#f02800; }
+p.required {color:#f02800; }
 /* Expiration date and CVV number validation fix */
 .v-fix { /*float:left; */ padding-bottom: 10px}
 .v-fix .validation-advice { display:block; width:12em; margin-right:-12em; position:relative; }
@@ -794,8 +794,6 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 /* Block: Account */
 .sidebar .block-account { background:#f5f5f5 url(../images/bkg_block.gif) repeat-x 0 0; }
-.sidebar .block-account .block-title { padding:26px 17px 12px; border-bottom:1px solid #d1d1d1; }
-.sidebar .block-account .block-title strong { font-size:18px; line-height:23px; color:#111; }
 .sidebar .block-account .block-content { padding:0; }
 .sidebar .block-account li { background:url(../images/bkg_dots.gif) repeat-x 0 100%; font-size:12px; padding-bottom:1px; }
 .sidebar .block-account li a { color:#666; text-decoration:none; display:block; padding:5px 13px 4px; }
@@ -1984,27 +1982,25 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 
 /* Account Login/Create Pages ============================================================ */
-.my-account .page-title{margin-left: -15px}
+.my-account .page-title{}
 .account-login { position:relative; font-size:12px; background:url(../images/bkg_cols.gif) repeat-y 266px 0; min-height:350px; margin-bottom:-20px; }
 
 .login-only { background:none; }
 .login-only .registered-users { float:none; margin:0 auto; }
 
-.account-login .new-users,
-.account-login .registered-users {padding:30px 32px 30px; }
+.account-login .new-users .content{min-height: 345px; padding: 14px 21px; background: #faf7ee; border: 1px solid #bbb6a5; }
+.account-login .registered-users .content{min-height: 345px; padding: 14px 21px; background: #faf7ee; border: 1px solid #bbb6a5; }
 .account-login .registered-users p { margin-bottom:1.5em; }
 .account-login .spacer { position:absolute; top:100%; left:447px; margin-top:-1px; width:16px; height:3px; font-size:0; line-height:0; background:#fff; overflow:hidden; }
-.account-login .fieldset h2 { margin-bottom:.5em; }
 .account-login p.required,
 .account-login .btn-only { text-align:left; padding-top: 0}
+.account-login .content h2 {font-weight: bold; margin: 0 0 14px; padding: 0 0 5px 3px; border-bottom: 1px solid #ddd; background-repeat: no-repeat; text-transform: uppercase; color: #e76200; font-size:13px}
 .account-login .btn-only a { float:left; white-space:nowrap; }
 .account-login .form-list p { padding:0 0 0 110px; }
-.account-login .form-list li.note {padding:5px 0;}
 .account-login .form-list li.control { float:left; clear:left; }
 li#remember-me-box.control { white-space:nowrap; }
 li#remember-me-box.control label { margin-right:20px; white-space:normal; }
 .account-login .form-list li.control .input-box { margin-left:113px; }
-.account-login .form-list li label{padding: 10px 0}
 li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; line-height:16px; padding-top:2px; white-space:normal; }
 
 .account-create {}
@@ -2058,8 +2054,8 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 /********** < Dashboard */
 .dashboard {}
 .dashboard .welcome-msg,
-.dashboard .col2-set{ padding: 15px;}
-.dashboard .recent-orders { background: #fff; padding: 15px; margin: 0 0 20px;}
+.dashboard .col2-set{ padding: 15px 0;}
+.dashboard .recent-orders { }
 /* Block: Tags */
 .dashboard .tags { padding:0 0 20px; }
 .dashboard .tags p { display:inline; }

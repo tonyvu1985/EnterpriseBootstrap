@@ -46,6 +46,7 @@
         <div class="fieldset">
             <div class="col2-set row">
                 <div class="col-1 registered-users col-md-6 col-sm-12">
+		<div class="content">
                     <h2 class="legend"><?php echo $this->__('Registered Customers') ?></h2>
                     <p><?php echo $this->__('If you have an account with us, log in using your email address.') ?></p>
                     <ul class="form-list">
@@ -63,22 +64,31 @@
                         </li>
                         <?php echo $this->getChildHtml('form.additional.info'); ?>
                         <li class="note">
-                            <a href="<?php echo $this->getForgotPasswordUrl() ?>"><?php echo $this->__('Forgot Your Password?') ?></a>
+				<div class="row">
+					<div class="col-md-6">
+					    <a href="<?php echo $this->getForgotPasswordUrl() ?>"><?php echo $this->__('Forgot Your Password?') ?></a>
+					</div>
+					<div class="col-md-6">
+					    <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+					</div>
+				</div>
                         </li>
                         <?php echo $this->getChildHtml('persistent.remember.me'); ?>
-                        <li class="buttons-set">
+                        <li>
                             <button type="submit" class="button btn btn-default" name="send" id="send2"><?php echo $this->__('Login') ?></button>
                         </li>
                     </ul>
-                    <p class="required"><?php echo $this->__('* Required Fields') ?></p>
                     <?php echo $this->getChildHtml('persistent.remember.me.tooltip'); ?>
+                </div>
                 </div>
                 <?php if ($this->helper('customer')->isRegistrationAllowed()): ?>
                 <div class="col-2 new-users col-md-6 col-sm-12">
+			<div class="content">
                     <h2 class="legend"><?php echo $this->__('New Customers') ?></h2>
                     <p><?php echo $this->__('By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.') ?></p>
                     <div class="buttons-set">
                         <button type="button" class="button btn btn-default" onclick="window.location='<?php echo Mage::helper('persistent')->getCreateAccountUrl($this->getCreateAccountUrl()) ?>';"><?php echo $this->__('Register') ?></button>
+                    </div>
                     </div>
                 </div>
                 <?php endif; ?>

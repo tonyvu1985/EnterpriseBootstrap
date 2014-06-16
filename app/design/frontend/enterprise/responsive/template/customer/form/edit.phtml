@@ -97,11 +97,16 @@
         </li>
     </ul>
 </div>
-<div class="buttons-set form-buttons">
-    <p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Go back') ?></a></p>
-    <button type="submit" class="button btn btn-default" title="<?php echo $this->__('Save') ?>"><?php echo $this->__('Save') ?></button>
+<div class="buttons-set form-buttons row">
+	<div class="col-xs-6">
+	    <p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Go back') ?></a></p>
+	</div>
+	<div class="col-xs-6" style="text-align:right">
+	    <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+	    <button type="submit" class="button btn btn-info" title="<?php echo $this->__('Save') ?>"><?php echo $this->__('Save') ?></button>
+	</div>
 </div>
-<p class="required"><?php echo $this->__('* Required Fields') ?></p>
+
 </form>
 <script type="text/javascript">
 //<![CDATA[
