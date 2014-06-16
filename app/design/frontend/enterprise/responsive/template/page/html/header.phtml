@@ -62,9 +62,15 @@
             <?php echo $this->getChildHtml('headerCallout') ?>
         </div> 
         <div class="quick-search col-sm-6 col-xs-12">
-            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></p>
-            <?php echo $this->getChildHtml('topSearch') ?>   
-            <?php echo $this->getChildHtml('switches') ?>
+		<div class="row">
+			<div class="col-sm-12 col-xs-6">
+				<?php echo $this->getChildHtml('switches') ?>
+			</div>
+			<div class="col-sm-12 col-xs-6">
+				<p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></p>
+			</div>
+		</div>
+		<?php echo $this->getChildHtml('topSearch') ?>   
         </div>
     </div>
     <?php echo $this->getChildHtml('topMenu') ?>

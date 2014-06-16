@@ -33,7 +33,7 @@
 ?>
               
 <?php if(count($this->getStores())>1): ?>
-    <div class="btn-group">
+    <div class="languageswitch btn-group">
         <button href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
             <span class="current language-<?php echo $this->escapeHtml(Mage::app()->getStore()->getCode()) ?>">
                 <?php echo $this->escapeHtml(Mage::app()->getStore()->getName()) ?>

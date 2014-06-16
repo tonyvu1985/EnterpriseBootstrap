@@ -26,7 +26,7 @@
 @media (min-width: 768px) and (max-width: 979px) {}
 
 @media (max-width:990px){
-  
+ .l_block, .m_block, .r_block {text-align: center; padding-top:15px} 
 }
 
 /* Landscape phone to portrait tablet */
@@ -44,12 +44,14 @@
     .navbar-collapse {max-height: none;}
     
     .block-tags{display: none}
-    
+   .main-banner1{text-align:center} 
+   .main-banner2{text-align:center; padding-top:15px} 
     /* quick access nav */
     .header-container .myaccount-text, .header-container .logout-text, .header-container .login-text, .header-container .register-text, .header-container .cart-text, .header-container .checkout-text, .header-container .wishlist-text{display: none}
     .header-container .myaccount-icon, .header-container .logout-icon, .header-container .login-icon, .header-container .register-icon, .header-container .cart-icon, .header-container .checkout-icon, .header-container .wishlist-icon{font-size: 1.5em}
     .header .logo{margin-bottom: 10px; display: block}
-    
+    .header .welcome-msg{padding-top:10px}
+    .header .languageswitch{float:left} 
     /* cart page */
     .cart .cart-collaterals{padding-right: 0}
     .cart .crosssell{margin-top: 15px}
@@ -60,6 +62,6 @@
 @media (max-width: 480px) {
     /* catalog category */
     .block-compare, .block-poll, .block-viewed, .paypal-logo, .block-wishlist{display: none}
-    
+   .usp .icon{display:none}
     .sorter .sort-by{padding-right: 0}
 }

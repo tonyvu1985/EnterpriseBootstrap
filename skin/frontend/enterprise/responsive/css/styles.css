@@ -577,7 +577,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 .list-opened { background-position:100% -129px !important; color:#d33911 !important; }
 
-.header .form-search { /*float:right; clear:right; padding:5px 0 0; white-space:nowrap; */ margin-bottom: 10px;}
+.header .form-search { margin-top: 12px;}
 .header .form-search a { text-align:left; }
 .header .form-search .search-autocomplete { z-index:999; position:relative!important; top:0 !important; left:0 !important; height:0 !important; overflow:visible !important; }
 .header .form-search .search-autocomplete ul { border:1px solid #c7c7c7; border-top:0; padding-left:0; width:210px; background-color:#fcf8f4; position:absolute; top:-1px; }
@@ -585,7 +585,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .header .form-search .search-autocomplete li .amount { float:right; font-weight:bold; }
 .header .form-search .search-autocomplete li.selected {}
 .header .form-search .search-autocomplete li.last { border-bottom:0; }
-
+.header .languageswitch{padding-bottom:11px}
 .advanced-search label{padding: 5px 0}
 .navbar-default .navbar-brand{text-decoration: none; text-transform: uppercase; font-size: 14px;}
 /********** < Navigation 
