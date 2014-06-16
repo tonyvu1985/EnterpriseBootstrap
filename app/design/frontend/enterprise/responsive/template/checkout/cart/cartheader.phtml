@@ -36,7 +36,7 @@
 <?php if ($_cartQty > 0): ?>
     <?php $_myCart = $this->__('<i class="cart-icon fa fa-shopping-cart"></i> <span class="cart-text">My Cart</span> %s', '<span>' . $_cartQty . '</span><b class="caret"></b>') ?>
 <?php else: ?>
-    <?php $_myCart = $this->__('<i class="cart-icon fa fa-shopping-cart"></i> <span class="cart-text">My Cart</span> %s', '<b class="caret"></b>') ?>
+    <?php $_myCart = $this->__('<i class="cart-icon fa fa-shopping-cart"></i> <span class="cart-text">My Cart</span>', '<b class="caret"></b>') ?>
 <?php endif ?>
 <?php if ($this->getIsLinkMode() || !$this->getIsNeedToDisplaySideBar()):?>
     <div class="block-title no-items">
@@ -81,7 +81,7 @@
                     <?php if ($this->canApplyMsrp()): ?>
                         <span class="map-cart-sidebar-total"><?php echo $this->__('ORDER TOTAL WILL BE DISPLAYED BEFORE YOU SUBMIT THE ORDER'); ?></span>
                     <?php else: ?>
-                        <span class="label"><?php echo $this->__('Cart Subtotal:') ?></span> <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?><?php if ($_subtotalInclTax = $this->getSubtotalInclTax()): ?> / <?php echo Mage::helper('checkout')->formatPrice($_subtotalInclTax) ?> <?php echo Mage::helper('tax')->getIncExcText(true) ?><?php endif; ?>
+                        <span class=""><?php echo $this->__('Cart Subtotal:') ?></span> <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?><?php if ($_subtotalInclTax = $this->getSubtotalInclTax()): ?> / <?php echo Mage::helper('checkout')->formatPrice($_subtotalInclTax) ?> <?php echo Mage::helper('tax')->getIncExcText(true) ?><?php endif; ?>
                     <?php endif; ?>
                 </p>
             <?php endif ?>
