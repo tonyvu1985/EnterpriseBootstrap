@@ -27,23 +27,41 @@
 ?>
 <?php if ($this->hasItems()): ?>
 <div class="box-collateral box-up-sell">
-    <div class="box-title">
-        <h2><?php echo $this->__('You may also be interested in the following product(s)') ?></h2>
-    </div>
-    <?php $i=0; foreach ($this->getItemCollection() as $_item): ?>
-        <?php if ($i++ % $this->getColumnCount() == 0): ?>
-            <ul class="products-grid">
-        <?php endif ?>
-                <li class="col-md-3 item<?php if (($i - 1) % $this->getColumnCount() == 0):?> first<?php elseif ($i % $this->getColumnCount() == 0):?> last<?php endif;?>">
-                    <?php
-                        $itemBlock = $this->getChild('catalog.product.upsell.item')->setItem($_item)->setPosition($i);
-                        echo $itemBlock->toHtml();
-                    ?>
-                </li>
-        <?php if ($i % $this->getColumnCount() == 0 || $i == $this->getItemsCount()): ?>
-            </ul>
-        <?php endif ?>
-    <?php endforeach; ?>
+	 <div class="col-xs-12" style="text-align: right">
+            <!-- Prev/next controls -->
+            <a class="jcarousel-prev"><i class="fa fa-angle-left fa-2x"></i></a>
+            <a class="jcarousel-next"><i class="fa fa-angle-right fa-2x"></i></a> 
+        </div>
+	<!-- Carousel -->
+	<div class="jcarousel products-grid" id="upsell-product-table">
+		<ul class="products-grid">
+		    <?php $i=0; foreach ($this->getItemCollection() as $_item): ?>
+			<li class="item<?php if (($i - 1) % $this->getColumnCount() == 0):?> first<?php elseif ($i % $this->getColumnCount() == 0):?> last<?php endif;?>">
+			    <?php
+				$itemBlock = $this->getChild('catalog.product.upsell.item')->setItem($_item)->setPosition($i);
+				echo $itemBlock->toHtml();
+			    ?>
+			</li>
+		    <?php endforeach; ?>
+		</ul>
+	</div>
     <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
 </div>
 <?php endif ?>
+
+<script>
+jQuery(function() {
+    // create instance
+    jQuery('.jcarousel').jcarousel();
+    
+    jQuery('.jcarousel-prev').click(function() {
+        jQuery('.jcarousel').jcarousel('scroll', '-=1');
+    });
+
+    jQuery('.jcarousel-next').click(function() {
+        jQuery('.jcarousel').jcarousel('scroll', '+=1');
+    });
+
+
+});
+</script>

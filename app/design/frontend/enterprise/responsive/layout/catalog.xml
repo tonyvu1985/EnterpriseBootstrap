@@ -205,6 +205,12 @@ Product view
             <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/><!--<if/><condition>can_load_calendar_js</condition>--></action>
             <action method="addItem"><type>js</type><name>calendar/calendar.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
             <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
+	    <!-- script for jcarousel -->        
+	    <action method="addCss"><stylesheet>css/jcarousel/jcarousel.skeleton.css</stylesheet></action>
+   	    <block type="core/text" name="jcarousel">
+	        <action method="setText"><text><![CDATA[<script src="http://sorgalla.com/jcarousel/dist/jquery.jcarousel.min.js" defer="defer"></script>]]></text></action>
+	    </block>
+   	    <!-- end script for jcarousel -->
         </reference>
         <reference name="content">
             <block type="catalog/product_view" name="product.info" template="catalog/product/view.phtml">
