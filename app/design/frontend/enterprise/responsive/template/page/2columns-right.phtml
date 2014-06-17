@@ -38,20 +38,30 @@
 <?php echo $this->getChildHtml('after_body_start') ?>
 <div class="wrapper">
     <?php echo $this->getChildHtml('global_notices') ?>
-    <div class="page container">
-        <?php echo $this->getChildHtml('header') ?>
-        <?php echo $this->getChildHtml('global_messages') ?>
-        <?php echo $this->getChildHtml('breadcrumbsContainer') ?>
-        <div class="main col2-right-layout">
-            <div class="col-main col-sm-9 col-xs-12">
-                <?php echo $this->getChildHtml('content') ?>
-            </div>
-            <div class="col-right sidebar col-sm-3 col-xs-12"><?php echo $this->getChildHtml('right') ?></div>
-        </div>
-        <?php echo $this->getChildHtml('footer_before') ?>
-        <?php echo $this->getChildHtml('footer') ?>
-        <?php echo $this->getChildHtml('global_cookie_notice') ?>
-        <?php echo $this->getChildHtml('before_body_end') ?>
+    <div class="page">
+	    <div class="full-container fullgrid-header">
+		    <div class="container">
+			<?php echo $this->getChildHtml('header') ?>
+			<?php echo $this->getChildHtml('global_messages') ?>
+			<?php echo $this->getChildHtml('breadcrumbsContainer') ?>
+		   </div>
+	    </div>	
+	    <div class="main col1-layout full-container fullgrid-main-container">
+		<div class="main col2-right-layout container">
+		    <div class="col-main col-sm-9 col-xs-12">
+			<?php echo $this->getChildHtml('content') ?>
+		    </div>
+		    <div class="col-right sidebar col-sm-3 col-xs-12"><?php echo $this->getChildHtml('right') ?></div>
+		</div>
+	    </div>
+	    <div class="full-container fullgrid-footer">
+		    <div class="container">
+			<?php echo $this->getChildHtml('footer_before') ?>
+			<?php echo $this->getChildHtml('footer') ?>
+			<?php echo $this->getChildHtml('global_cookie_notice') ?>
+			<?php echo $this->getChildHtml('before_body_end') ?>
+		    </div>
+	    </div>
     </div>
 </div>
 <?php echo $this->getAbsoluteFooter() ?>

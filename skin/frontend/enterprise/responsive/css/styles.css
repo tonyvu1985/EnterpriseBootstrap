@@ -92,7 +92,7 @@ ul,ol         { list-style:none; }
 .page-print { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
-.main { margin:0 0 14px; min-height:350px; text-align:left; }
+.main {min-height:350px; text-align:left; }
 .sidebar {padding-right: 0; padding-left: 0}
 
 /* Base Columns 
