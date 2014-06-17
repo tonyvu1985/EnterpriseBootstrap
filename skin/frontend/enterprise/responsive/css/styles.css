@@ -26,6 +26,7 @@
 
 .usp .table tr td{border:0}
 #tvcarousel{margin: 20px 0}
+#product-attribute-specs-table tbody tr td, #product-attribute-specs-table tbody tr th{border:0}
 * { margin:0; padding:0; }
 
 img           { border:0; vertical-align:top; }
@@ -1652,9 +1653,6 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart-table {background-color: #ffffff;}
 
 /* Shopping Cart Collateral boxes */
-.cart .cart-collaterals {padding-left:0; }
-/*.cart .cross-inside { background:url(../images/bkg_crosssell.gif) repeat-y 0 0; }
-.cart .cart-collaterals h2 { color:#000; font-weight:normal; margin:0 0 5px; }*/
 .cart .deals {padding-left: 0}
 /*.cart .deals p,
 .cart .deals label { margin:0 0 7px; display:block; }
@@ -1690,8 +1688,8 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .crosssell .add-to-links { margin:0 0 5px; }
 
 /* Shopping Cart Totals */
-
-.cart .totals { font-size:14px; background: #dee5e8; border: 1px solid #bebcb7; padding-top: 20px; float: right}
+.cart .totals {float: right; padding-left:0}
+.cart .totals .content{ font-size:14px; background: #dee5e8; border: 1px solid #bebcb7; padding-top: 20px;}
 .cart .totals table {width: 100%}
 .cart .totals table th,
 .cart .totals table td { padding:0 5px 5px; }

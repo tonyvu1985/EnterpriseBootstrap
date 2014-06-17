@@ -138,18 +138,20 @@
             <script type="text/javascript">decorateTable('shopping-cart-table')</script>
         </fieldset>
     </form>
-    <div class="col-xs-12">
+    <div class="row">
         <div class="totals col-md-4 col-sm-6 col-xs-12">
-            <?php echo $this->getChildHtml('totals'); ?>
-            <?php if(!$this->hasError()): ?>
-            <ul class="checkout-types">
-            <?php foreach ($this->getMethods('methods') as $method): ?>
-                <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
-                <li><?php echo $methodHtml; ?></li>
-                <?php endif; ?>
-            <?php endforeach; ?>
-            </ul>
-            <?php endif; ?>
+		<div class="col-xs-12 content">
+		    <?php echo $this->getChildHtml('totals'); ?>
+		    <?php if(!$this->hasError()): ?>
+		    <ul class="checkout-types">
+		    <?php foreach ($this->getMethods('methods') as $method): ?>
+			<?php if ($methodHtml = $this->getMethodHtml($method)): ?>
+			<li><?php echo $methodHtml; ?></li>
+			<?php endif; ?>
+		    <?php endforeach; ?>
+		    </ul>
+		    <?php endif; ?>
+		</div>
         </div>
 
         <div class="col-md-8 col-sm-6 col-xs-12 cart-collaterals<?php if($this->getChildHtml('crosssell')) echo ' cross-inside'; ?>">
