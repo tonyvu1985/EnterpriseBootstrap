@@ -39,7 +39,7 @@
 <div class="wrapper">
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
-        <div class="full-container" style="margin: 0 auto">
+        <div class="full-container fullgrid-header">
             <div class="container">
                 <?php echo $this->getChildHtml('header') ?>
                 <?php echo $this->getChildHtml('global_messages') ?>
@@ -47,13 +47,13 @@
             </div>
         </div>
         
-        <div class="main col1-layout container" style="margin: 0 auto">
-            <div class="col-main">
+        <div class="main col1-layout full-container fullgrid-main-container">
+            <div class="col-main container">
                 <?php echo $this->getChildHtml('content') ?>
             </div>
         </div>
         
-        <div class="full-container" style="margin: 0 auto; background: #f8f8f8x">
+        <div class="full-container fullgrid-footer">
             <div class="container">
                 <?php echo $this->getChildHtml('footer_before') ?>
                 <?php echo $this->getChildHtml('footer') ?>

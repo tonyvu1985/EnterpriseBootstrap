@@ -149,6 +149,45 @@
                             <show_in_store>1</show_in_store>
                         </bgrepeat>  
                         
+                        <fullgrid translate="label">
+                            <label><![CDATA[<span style="color:red">Full Grid background color</span>]]></label>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                
+                        </fullgrid>
+                        
+                        <fullgrid_header translate="label">
+                            <label>Header</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                             
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fullgrid_header>  
+
+                        <fullgrid_main_container translate="label">
+                            <label>Main Container</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                             
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fullgrid_main_container>
+
+                        <fullgrid_footer translate="label">
+                            <label>Footer</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>color</validate>                             
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fullgrid_footer>  
+                        
                     </fields>
                 </pagebg>      
                 
@@ -228,16 +267,6 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>                        
                         </navbar>
-                        
-                        <bgcolor translate="label"> <!-- header background color -->
-                            <label>Bg color</label>
-                            <frontend_type>text</frontend_type>
-                            <validate>color</validate>                             
-                            <sort_order>50</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>  
-                        </bgcolor>
                         
                         <link translate="label">
                             <label><![CDATA[<span style="color:red">a link</span>]]></label>
@@ -357,67 +386,6 @@
                     </fields>
                 </header>
                 
-                <body translate="label"> <!-- body -->
-                    <label>Body</label>
-                    <frontend_type>text</frontend_type>
-                    <sort_order>4</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>    
-                    <fields>
-                        <bgcolor translate="label">
-                            <label>Bg color</label>
-                            <frontend_type>text</frontend_type>
-                            <validate>color</validate>                             
-                            <sort_order>1</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>                       
-                        </bgcolor>
-                        
-                        <bgimage translate="label"> <!-- body background image -->
-                            <label>Bg image</label>                           
-                            <frontend_type>image</frontend_type>
-                            <backend_model>adminhtml/system_config_backend_image</backend_model>
-                            <upload_dir config="system/filesystem/media" scope_info="1">bgimage</upload_dir>
-                            <base_url type="media" scope_info="1">bgimage</base_url>
-                            <sort_order>2</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </bgimage>    
-                                    
-                        <bgpositionx translate="label"> <!-- background position x -->
-                            <label>Bg position x</label>
-                            <frontend_type>text</frontend_type>
-                            <sort_order>3</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </bgpositionx>
-
-                        <bgpositiony translate="label"> <!-- background position y -->
-                            <label>Bg position y</label>
-                            <fronend_type>text</fronend_type>
-                            <sort_order>4</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>        
-                        </bgpositiony>
-
-                        <bgrepeat translate="label"> <!-- background repeat -->
-                            <label>Bg repeat</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>themecustom/option_repeat</source_model>
-                            <sort_order>5</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </bgrepeat>
-                    
-                    </fields>
-                </body>
-                
                  <footer translate="label"> <!-- footer -->
                     <label>Footer</label>
                     <frontend_type>text</frontend_type>
@@ -426,16 +394,6 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>    
                     <fields>
-                        <bgcolor translate="label">
-                            <label>Bg color</label>
-                            <frontend_type>text</frontend_type>
-                            <validate>color</validate>                             
-                            <sort_order>0</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </bgcolor>
-                        
                         <title translate="label">
                             <label><![CDATA[<span style="color:red">Title</span>]]></label>
                             <frontend_type>label</frontend_type>
@@ -520,35 +478,6 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </text_size>                  
-                        
-                        <line translate="label"> <!-- line style -->
-                            <label><![CDATA[<span style="color:red">Line</span>]]></label>
-                            <frontend_type>label</frontend_type>
-                            <sort_order>12</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>                
-                        </line>
-                        
-                        <line_color translate="label"> <!-- line color -->
-                            <label>Color</label>
-                            <frontend_type>text</frontend_type>                            
-                            <validate>color</validate>                  
-                            <sort_order>14</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>                            
-                        </line_color>                  
-                        
-                        <line_size translate="label"> <!-- footer line size -->
-                            <label>Size</label>
-                            <frontend_type>text</frontend_type>                            
-                            <sort_order>15</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                            <comment>If empty, It will take 10px as default line size</comment>
-                        </line_size>                  
                         
                         <contact translate="label">
                             <label>Contact details</label>

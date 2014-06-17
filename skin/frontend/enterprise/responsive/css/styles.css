@@ -25,6 +25,7 @@
 /* Reset ================================================================================= */
 
 .usp .table tr td{border:0}
+#tvcarousel{margin: 20px 0}
 * { margin:0; padding:0; }
 
 img           { border:0; vertical-align:top; }
@@ -91,7 +92,7 @@ ul,ol         { list-style:none; }
 .page-print { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
-.main { margin:0 0 14px; min-height:350px; background-color:#fff; /*border:1px solid #cfcfcf; */text-align:left; }
+.main { margin:0 0 14px; min-height:350px; text-align:left; }
 .sidebar {padding-right: 0; padding-left: 0}
 
 /* Base Columns 
@@ -1538,7 +1539,7 @@ button.btn-cart span {}*/
 .cms-home .top-callout,
 .cms-index-index .top-callout { margin-bottom:6px; }
 .cms-home .col1-layout .col-main,
-.cms-index-index .col1-layout .col-main { padding:0; }
+/*.cms-index-index .col1-layout .col-main { padding:0; }*/
 
 .cms-index-index .col2-set {}
 .cms-home .col2-set .col-1,
