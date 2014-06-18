@@ -546,8 +546,9 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 .header-container {margin-top: 60px;}
 .header-container .navbar{min-height: 40px}
- .header-container ul.links li{text-transform: uppercase;}
- .header-container ul.links li a{color: #444}
+.menubar{margin-bottom: 0px; border:0; border-radius:0}
+.header-container ul.links li{text-transform: uppercase;}
+.header-container ul.links li a{color: #444}
 .header {margin-bottom: 20px}
 .header .logo {/* text-decoration:none !important; */}
 .quick-access {text-align: right; padding-right: 0}
