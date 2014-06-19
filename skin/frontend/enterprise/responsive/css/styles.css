@@ -312,7 +312,7 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .std .messages ul { list-style:none !important; padding-left:17px !important; margin:0 0 -11px !important; }
 
 .breadcrumbs{text-align: left}
-.breadcrumbs .breadcrumb{background-color: transparent; border-radius:0; padding: 10px 0 0 0; margin:0}
+.breadcrumbs .breadcrumb{background-color: transparent; border-radius:0; padding: 25px 0 0 0; margin:0}
 /* BreadCrumbs 
 .breadcrumbs { margin:0; padding:7px 20px 5px; background:#ededed url(../images/bkg_crumbs.gif) no-repeat 0 0; text-align:left; }
 .breadcrumbs li { display:inline; }
@@ -1634,7 +1634,6 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 /* Shopping Cart ========================================================================= */
 .cart-empty { padding:20px; background:#fff; }
 .cart {}
-.cart .title-buttons { padding-right:15px; }
 .cart .messages,
 .cart .messages li { margin:0; }
 .cart .checkout-types { float:right; text-align:center; }
@@ -1652,7 +1651,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart-table {background-color: #ffffff;}
 
 /* Shopping Cart Collateral boxes */
-.cart .deals {padding-left: 0}
+/*.cart .deals {padding-left: 0}*/
 /*.cart .deals p,
 .cart .deals label { margin:0 0 7px; display:block; }
 .cart .deals .input-text { width:140px; float:left; margin:0 5px 3px 0; }
@@ -1665,7 +1664,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .giftcard button.check-gc-status { clear:both;}*/
 
 .cart .giftcard,
-.cart .discount, .cart .shipping { margin:0 0 20px 0px; border: 1px solid #ccc; padding: 0px 10px 15px 10px;}
+.cart .discount, .cart .shipping { margin:-1px 0 0px 0px; border: 1px solid #ccc; padding: 0px 10px 15px 10px;}
 .cart .cancel-btn { margin:5px 30px 0 0; clear:left; }
  
 /*.cart .shipping select { width:256px; }
@@ -1687,8 +1686,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .crosssell .add-to-links { margin:0 0 5px; }
 
 /* Shopping Cart Totals */
-.cart .totals {float: right; padding-left:0}
-.cart .totals .content{ font-size:14px; background: #dee5e8; border: 1px solid #bebcb7; padding-top: 20px;}
+.cart .totals {font-size:14px; background: #dee5e8; border: 1px solid #bebcb7; padding-top: 20px;}
 .cart .totals table {width: 100%}
 .cart .totals table th,
 .cart .totals table td { padding:0 5px 5px; }
