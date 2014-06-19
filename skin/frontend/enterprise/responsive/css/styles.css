@@ -1632,8 +1632,6 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 
 /* Shopping Cart ========================================================================= */
-.checkout-cart-index .col-main { padding:0; }
-.checkout-cart-index .col-main .page-title { margin:0; }
 .cart-empty { padding:20px; background:#fff; }
 .cart {}
 .cart .title-buttons { padding-right:15px; }
