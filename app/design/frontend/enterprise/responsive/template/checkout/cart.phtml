@@ -138,19 +138,23 @@
             <script type="text/javascript">decorateTable('shopping-cart-table')</script>
         </fieldset>
     </form>
-	<div class="col-md-4 col-sm-12">
-	    <?php echo $this->getChildHtml('crosssell') ?>
-	    <?php echo $this->getChildHtml('coupon') ?>
+	<div class="col-md-4 col-sm-6 col-xs-12">
+		<div class="row">
+		    <?php echo $this->getChildHtml('crosssell') ?>
+		    <?php echo $this->getChildHtml('coupon') ?>
+		</div>
 	</div>
     
-	<div class="deals col-md-4 col-sm-12">
-	    <?php /* Extensions placeholder */ ?>
-	    <?php echo $this->getChildHtml('checkout.cart.extra') ?>
-	    <?php echo $this->getChildHtml('checkout_cart_widget') ?>
-	    <?php echo $this->getChildHtml('giftcards') ?>
-	    <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
+	<div class="deals col-md-5 col-sm-6 col-xs-12">
+		<div class="row">
+		    <?php /* Extensions placeholder */ ?>
+		    <?php echo $this->getChildHtml('checkout.cart.extra') ?>
+		    <?php echo $this->getChildHtml('checkout_cart_widget') ?>
+		    <?php echo $this->getChildHtml('giftcards') ?>
+		    <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
+		</div>
 	</div>
-        <div class="totals col-md-4 col-sm-12">
+        <div class="totals col-md-3 col-sm-12 col-xs-12">
 	    <?php echo $this->getChildHtml('totals'); ?>
 	    <?php if(!$this->hasError()): ?>
 	    <ul class="checkout-types">

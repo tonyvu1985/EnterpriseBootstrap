@@ -1636,7 +1636,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart {}
 .cart .messages,
 .cart .messages li { margin:0; }
-.cart .checkout-types { float:right; text-align:center; }
+.cart .checkout-types {float:right; }
 .cart .checkout-types .paypal-or { margin:0 8px; line-height:2.3; }
 .cart .checkout-types fieldset { display:inline; }
 .cart .checkout-types .btn-proceed-checkout span { background-image:url(../images/bkg_btn-co.gif); height:27px !important; padding:0 0 0 13px !important; }
@@ -1664,7 +1664,8 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .giftcard button.check-gc-status { clear:both;}*/
 
 .cart .giftcard,
-.cart .discount, .cart .shipping { margin:-1px 0 0px 0px; border: 1px solid #ccc; padding: 0px 10px 15px 10px;}
+.cart .discount, .cart .shipping {border: 1px solid #ccc; padding: 0px 10px 15px 10px;}
+.cart .shipping {margin-bottom:20px}
 .cart .cancel-btn { margin:5px 30px 0 0; clear:left; }
  
 /*.cart .shipping select { width:256px; }
@@ -1675,8 +1676,8 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .shipping .form-list .input-text,
 .cart .shipping .form-list select { display:block; float:none; }
 */
-.cart .crosssell { padding:15px; border:1px solid #cec3b6; background:#fafaec; margin-bottom: 15px}
-.cart .crosssell h2 { font-size:13px; color:#cd3800; text-transform: uppercase; margin-top: 5px}
+.cart .crosssell { padding:0 10px 20px 10px; border:1px solid #cec3b6; background:#fafaec;}
+.cart .crosssell h2 {color:#cd3800;}
 .cart .crosssell .item { padding:0 0 25px 0 ; clear: both}
 .cart .crosssell .product-image { float:left; margin:3px 0px 0 0; }
 .cart .crosssell .product-shop { margin-left:90px; }
