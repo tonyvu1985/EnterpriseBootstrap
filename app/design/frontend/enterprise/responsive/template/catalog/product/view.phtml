@@ -50,6 +50,9 @@
                         <div class="product-name">
                             <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
                         </div>
+			<?php if ($this->canEmailToFriend()): ?>
+				<a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a>
+			<?php endif; ?>
                         <p class="product-ids"><?php echo $this->__('SKU# %s', $this->escapeHtml($_product->getSku())); ?></p>
                         <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
                         <?php echo $this->getChildHtml('alert_urls') ?>
@@ -107,9 +110,6 @@
                     //]]>
                     </script>
                     <?php endif; ?>
-                    <?php if ($this->canEmailToFriend()): ?>
-                        <p class="emailto-link"><a class="btn btn-info" href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
-                    <?php endif; ?>
                     </div>
                     
                     
@@ -133,7 +133,7 @@
       <li class="active"><a href="#relatedproduct" data-toggle="tab">Related products</a></li>
       <li><a href="#upsells" data-toggle="tab">Upsells products</a></li>
       <li><a href="#tags" data-toggle="tab">Product Tags</a></li>
-      <li><a href="#additional" data-toggle="tab">Additional data</a></li>
+      <!--<li><a href="#additional" data-toggle="tab">Additional data</a></li>-->
     </ul>
     
     <div id="ProductTabContent" class="tab-content">
@@ -146,9 +146,9 @@
          <div class="tab-pane fade" id="tags">
             <?php echo $this->getChildHtml('productTagList') ?>
          </div>
-         <div class="tab-pane fade" id="additional">
-            <?php echo $this->getChildHtml('product_additional_data') ?>
-         </div>
+<!--         <div class="tab-pane fade" id="additional">
+            <?php //echo $this->getChildHtml('product_additional_data') ?>
+         </div>-->
     </div>
 </div>
 

@@ -4,6 +4,7 @@
     Author     : tony vu
     Description: Mega menu
 */
+.yamm{margin-bottom: 0px; border:0; border-radius:0}
 .yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown{position: static; text-align: left}
 .yamm .container{position: relative;}
 .yamm .dropdown-menu{left: auto;}

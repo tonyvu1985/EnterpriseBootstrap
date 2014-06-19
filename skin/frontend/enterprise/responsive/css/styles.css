@@ -312,6 +312,7 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .std .messages ul { list-style:none !important; padding-left:17px !important; margin:0 0 -11px !important; }
 
 .breadcrumbs{text-align: left}
+.breadcrumbs .breadcrumb{background-color: transparent; border-radius:0; padding: 10px 0 0 0; margin:0}
 /* BreadCrumbs 
 .breadcrumbs { margin:0; padding:7px 20px 5px; background:#ededed url(../images/bkg_crumbs.gif) no-repeat 0 0; text-align:left; }
 .breadcrumbs li { display:inline; }
@@ -544,7 +545,7 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .logo {/* float:left; */ text-align: left}
 .free-shipping { float:left; margin:15px 0 0 10px; display:inline; }
 
-.header-container {margin-top: 60px;}
+.header-container {margin-top: 40px;}
 .header-container .navbar{min-height: 40px}
 .menubar{margin-bottom: 0px; border:0; border-radius:0}
 .header-container ul.links li{text-transform: uppercase;}
@@ -1007,7 +1008,6 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 #messages_product_view .messages li { margin:0; position:relative; z-index:1; }
 
 .product-collateral {clear: both}
-.product-collateral .emailto-link {padding-top: 15px }
 .box-collateral {padding-top:20px}
 .box-collateral .box-title { padding:5px 20px 5px;}
 /*.box-collateral .note{padding-left: 20px}*/
@@ -1075,7 +1075,7 @@ p.product-image { cursor:default !important; }
 .jqZoomWindow { border:1px solid #ccc; background-color:#fff; }
 
 /* Product Shop */
-.product-view .product-shop {}
+.product-view .product-shop .no-rating{margin:0}
 .product-view .product-shop .product-main-info {/* margin:0 -30px 30px; padding:20px 30px 5px;*/  }
 .product-view .product-shop p,
 .product-view .product-shop .ratings { margin:10px 0; }
@@ -1223,7 +1223,7 @@ a.minimal-price-link:hover { text-decoration:underline; }
 
 /* Add to Links */
 .add-to-links { margin:5px 0 0; }
-.add-to-links li { margin-right:5px; float:left}
+.add-to-links li { margin-right:8px; float:left}
 .add-to-links li a{color: #1b6800}
 /* Add to Cart 
 .add-to-cart {}
