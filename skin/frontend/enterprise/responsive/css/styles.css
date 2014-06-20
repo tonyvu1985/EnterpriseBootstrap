@@ -176,11 +176,11 @@ button.disabled span { cursor:default !important; color:#bbb !important; }
 .product-options .validation-error .options-list,
 .validation-failed { border:1px solid #f47d4e !important; background:#fff7f5 !important; }
 input.input-text.validation-failed,
-textarea.validation-failed { background:#fff7f5 url(../images/bkg_input-failed.gif) 0 0 repeat-x !important; }
+textarea.validation-failed { }
 span.validation-passed,
-div.validation-passed { background:url(../images/icon_ok.gif) 100% 2px no-repeat; padding-right:20px; }
+div.validation-passed {padding-right:20px; }
 span.validation-error,
-div.validation-error { background:url(../images/icon_error.gif) 100% 2px no-repeat; padding-right:20px; }
+div.validation-error {/* padding-right:20px; */}
 .required em { color:#f15c22; margin-right:4px; }
 p.required {color:#f02800; }
 /* Expiration date and CVV number validation fix */
@@ -294,16 +294,15 @@ a.back-link { color:#999; }
 .messages a { text-decoration:underline; }
 .messages a:hover { text-decoration:none; }*/
 
-.messages li.notice-msg { border-style:solid !important; border-width:1px !important; font-size:12px !important; }
-p.error-msg { border-style:solid !important; padding:10px; border-width:1px !important; font-size:12px !important; margin:10px 0; }
+.messages li.notice-msg, p.error-msg {padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;background-color: #fcf8e3; border-color: #faebcc; color: #8a6d3b;}
 /* Error Message */
 .messages li.error-msg { background-color: #f2dede; border-color: #ebccd1; color: #a94442; padding: 15px; margin-bottom: 20px; border: 1px solid transparent;}
 .messages li.error-msg a { color:#d91a00; }
 .messages li.error-msg ul { /* background-image:url(../images/bkg_msg-error.gif); */ }
 p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 /* Success Message */
-.messages li.success-msg {padding: 5px; border: 1px solid transparent; border-radius: 4px; background-color: #dff0d8; border-color: #d6e9c6; color: #3c763d;}
-.messages li.note-msg {padding: 5px; border: 1px solid #fcd344; border-radius: 4px; background-color: #fafaec; border-color: #d6e9c6; color: #3d6611;}
+.messages li.success-msg {padding: 15px; border: 1px solid transparent; border-radius: 4px; background-color: #dff0d8; border-color: #d6e9c6; color: #3c763d;}
+.messages li.note-msg {padding: 15px; border: 1px solid #fcd344; border-radius: 4px; background-color: #fafaec; border-color: #d6e9c6; color: #3d6611;}
 
 
 /* std class reset */
@@ -780,7 +779,6 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 .sidebar .block li a.btn-remove { overflow:hidden; }
 .sidebar .block li a.btn-previous { background:url(../images/bkg_icon-back.png) no-repeat 0 0; }
 
-.col-main .block { background:#fff; }
 .col-main .block .block-title { background:#e7e7e7 url(../images/bkg_block-title.gif) repeat-x 0 0; border:1px solid #e1e1e1; padding:5px 20px 5px; margin:0 -1px; }
 .col-main .block .block-title h2,
 .col-main .block .block-title h3 { font-size:14px; line-height:1.2; color:#000333; font-weight:bold; }
@@ -1004,7 +1002,6 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 .product-view {/* background:#fff url(../images/bkg_cols.gif) repeat-y 279px 0; border-top:1px solid #cfcfcf; margin:-1px -20px -20px; float:left; width:938px; */}
 #messages_product_view { position:relative; z-index:1; }
-#messages_product_view .messages { margin:0 0 1px; }
 #messages_product_view .messages li { margin:0; position:relative; z-index:1; }
 
 .product-collateral {clear: both}
@@ -1634,8 +1631,6 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 /* Shopping Cart ========================================================================= */
 .cart-empty { padding:20px; background:#fff; }
 .cart {}
-.cart .messages,
-.cart .messages li { margin:0; }
 .cart .checkout-types {float:right; }
 .cart .checkout-types .paypal-or { margin:0 8px; line-height:2.3; }
 .cart .checkout-types fieldset { display:inline; }
@@ -1648,7 +1643,6 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart-table .item-msg { font-size:10px; }
 .cart-table thead th { vertical-align:bottom; }
 .cart-table tbody td { padding:12px; }
-.cart-table {background-color: #ffffff;}
 
 /* Shopping Cart Collateral boxes */
 /*.cart .deals {padding-left: 0}*/
@@ -1735,11 +1729,10 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 /* One Page */
 .checkout-onepage-index .col-main { padding:20px 0 0; }
 
-.opc-wrapper {margin-top: -20px}
-.opc-wrapper .page-title { margin:0; position:relative; z-index:1; }
 .opc-wrapper .page-title .callout { position:absolute; top:7px; right:20px; z-index:1; }
 
 /* Block: Checkout Progress */
+.opc-progress-container{padding:0}
 .opc-progress-container .opc-block-progress {margin-top: 15px}
 .opc-progress-container .opc-block-progress  .panel-heading{text-transform: uppercase}
 .opc-progress-container .opc-block-progress .panel-body{padding: 0}
@@ -1750,7 +1743,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .opc-progress-container .block-progress .cards-list dd { padding:0; }
 .opc-progress-container .block-progress .cards-list .info-table th { font-weight:normal; }
 
-/*.opc { float:right; width:755px; }*/
+.opc {padding-right:0; }
 .opc li.section { position:relative; }
 .opc .step-title { margin:0 0 1px; }
 .opc .step-title .number { display:none; }
@@ -1759,7 +1752,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .opc .allow .step-title h2 { background-color:#656565; color:#fff; cursor:pointer; }
 .opc .active {}
 .opc .active .step-title { margin:0 0 0; padding:0 0 0 0; }
-.opc .active .step-title h2 { background:#d12c01 ; color:#fff; text-transform:capitalize; font-weight:normal; border-bottom:1px solid #cfcfcf; cursor:default; font-size:16px; padding:10px 14px; line-height:24px; }
+.opc .active .step-title h2 { background:#d12c01 ; font-weight:normal; font-size:12px; padding:10px 14px;}
 .opc .step { padding:20px; min-height:300px; font-size:12px; background:#fcfcfc; border-top:0; }
 .opc .step .tool-tip { right:10px; }
 .opc .order-review {}

@@ -39,7 +39,6 @@
     <?php echo $this->getChildHtml('form_fields_before')?>
     <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
     <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="form-validate" enctype="multipart/form-data">
-        <div class="fieldset col-xs-12">
             <input type="hidden" name="success_url" value="<?php echo $this->getSuccessUrl() ?>" />
             <input type="hidden" name="error_url" value="<?php echo $this->getErrorUrl() ?>" />
             <h2 class="legend"><?php echo $this->__('Personal Information') ?></h2>
@@ -78,7 +77,6 @@
                 <?php echo $customerAttributes->toHtml()?>
             <?php endif;?>
             </ul>
-        </div>
         <div class="divider"></div>
     <?php if($this->getShowAddressFields()): ?>
         <div class="fieldset">
@@ -163,7 +161,6 @@
         </div>
         <div class="divider"></div>
     <?php endif; ?>
-        <div class="fieldset col-xs-12">
             <h2 class="legend"><?php echo $this->__('Login Information') ?></h2>
             <ul class="form-list">
                 <li class="fields">
@@ -184,12 +181,11 @@
                 <?php echo $this->getChildHtml('persistent.remember.me'); ?>
             </ul>
             <?php echo $this->getChildHtml('persistent.remember.me.tooltip'); ?>
-        </div>
         <div class="buttons-set form-buttons row">
             <p class="back-link col-xs-6"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
             <div class="col-xs-6" style="text-align: right">
-                <button type="submit" class="button btn btn-default" title="<?php echo $this->__('Submit') ?>"><?php echo $this->__('Submit') ?></button>
                 <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+                <button type="submit" class="button btn btn-default" title="<?php echo $this->__('Submit') ?>"><?php echo $this->__('Submit') ?></button>
             </div>
         </div>
         <?php if (Mage::helper('checkout')->isContextCheckout()): ?>

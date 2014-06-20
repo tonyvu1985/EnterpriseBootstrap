@@ -146,13 +146,11 @@
 	</div>
     
 	<div class="deals col-md-5 col-sm-6 col-xs-12">
-		<div class="row">
 		    <?php /* Extensions placeholder */ ?>
 		    <?php echo $this->getChildHtml('checkout.cart.extra') ?>
 		    <?php echo $this->getChildHtml('checkout_cart_widget') ?>
 		    <?php echo $this->getChildHtml('giftcards') ?>
 		    <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
-		</div>
 	</div>
         <div class="totals col-md-3 col-sm-12 col-xs-12">
 	    <?php echo $this->getChildHtml('totals'); ?>
