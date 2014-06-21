@@ -49,6 +49,9 @@ $_product = $this->getProduct();
                         <div class="product-name">
                             <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
                         </div>
+			<?php if ($this->canEmailToFriend()): ?>
+			    <p><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
+			<?php endif; ?>
                         <p class="product-ids"><?php echo $this->__('SKU#%s',$this->escapeHtml($_product->getSku())); ?></p>
                         <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
                         <?php echo $this->getChildHtml('product_type_data') ?>
@@ -56,12 +59,6 @@ $_product = $this->getProduct();
                     </div>
                     <?php echo $this->getChildHtml('tierprices') ?>
                     <?php echo $this->getChildHtml('extrahint') ?>
-                    <?php //echo $this->getChildHtml('customize_button') ?>
-                    <?php if (!$this->hasOptions()):?>
-                        <?php if($_product->isSaleable()): ?>
-                            <button type="button" onclick="window.location='<?php echo Mage::getBaseUrl().$_product->getRequestPath();?>?startcustomization=1'" class="button btn-cart btn btn-danger"><?php echo $this->__("Customize and Add to Cart") ?></button>
-                        <?php endif; ?>
-                    <?php endif; ?>
                     <?php echo $this->getChildHtml('addto') ?>
 
                     <?php if ($_product->getShortDescription()):?>
@@ -105,9 +102,6 @@ $_product = $this->getProduct();
                     //]]>
                     </script>
                 <?php endif; ?>
-                <?php if ($this->canEmailToFriend()): ?>
-                    <p class="emailto-link"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
-                <?php endif; ?>
             </div>
             <div class="clearer"></div>
             <?php echo $this->getChildHtml('relatedProducts') ?>
@@ -125,7 +119,6 @@ $_product = $this->getProduct();
             <div id="options-container">
                 <div id="customizeTitle" class="page-title title-buttons">
                     <h1><?php echo $this->__('Customize %s', $_helper->productAttribute($_product, $_product->getName(), 'name')) ?></h1>
-               <!--     <a href="#" onclick="Enterprise.Bundle.end(); return false;"><small>&lsaquo;</small> Go back to product detail</a>-->
                 </div>                
                 <?php if ($this->getChildChildHtml('container1')):?>
                     <?php echo $this->getChildChildHtml('container1', '', true, true) ?>

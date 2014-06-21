@@ -55,6 +55,8 @@
     /* cart page */
     .cart .cart-collaterals{padding-right: 0}
     .cart .crosssell{margin-top: 15px}
+    .cart .deals{padding:0}
+    .cart .giftcard{margin-top:-1px}
 }
  
 /* Landscape phones and down */

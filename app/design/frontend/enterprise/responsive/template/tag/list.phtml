@@ -38,7 +38,7 @@
     <?php endif; ?>
     <form id="addTagForm" action="<?php echo $this->getFormAction(); ?>" method="get">
         <div class="form-add">
-		<label for="productTagName"><?php echo $this->__('Add Your Tags:') ?></label>
+		<p for="productTagName"><?php echo $this->__('Add Your Tags:') ?></p>
 		<input type="text" class="input-text required-entry form-control" name="productTagName" id="productTagName" />
 		<button type="button" style="margin:10px 0" title="<?php echo $this->__('Add Tags') ?>" class="button btn btn-default" onclick="submitTagForm()">
 			<?php echo $this->__('Add Tags') ?>
