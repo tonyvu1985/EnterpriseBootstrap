@@ -79,7 +79,7 @@ $_product = $this->getProduct();
                         <li class="active"><a href="#details" data-toggle="tab"><?php echo $this->__('Details') ?></a></li>
                     <?php endif;?>
                     <?php if($_additional):?>
-                        <dt class="tab"><a href="#aditionalinfo"><?php echo $this->__('Additional Information') ?></a></dt>
+                        <li><a href="#aditionalinfo"><?php echo $this->__('Additional Information') ?></a></li>
                     <?php endif;?>
                     </ul>
 			<div id="ProductInfo" class="tab-content">
@@ -103,6 +103,7 @@ $_product = $this->getProduct();
 	<?php $_upsells = $this->getChildHtml('upsell_products') ?>
 	<?php $_tags= $this->getChildHtml('productTagList') ?>
 	<?php $_additionaldata = $this->getChildHtml('product_additional_data') ?>
+	<div class="col-xs-12">
      <ul id="myTab" class="nav nav-tabs" style="margin-top:20px;">
 	<?php if($_relatedproduct) : ?>
 	      <li><a href="#relatedproduct" data-toggle="tab">Related products</a></li>
@@ -143,7 +144,7 @@ $_product = $this->getProduct();
 		 </div>
 	<?php endif; ?>
     </div>
-	
+	</div>
         </div>
         <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
             <?php echo $this->getBlockHtml('formkey') ?>
@@ -153,7 +154,7 @@ $_product = $this->getProduct();
             </div>
             <?php if ($_product->isSaleable() && $this->hasOptions()): ?>
             <div id="options-container">
-                <div id="customizeTitle" class="page-title title-buttons">
+                <div id="customizeTitle" class="page-title col-xs-12" style="padding-left:15px">
                     <h1><?php echo $this->__('Customize %s', $_helper->productAttribute($_product, $_product->getName(), 'name')) ?></h1>
                 </div>                
                 <?php if ($this->getChildChildHtml('container1')):?>
