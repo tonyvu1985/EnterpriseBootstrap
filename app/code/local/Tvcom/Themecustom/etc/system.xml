@@ -426,7 +426,7 @@
                         <link translate="label">
                             <label><![CDATA[<span style="color:red">a link</span>]]></label>
                             <frontend_type>label</frontend_type>
-                            <sort_order>4</sort_order>
+                            <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>                
@@ -436,7 +436,7 @@
                             <label>Color</label>
                             <frontend_type>text</frontend_type>
                             <validate>color</validate>                  
-                            <sort_order>5</sort_order>
+                            <sort_order>15</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -445,7 +445,7 @@
                         <link_size translate="label"> <!-- footer link color -->
                             <label>Font size</label>
                             <frontend_type>text</frontend_type>                            
-                            <sort_order>6</sort_order>
+                            <sort_order>26</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -454,7 +454,7 @@
                         <text translate="label"> <!-- text style -->
                             <label><![CDATA[<span style="color:red">Text</span>]]></label>
                             <frontend_type>label</frontend_type>
-                            <sort_order>7</sort_order>
+                            <sort_order>37</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>                
@@ -464,7 +464,7 @@
                             <label>Color</label>
                             <frontend_type>text</frontend_type>
                             <validate>color</validate>                  
-                            <sort_order>8</sort_order>
+                            <sort_order>48</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -473,7 +473,7 @@
                         <text_size translate="label"> <!-- footer link color -->
                             <label>Font size</label>
                             <frontend_type>text</frontend_type>                            
-                            <sort_order>10</sort_order>
+                            <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -482,7 +482,7 @@
                         <contact translate="label">
                             <label>Contact details</label>
                             <frontend_type>textarea</frontend_type>                            
-                            <sort_order>20</sort_order>
+                            <sort_order>70</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -492,7 +492,7 @@
                         <socialshare translate="label">
                             <label><![CDATA[<span style="color:red">Social share</span>]]></label>
                             <frontend_type>label</frontend_type>
-                            <sort_order>30</sort_order>
+                            <sort_order>80</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>                
@@ -501,7 +501,7 @@
                         <facebook translate="label"> <!-- facebook link -->
                             <label>Facebook link</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>40</sort_order>
+                            <sort_order>90</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>    
@@ -511,7 +511,7 @@
                         <twitter translate="label"> <!-- twitter link -->
                             <label>Twitter link</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>60</sort_order>
+                            <sort_order>100</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>    
@@ -521,7 +521,7 @@
                         <youtube translate="label"> <!-- youtube link -->
                             <label>Youtube link</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>70</sort_order>
+                            <sort_order>110</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>    
