@@ -26,33 +26,36 @@
 ?>
 
 <?php $_product = $this->getProduct() ?>
-<div id="bundleSummary" class="block bundle-summary col-md-6 col-xs-12">
-    <div class="product">
-        <div class="block-title">
-            <h2><?php echo $this->__('Your Customization'); ?></h2>
+<div id="bundleSummary" class="block bundle-summary col-md-5 col-xs-12">
+    <div class="product panel panel-default">
+        <div class="block-title panel-heading">
+            <?php echo $this->__('Your Customization'); ?>
         </div>
         <img class="product-image no-display" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(58); ?>" width="58" height="58" alt="<?php echo $this->escapeHtml($this->getImageLabel($_product, 'small_image')) ?>" />
-        <div class="product-details">
+        <div class="product-details panel-body">
             <h3 class="product-name no-display"><?php echo $this->escapeHtml($_product->getName()) ?></h3>
             <?php if($_product->getIsSalable()): ?>
                 <p class="availability in-stock"><?php echo $this->__('Availability') ?>: <span><?php echo $this->__('In stock') ?></span></p>
             <?php else: ?>
                 <p class="availability out-of-stock"><?php echo $this->__('Availability') ?>: <span><?php echo $this->__('Out of stock') ?></span></p>
             <?php endif; ?>
+        <?php echo $this->getChildHtml('', true, true);?>
         </div>
         <div class="clearer"></div>
-        <?php echo $this->getChildHtml('', true, true);?>
     </div>
-    <div class="block-content summary">
-        <h4><?php echo $this->__('Summary'); ?></h4>
-        <ul class="no-display" id="bundle-summary-template">
-           <li><strong class="label">{{label}}:</strong>{{options}}</li>
-        </ul>
-        <div class="no-display" id="bundle-summary-option-template"> <?php echo $this->__('%s x %s', '{{qty}}', '{{name}}') ?></div>
-        <div class="no-display" id="bundle-summary-option-multi-template"><div><?php echo $this->__('%s x %s', '{{qty}}', '{{name}}') ?></div></div>
-        <ul id="bundle-summary">
-            <li class="no-display">&nbsp;</li>
-        </ul>
-
+    <div class="summary panel panel-default">
+	<div class="panel-heading block-title">
+		<?php echo $this->__('Summary'); ?>
+	</div>
+	<div class="panel-body">
+		<ul class="no-display" id="bundle-summary-template">
+		   <li><strong class="label">{{label}}:</strong>{{options}}</li>
+		</ul>
+		<div class="no-display" id="bundle-summary-option-template"> <?php echo $this->__('%s x %s', '{{qty}}', '{{name}}') ?></div>
+		<div class="no-display" id="bundle-summary-option-multi-template"><div><?php echo $this->__('%s x %s', '{{qty}}', '{{name}}') ?></div></div>
+		<ul id="bundle-summary">
+		    <li class="no-display">&nbsp;</li>
+		</ul>
+	</div>
     </div>
 </div>

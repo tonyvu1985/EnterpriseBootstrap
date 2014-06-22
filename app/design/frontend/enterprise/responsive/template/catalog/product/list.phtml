@@ -64,7 +64,7 @@
                         <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>" class="link-learn"><?php echo $this->__('Learn More') ?></a>
                     </div>
                     <?php if($_product->isSaleable()): ?>
-                        <button style="float:left" type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart btn btn-default" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><?php echo $this->__('Add to Cart') ?></button>
+                        <button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart btn btn-default" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><?php echo $this->__('Add to Cart') ?></button>
 
                     <?php else: ?>
                         <?php if ($_product->getIsSalable()): ?>
@@ -73,7 +73,7 @@
                             <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
                         <?php endif; ?>
                     <?php endif; ?>
-                        <ul class="add-to-links" style="float:left; margin:7px 0px 0 10px">
+                        <ul class="add-to-links">
                             <?php if ($this->helper('wishlist')->isAllow()) : ?>
                                 <li><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>" class="link-wishlist"><i class="fa fa-gift fa-lg"></i></a></li>
                             <?php endif; ?>
@@ -108,7 +108,7 @@
             <?php echo $this->getPriceHtml($_product, true) ?>
             <div class="actions">
                 <?php if($_product->isSaleable()): ?>
-                    <button style="float:left" type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart btn btn-default" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><?php echo $this->__('Add to Cart') ?></button>
+                    <button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart btn btn-default" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><?php echo $this->__('Add to Cart') ?></button>
                 <?php else: ?>
                     <?php if ($_product->getIsSalable()): ?>
                         <p class="availability in-stock"><span><?php echo $this->__('In stock') ?></span></p>
@@ -116,7 +116,7 @@
                         <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
                     <?php endif; ?>
                 <?php endif; ?>
-                    <ul class="add-to-links" style="float:left; margin:7px 0px 0 10px;">
+                    <ul class="add-to-links">
                         <?php if ($this->helper('wishlist')->isAllow()) : ?>
                             <li><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>" class="link-wishlist"><i class="fa fa-gift fa-lg"></i></a></li>
                         <?php endif; ?>
