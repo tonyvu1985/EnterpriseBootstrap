@@ -1353,9 +1353,8 @@ button.btn-cart span {}*/
 #options-container .product-options-bottom p.required { padding:5px 0 0; width:auto; clear:both; text-align:right; }
 .moving-now {}
 
-.bundle-summary .product-details p.availability { font-weight:normal; margin:28px 0 0;}
+.bundle-summary .product-details p.availability { font-weight:normal;}
 .bundle-summary .product-details p.availability span{ color:#1e75b4}
-.bundle-summary .price-box { margin-bottom:35px; }
 .bundle-summary .price-box .price-as-configured .price { font-weight:normal; }
 .bundle-summary .price-box .price-as-configured .price-label {margin-right:10px; }
 .bundle-summary .product-name { font-size:16px; color:#111; }
@@ -1363,7 +1362,7 @@ button.btn-cart span {}*/
 .bundle-summary .product .add-to-links .clickable > strong,
 .bundle-summary .product .add-to-links li { display:inline-block; }
 .bundle-summary .product .add-to-links li:first-child { margin-right:10px; }
-.bundle-summary .summary ul { margin:6px 0 10px; }
+.bundle-summary .summary ul { margin:0px 0 10px; }
 .bundle-summary .summary li {margin:0; padding:11px 0 7px; }
 .bundle-summary .summary .last { background:none; padding-bottom:0; }
 
