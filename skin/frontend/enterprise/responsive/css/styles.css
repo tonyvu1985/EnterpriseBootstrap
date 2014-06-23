@@ -499,7 +499,7 @@ ul.links li.last .separator { display:none; }
 .std table[border="0"] { border-width:0; }
 .std table[border="0"] th,
 .std table[border="0"] td { border-width:0; }
-ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-repeat 0 0.5em; }
+ul.disc li { /*padding-left:10px;*/ }
 .std ul.disc li { padding-left:0; background:none; }
 
 /* Misc */
@@ -1286,10 +1286,10 @@ button.btn-cart span {}*/
 .options-container-small .product-pricing { display:none; }
 .options-container-small .price-box { display:none; }
 .options-container-small .add-to-cart { padding:13px 15px 0 0 !important; }
-.options-container-small .product-options-bottom p.required { padding:0 0 0 90px; width:auto; float:left; clear:left; text-align:left; }
+.options-container-small .product-options-bottom p.required {text-align:left; }
 .options-container-small dt { clear:left; float:left; line-height:1.2; width:8em; padding:9px 5px 3px 0; }
 .options-container-small dd { float:left; width:275px; border-bottom:0; padding:0; margin:0 0 8px; }
-.options-container-small .product-options { margin:0 0 0; }
+.options-container-small .product-options { margin:0; padding-left:0 }
 
 /* Options after product info column */
 .options-container-big { clear:both; background:#fff; padding:20px; border-top:1px solid #cfcfcf; border-width:1px 0; }
