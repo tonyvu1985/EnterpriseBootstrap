@@ -85,14 +85,14 @@
                                 <?php echo $this->escapeHtml($_rate->getErrorMessage()) ?>
                            <?php else: ?>
                                 <input name="estimate_method" type="radio" value="<?php echo $_rate->getCode() ?>" id="s_method_<?php echo $_rate->getCode() ?>"<?php if($_rate->getCode()===$this->getAddressShippingMethod()) echo ' checked="checked"' ?> class="radio" />
-                                <label for="s_method_<?php echo $_rate->getCode() ?>"><?php echo $this->escapeHtml($_rate->getMethodTitle()) ?>
+                                <span style="line-height:25px" for="s_method_<?php echo $_rate->getCode() ?>"><?php echo $this->escapeHtml($_rate->getMethodTitle()) ?>
                                 <?php $_excl = $this->getShippingPrice($_rate->getPrice(), $this->helper('tax')->displayShippingPriceIncludingTax()); ?>
                                 <?php $_incl = $this->getShippingPrice($_rate->getPrice(), true); ?>
                                 <?php echo $_excl; ?>
                                 <?php if ($this->helper('tax')->displayShippingBothPrices() && $_incl != $_excl): ?>
                                     (<?php echo $this->__('Incl. Tax'); ?> <?php echo $_incl; ?>)
                                 <?php endif; ?>
-                                </label>
+                                </span>
                            <?php endif ?>
                         </li>
                     <?php endforeach; ?>

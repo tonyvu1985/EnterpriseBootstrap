@@ -45,7 +45,7 @@
                 <div class="product-shop">
                     <h3 class="product-name"><a href="<?php echo $this->getProductUrl($_item) ?>"><?php echo $this->escapeHtml($_item->getName()) ?></a></h3>
                     <?php echo $this->getPriceHtml($_item, true) ?>
-                    <p><button class="button btn-cart btn btn-default btn-xs" onclick="setLocation('<?php echo $this->getAddToCartUrl($_item) ?>')" type="button"><?php echo $this->__('Add to Cart') ?></button></p>
+                    <p><button class="button btn-cart btn btn-default" onclick="setLocation('<?php echo $this->getAddToCartUrl($_item) ?>')" type="button"><?php echo $this->__('Add to Cart') ?></button></p>
                     <ul class="add-to-links">
                         <?php if ($this->helper('wishlist')->isAllow()) : ?>
                         <li><a href="<?php echo $this->getAddToWishlistUrl($_item) ?>" class="link-wishlist"><i class="fa fa-gift fa-lg"></i></a></li>
