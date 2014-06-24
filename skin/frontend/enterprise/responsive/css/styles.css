@@ -808,11 +808,10 @@ ul.disc li { /*padding-left:10px;*/ }
 .sidebar .block-layered-nav .block-subtitle { display:none; }
 .sidebar .block-layered-nav .block-content { padding:0; }
 .sidebar .block-layered-nav dl { padding:10px 14px 17px 17px; }
-.sidebar .block-layered-nav dt { margin:2px 0 0; font-weight:bold; font-size:12px; color:#222; }
+.sidebar .block-layered-nav dt {font-weight:bold; text-transform:uppercase; }
 .sidebar .block-layered-nav dd { margin:0 0 13px; color:#666; }
 .sidebar .block-layered-nav dd.last { margin:0; }
 .sidebar .block-layered-nav dd li { margin:2px 0; }
-.sidebar .block-layered-nav dd a { color:#222; text-decoration:none; }
 .sidebar .block-layered-nav dd a:hover { text-decoration:underline; }
 .sidebar .block-layered-nav .currently { padding:10px 10px 10px 17px; /*margin-bottom:-1px; background:#f4f4f4; */}
 .sidebar .block-layered-nav .currently .block-subtitle { display:block; margin-bottom:5px; }
@@ -1085,7 +1084,7 @@ p.product-image { cursor:default !important; }
 .product-view .product-shop .price-box .price-as-configured .price-label { font-size:12px; }
 .product-view .product-shop .price-box .price-as-configured .price { color:#e55100; font-size:14px; }
 .product-view .product-shop .price-box .price-including-tax .price,
-.product-view .product-shop .price-box .regular-price .price { color:#111; font-size:14px; }
+.product-view .product-shop .price-box .regular-price .price {/* color:#111; font-size:14px; */}
 .product-view .product-shop .price-box .special-price .price-label,
 .product-view .product-shop .price-box .special-price .price { font-size:14px; }
 .product-view .product-shop .price-box .price-as-configured .price-including-tax .price { color:#e55100; }
@@ -1136,7 +1135,7 @@ p.product-image { cursor:default !important; }
 .price { white-space:nowrap !important; }
 
 .price-box {}
-.price-box .price { font-weight:bold; }
+.price-box .price { font-weight:normal; color:#d12c01}
 
 .price-box-bundle {}
 
@@ -1195,7 +1194,7 @@ a.minimal-price-link:hover { text-decoration:underline; }
 .price-incl-tax .price { display:block; font-weight:bold; }
 
 /* Price range */
-.price-from {}
+.price-from {margin-bottom:0}
 .price-from .price-label { white-space:nowrap; }
 .price-from .price { white-space:nowrap; }
 .price-to {}
@@ -1221,7 +1220,7 @@ a.minimal-price-link:hover { text-decoration:underline; }
 /* Add to Links */
 .add-to-links { margin:10px 0 0; }
 .add-to-links li { margin-right:8px; float:left}
-.add-to-links li a{color: #ef5d24}
+.add-to-links li .link-wishlist{color: #ef5d24}
 /* Add to Cart 
 .add-to-cart {}
 .add-to-cart label { font-size:12px; vertical-align:middle; font-weight:bold; margin-right:5px; text-transform:capitalize; }

@@ -39,11 +39,11 @@
         <div class="view-mode col-xs-6">
             <?php $_modes = $this->getModes(); ?>
             <?php if($_modes && count($_modes)>1): ?>
-            <?php echo $this->__('View') ?>
+            <?php echo $this->__('View as:') ?>
             <?php $_i=1; $_fix=''; foreach ($this->getModes() as $_code=>$_label): ?>
                 <?php if ($_i==1 && strtolower($_code)=='list') $_fix='-fix'; ?>
                 <?php if($this->isModeActive($_code)): ?>
-                    <strong class="<?php echo strtolower($_code); echo $_fix; ?>" title="<?php echo $_label ?>"><?php echo $_label ?></strong>
+                    <span class="<?php echo strtolower($_code); echo $_fix; ?>" title="<?php echo $_label ?>"><?php echo $_label ?></span>
                 <?php else: ?>
                     <a class="<?php echo strtolower($_code); echo $_fix; ?>" title="<?php echo $_label ?>" href="<?php echo $this->getModeUrl($_code) ?>"><?php echo $_label ?></a>
                 <?php endif; ?>
