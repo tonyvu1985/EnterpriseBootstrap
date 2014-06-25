@@ -26,6 +26,11 @@
 ?>
 <div class="footer-container">
     <div class="footer row">
+       <div class="col-md-3 col-sm-6 col-xs-12"> <!-- col 1 -->
+		<p class="title">Contact Details</p>
+		<?php echo Mage::getStoreConfig('setting/footer/contact', Mage::app()->getStore()->getId()); ?>
+	</div>
+ 
         <div class="col-md-3 col-sm-6 col-xs-12">
             <?php echo $this->getChildHtml('newsletter') ?>
         </div>
@@ -36,10 +41,6 @@
         <div class="footer-links col-md-3 col-sm-6 col-xs-12">
             <h5 class="title">customer cares</h5>
             <?php echo $this->getChildHtml('footer_links')?>
-        </div>
-        
-        <div class="footer-store-switcher col-md-3 col-sm-6 col-xs-12">
-            <?php echo $this->getChildHtml('store_switcher')?>
         </div>
     </div>
 </div>

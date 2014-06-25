@@ -550,8 +550,8 @@ ul.disc li { /*padding-left:10px;*/ }
 .header-container ul.links li{text-transform: uppercase;}
 .header-container ul.links li a{color: #444}
 .header {margin-bottom: 20px}
-.header .logo {/* text-decoration:none !important; */}
-.quick-access {text-align: right;}
+.header-container .welcome-msg{margin-right:10px}
+.quick-access {text-align: right; padding-top:10px}
 .quick-access .links { /*float:right; line-height:18px; white-space:nowrap; */}
 .quick-access .links li { margin: 0 6px}
 .quick-access .links li a {text-transform:normal; text-decoration:none; font-weight: normal; color: #444}
@@ -561,10 +561,9 @@ ul.disc li { /*padding-left:10px;*/ }
 .quick-access .cart-link li {padding:0}
 /*.quick-search .dropdown-menu{float: right; left: auto; right: 0}*/
 .quick-search{text-align: right}
-.user-info{padding-top: 10px; text-align: left}
+.user-info{padding-top: 10px; padding-left:15px; text-align: left}
 .user-info  li.first{padding-right: 10px}
 /*.user-info a{color:#d12c01}*/
-.quick-access{}
 #cartHeader{color: #444; text-transform: uppercase}
 #cartHeader:hover{color:#d12c01}
 #popId-languageSelect li{text-align: left}
@@ -894,7 +893,7 @@ ul.disc li { /*padding-left:10px;*/ }
 .block-list .block-content ol { margin:-5px -13px; }
 .block-list li.item { padding:0px 5px 0px 13px; }
 .block-list .actions { padding:5px 0 0; }
-.sidebar .block-list .product-name { font:normal 11px/1.25 Arial, Helvetica, sans-serif; color:#444; }
+.sidebar .block-list .product-name { font:normal 12px/1.25 Arial, Helvetica, sans-serif; color:#444; }
 .sidebar .block-list .product-name a:HOVER { color:#d12c01; }
 
 /* Block: Poll */
@@ -2156,7 +2155,7 @@ p.wishlist-empty {border:1px solid #d0d0d0;}
 #wishlists-select strong { background:none; padding-right:0; padding-left:7px; font-weight:normal; font-size:12px; text-transform:none; }
 #wishlists-select strong span { font-weight:bold; }
 #wishlists-select .change { text-indent:0; width:auto; background:none; margin-left:4px; border:0; right:auto; left:100%; text-decoration:none; line-height:19px; margin-top:1px; }
-#wishlists-select .change span { color:#1e75b4; text-transform:none; background:url(../images/bkg_header-panel.gif) no-repeat scroll 100% -74px transparent; padding-right:10px; }
+#wishlists-select .change span { color:#1e75b4; text-transform:none; padding-right:10px; }
 #wishlists-select.active .change span { color:#d33911; background-position:100% -130px; }
 #wishlists-select .list-container { right:auto; left:0; margin-top:4px; }
 #wishlists-select .list-container ul { background:#e7e7e7; border:0; }
