@@ -27,6 +27,7 @@
 
 @media (max-width:990px){
  .l_block, .m_block, .r_block {text-align: center; padding-top:15px} 
+ .img-responsive{display:inline-block}
 }
 
 /* Landscape phone to portrait tablet */
