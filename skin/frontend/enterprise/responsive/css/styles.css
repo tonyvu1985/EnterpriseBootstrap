@@ -954,8 +954,7 @@ ul.disc li { /*padding-left:10px;*/ }
 
 /* View Type: Grid */
 .products-grid {/* padding:0 0 0 20px; margin:0 0 40px 0; */}
-.products-grid li.item {padding: 12px 10px 10px} 
-.products-grid li.last {/* margin-right:0; */}
+.products-grid li.item {padding: 12px 10px 10px; text-align: center} 
 .products-grid .actions {}
 .products-grid .product-image {/* display:block; text-decoration:none !important; margin:0 auto 10px; position:relative; width:135px; */}
 .products-grid .product-name { margin-bottom:7px; word-wrap:break-word; }
