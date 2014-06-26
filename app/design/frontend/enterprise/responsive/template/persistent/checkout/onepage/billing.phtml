@@ -215,13 +215,17 @@
         <input type="hidden" name="billing[use_for_shipping]" value="1" />
     <?php endif; ?>
 </fieldset>
-<div class="buttons-set form-buttons btn-only" id="billing-buttons-container">
+<div class="row">
+<div class="col-xs-6">
+	<p class="required"><?php echo $this->__('* Required Fields') ?></p>
+</div>
+<div class="form-buttons btn-only col-xs-6" id="billing-buttons-container">
     <button type="button" class="button btn btn-default" onclick="billing.save()"><?php echo $this->__('Continue') ?></button>
     <span id="billing-please-wait" class="please-wait" style="display:none;">
         <img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>" alt="" class="v-middle" /> <?php echo $this->__('Loading next step...') ?>
     </span>
 </div>
-<p class="required"><?php echo $this->__('* Required Fields') ?></p>
+</div>
 </form>
 <script type="text/javascript">
 //<![CDATA[
