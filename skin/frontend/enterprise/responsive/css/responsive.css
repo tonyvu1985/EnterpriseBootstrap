@@ -36,6 +36,7 @@
 }
 @media (max-width: 767px) {
     .cart > form{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; border: 1px solid #dddddd; display: inline-block}
+    #checkout-review-table-wrapper #checkout-review-table{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; border: 1px solid #dddddd; display: inline-block}
     .my-wishlist #wishlist-view-form {width: 100%; overflow-y: hidden; overflow-x: scroll;  display: inline-block}
     .cart-table .product-name{margin-top: 0}
     /* My Dashboard */

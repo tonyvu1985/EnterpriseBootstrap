@@ -145,7 +145,7 @@ select.multiselect option:last-child { border-top:0; }
 textarea { overflow:auto; resize:vertical; }
 textarea.default-value { color:#ddd; }
 input.radio,
-input.checkbox {/* margin-right:3px; font-size:11px !important; margin-top:2px; vertical-align:top;*/ display: inline-block}
+input.checkbox {display: inline-block; float:left; margin-right:5px}
 /*input.radio { font-size:10px !important; }
 input.qty { width:2.5em !important; }*/
 input.disabled { background:#f6f6f6 !important; color:#bbb !important; }
@@ -215,11 +215,11 @@ ul.add-row .btn-remove,
 
 .form-list .add-field .input-box { /*margin-left:240px */}
 .form-list .control { position:relative; vertical-align:top; z-index:1; } /* row with checkbox or radio button */
-.form-list .control label { line-height:16px; }
+.form-list .control label { line-height:27px; }
 /*.form-list .control .input-box { position:absolute; left:0; margin-left:240px; line-height:16px; padding-top:1px; }*/
 .form-list .control input.radio { margin-top:3px; }
 
-.form-alt label { float:none; display:inline; width:auto; }
+.form-alt label {display:inline; line-height:27px; }
 .form-alt li { margin:0 0 5px; line-height:16px; }
 /*.form-alt select { width:496px; }
 .form-alt .input-box { width:496px; margin-top:5px; padding-bottom:11px; }
@@ -956,7 +956,7 @@ ul.disc li { /*padding-left:10px;*/ }
 .products-grid {/* padding:0 0 0 20px; margin:0 0 40px 0; */}
 .products-grid li.item {padding: 12px 10px 10px; text-align: center} 
 .products-grid .actions {}
-.products-grid .product-image {/* display:block; text-decoration:none !important; margin:0 auto 10px; position:relative; width:135px; */}
+.products-grid .product-image {display:inline-block;}
 .products-grid .product-name { margin-bottom:7px; word-wrap:break-word; }
 /*.products-grid .ratings { text-align:left; }*/
 .products-grid .rating-links { display:block; padding:2px 0 0; clear:both; }
@@ -1584,7 +1584,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 /* Content Styles ================================================================= */
 .product-name { font-size:12px; font-weight:bold; color:#333; }
-.product-name a { color:#333; text-decoration:none; font-weight: normal }
+.product-name a {text-decoration:none; font-weight: normal }
 .product-name a:hover { color:#333; text-decoration:none; }
 
 /* Product Tags */
@@ -1735,19 +1735,16 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .opc .order-review {}
 .opc .order-review .authentication { margin:0 auto; width:570px; }
 .opc .order-review .warning-message { color:#222; font-weight:bold; text-align:center; padding:10px 10px 0; }
-.opc .form-list .control label{padding: 4px 0px 0px 10px}
-.opc input[type="radio"], .opc input[type="checkbox"]{float: left}
+.opc input[type="radio"], .opc input[type="checkbox"]{/*float: left*/}
 .opc .address-select{position: relative; z-index: 2; float: left; width: 100%; margin-bottom: 0;padding: 10px 5px; margin: 10px 0px;}
+.opc [title="State/Province"]{margin:10px 0; width:100%; font-size: 14px; line-height: 1.428571429; color: #555; vertical-align: middle; border-radius: 0px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075); box-shadow: inset 0 1px 1px rgba(0,0,0,0.075); -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; padding: 6px 12px; background:# fff !important}
+.opc [title="Country"]{margin:10px 0; width:100%; font-size: 14px; line-height: 1.428571429; color: #555; vertical-align: middle; border-radius: 0px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075); box-shadow: inset 0 1px 1px rgba(0,0,0,0.075); -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; padding: 6px 12px; background:# fff !important}
 /* Steps 
-.opc .form-alt .input-box { width:695px; }
-.opc .form-alt .input-box select { width:695px; }*/
 
 #checkout-step-login { height:auto !important; min-height:0 !important; padding:0; }
 #checkout-step-login .col2-set { padding:20px 20px 30px; background:#fcfcfc url(../images/bkg_cols.gif) repeat-y 195px 0; height:auto !important; min-height:0 !important; }
 #checkout-step-login .login-only { background-image:none; }
 #checkout-step-login h4 { font-size:16px; color:#000; font-weight:normal; margin:0 0 15px; }
-#checkout-step-login .col2-set .col-1 {}
-#checkout-step-login .col2-set .col-2 { width:338px; }
 #checkout-step-login .col2-set .col-2 .radio { margin-right:5px; }
 #checkout-step-login .col2-set .col-2 li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-repeat 0 0.5em; }
 #checkout-step-login .col2-set .col-2 .form-list li { background:none; padding-left:0; }
@@ -1767,7 +1764,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .opc .buttons-set
 .opc .form-buttons { width:auto; text-align:right; }
 .opc .buttons-set p.back-link { text-align:left;}
-.opc .form-buttons { width:auto; text-align:right; }
+.opc .form-buttons {text-align:right; }
 .opc .buttons-set .button,
 .opc .form-buttons .button { float:right; margin:0; }
 
@@ -1835,11 +1832,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .sp-methods dt {clear: both}
 .sp-methods dd { margin:0 0 7px; }
 .sp-methods dd li { margin:5px 0; }
-.sp-methods .price {}
-.sp-methods label{margin: 4px 0 0 10px}
-.sp-methods .form-list {/* padding-left:20px; margin:15px 0; */}
-.sp-methods .form-list select { width:256px; }
-.sp-methods .form-list label { width:155px; }
+.sp-methods label{margin: 4px 0 0 0px}
 
 .sp-methods select.month { width:150px; margin-right:10px; }
 .sp-methods select.year { width:96px; }
