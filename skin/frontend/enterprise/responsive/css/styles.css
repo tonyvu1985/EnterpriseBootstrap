@@ -959,7 +959,7 @@ ul.disc li { /*padding-left:10px;*/ }
 .products-grid .actions {}
 .products-grid .product-image {/* display:block; text-decoration:none !important; margin:0 auto 10px; position:relative; width:135px; */}
 .products-grid .product-name { margin-bottom:7px; word-wrap:break-word; }
-.products-grid .ratings { text-align:left; }
+/*.products-grid .ratings { text-align:left; }*/
 .products-grid .rating-links { display:block; padding:2px 0 0; clear:both; }
 .products-grid .price-box { margin:5px 0 10px; clear:both; }
 
@@ -1102,10 +1102,7 @@ p.product-image { cursor:default !important; }
 .rating-box .rating { float:left; height:13px; background:url(../images/bkg_rating.gif) 0 0 repeat-x; }
 .ratings { margin:5px 0; }
 .ratings .rating-box { float:left; margin-right:5px; }
-.ratings .amount { font-size:12px; }
 .ratings .rating-links { margin:0; font-size:11px; }
-.ratings .rating-links a { text-decoration:underline; }
-.ratings .rating-links a:hover { text-decoration:none; }
 .ratings .rating-links .separator { margin:0 3px; }
 .ratings dt {}
 .ratings dd {}
