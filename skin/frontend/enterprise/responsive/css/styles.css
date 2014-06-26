@@ -550,7 +550,7 @@ ul.disc li { /*padding-left:10px;*/ }
 .header-container ul.links li{text-transform: uppercase;}
 .header-container ul.links li a{color: #444}
 .header {margin-bottom: 20px}
-.header-container .welcome-msg{margin-right:10px}
+.header-container .welcome-msg{margin-right:10px; background: #ccc; padding: 5px 10px; text-transform: uppercase;}
 .quick-access {text-align: right; padding-top:10px}
 .quick-access .links { /*float:right; line-height:18px; white-space:nowrap; */}
 .quick-access .links li { margin: 0 6px}
@@ -1967,7 +1967,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .account-login .btn-only { text-align:left; padding-top: 0}
 .account-login .content h2 {font-weight: bold; margin: 0 0 14px; padding: 0 0 5px 3px; border-bottom: 1px solid #ddd; background-repeat: no-repeat; text-transform: uppercase; color: #e76200; font-size:13px}
 .account-login .btn-only a { float:left; white-space:nowrap; }
-.account-login .form-list p { padding:0 0 0 110px; }
+.account-login .form-list p.required { text-align:right; }
 .account-login .form-list li.control { float:left; clear:left; }
 li#remember-me-box.control { white-space:nowrap; }
 li#remember-me-box.control label { margin-right:20px; white-space:normal; }
