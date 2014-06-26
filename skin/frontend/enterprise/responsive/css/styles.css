@@ -550,7 +550,7 @@ ul.disc li { /*padding-left:10px;*/ }
 .header-container ul.links li{text-transform: uppercase;}
 .header-container ul.links li a{color: #444}
 .header {margin-bottom: 20px}
-.header-container .welcome-msg{margin-right:10px; text-transform: uppercase;}
+.header-container .welcome-msg{margin-right:10px; text-transform: uppercase; color:#888}
 .quick-access {text-align: right; padding-top:10px}
 .quick-access .links { /*float:right; line-height:18px; white-space:nowrap; */}
 .quick-access .links li { margin: 0 6px}
