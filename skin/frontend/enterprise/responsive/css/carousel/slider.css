@@ -29,5 +29,5 @@
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-
-.carousel-inner .item {width: 100%; height: 400px; background-position: center center;}
+.carousel-inner .bg {background-repeat:no-repeat; background-size:cover;}
+.carousel-inner .item {height: 400px; background-position: center center; background-repeat:no-repeat}
