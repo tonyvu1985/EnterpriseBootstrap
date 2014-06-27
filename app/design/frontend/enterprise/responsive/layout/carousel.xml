@@ -5,7 +5,7 @@
         <reference name="head">
             <action method="addCss"><stylesheet>css/carousel/slider.css</stylesheet></action>
         </reference>
-        <reference name="content">
+        <reference name="header">
             <block type="core/template" name="carousel" before="" template="carousel/slider.phtml" />
         </reference>
     </cms_index_index>

@@ -55,9 +55,9 @@
     <?php
         foreach (glob($path_folder) as $filename) {
             if($j == 0){
-               echo '<div class="item active"><img src="' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . '" /><div class="carousel-caption"></div></div>' ;
+               echo '<div class="item active" style="background:url(' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . ')" /><div class="carousel-caption"></div></div>' ;
             }else{
-               echo '<div class="item"><img src="' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . '" /><div class="carousel-caption"></div></div>' ;
+               echo '<div class="item" style="background:url(' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . ')" /><div class="carousel-caption"></div></div>' ;
             }   
             $j++;
         }
