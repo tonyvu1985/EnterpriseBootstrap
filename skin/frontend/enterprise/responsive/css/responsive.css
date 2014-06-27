@@ -66,5 +66,6 @@
     /* catalog category */
     .block-compare, .block-poll, .block-viewed, .paypal-logo, .block-wishlist{display: none}
    .usp .icon{display:none}
-    .sorter .sort-by{padding-right: 0}
+   .sorter .sort-by{padding-right: 0}
+   .sorter .sort-by .input-group-addon{display:none}
 }

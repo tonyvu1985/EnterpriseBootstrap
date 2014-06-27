@@ -34,12 +34,12 @@
 <?php if($this->getCollection()->getSize()): ?>
 <div class="toolbar">
     <?php if( $this->isExpanded() ): ?>
-    <div class="sorter col-xs-12">
+    <div class="sorter row">
         <?php if( $this->isEnabledViewSwitcher() ): ?>
         <div class="view-mode col-xs-6">
             <?php $_modes = $this->getModes(); ?>
             <?php if($_modes && count($_modes)>1): ?>
-            <?php echo $this->__('View as:') ?>
+            <?php echo $this->__('View') ?>
             <?php $_i=1; $_fix=''; foreach ($this->getModes() as $_code=>$_label): ?>
                 <?php if ($_i==1 && strtolower($_code)=='list') $_fix='-fix'; ?>
                 <?php if($this->isModeActive($_code)): ?>
@@ -53,18 +53,20 @@
         <?php endif; ?>
 
         <div class="sort-by col-xs-6">
-            <?php echo $this->__('Sort') ?>
-            <select onchange="setLocation(this.value)">
-            <?php foreach($this->getAvailableOrders() as $_key=>$_order): ?>
-                <option value="<?php echo $this->getOrderUrl($_key, 'asc') ?>"<?php if($this->isOrderCurrent($_key)): ?> selected="selected"<?php endif; ?>>
-                    <?php echo $this->__($_order) ?>
-                </option>
-            <?php endforeach; ?>
-            </select>
+		<div class="input-group" style="display:inline-table; width:90%">
+		    <span class="input-group-addon">Sort</span>
+		    <select class="form-control" onchange="setLocation(this.value)">
+		    <?php foreach($this->getAvailableOrders() as $_key=>$_order): ?>
+			<option value="<?php echo $this->getOrderUrl($_key, 'asc') ?>"<?php if($this->isOrderCurrent($_key)): ?> selected="selected"<?php endif; ?>>
+			    <?php echo $this->__($_order) ?>
+			</option>
+		    <?php endforeach; ?>
+		    </select>
+		</div>
             <?php if($this->getCurrentDirection() == 'desc'): ?>
-                <a href="<?php echo $this->getOrderUrl(null, 'asc') ?>"><i class="fa fa-long-arrow-down"></i></a>
+                <a href="<?php echo $this->getOrderUrl(null, 'asc') ?>"><i class="fa fa-long-arrow-down fa-lg"></i></a>
             <?php else: ?>
-                <a href="<?php echo $this->getOrderUrl(null, 'desc') ?>"><i class="fa fa-long-arrow-up"></i></a>
+                <a href="<?php echo $this->getOrderUrl(null, 'desc') ?>"><i class="fa fa-long-arrow-up fa-lg"></i></a>
             <?php endif; ?>
         </div>
     </div>

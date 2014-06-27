@@ -387,7 +387,7 @@ p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .sorter .view-mode a.grid-fix { background-position:-24px -58px; }
 .sorter .view-mode strong.grid-fix { background-position:-24px -87px;; }
 .sorter .link-feed {}*/
-.sorter .view-mode{}
+.sorter .view-mode{margin-top:10px}
 .sorter .sort-by { text-align: right }
 /* Toolbar  */
 .toolbar { margin:10px 0; }
@@ -548,14 +548,12 @@ ul.disc li { /*padding-left:10px;*/ }
 .header-container .navbar{min-height: 40px}
 .menubar{margin-bottom: 0px; border:0; border-radius:0}
 .header-container ul.links li{text-transform: uppercase;}
-.header-container ul.links li a{color: #444}
 .header {margin-bottom: 20px}
 .header-container .welcome-msg{margin-right:10px; text-transform: uppercase; color:#888}
 .quick-access {text-align: right; padding-top:10px}
 .quick-access .links { /*float:right; line-height:18px; white-space:nowrap; */}
 .quick-access .links li { margin: 0 6px}
-.quick-access .links li a {text-transform:normal; text-decoration:none; font-weight: normal; color: #444}
-.quick-access .links li a:hover { color:#d33911; }
+.quick-access .links li a {text-transform:normal; text-decoration:none; font-weight: normal; }
 .quick-access .checkout-link{display: inline-block}
 .quick-access .checkout-link li {padding:0px; }
 .quick-access .cart-link li {padding:0}
@@ -564,8 +562,8 @@ ul.disc li { /*padding-left:10px;*/ }
 .user-info{padding-top: 10px; padding-left:15px; text-align: left}
 .user-info  li.first{padding-right: 10px}
 /*.user-info a{color:#d12c01}*/
-#cartHeader{color: #444; text-transform: uppercase}
-#cartHeader:hover{color:#d12c01}
+#cartHeader{color: #428bca; text-transform: uppercase}
+#cartHeader:hover{color:#2a6496}
 #popId-languageSelect li{text-align: left}
 #popId-languageSelect li.current{padding: 3px 20px}
 #popId-languageSelect li.current span{color: #ccc}
@@ -794,7 +792,7 @@ ul.disc li { /*padding-left:10px;*/ }
 .info-table td { padding:2px 0; }
 
 /* Block: Account */
-.sidebar .block-account { background:#f5f5f5 url(../images/bkg_block.gif) repeat-x 0 0; }
+.sidebar .block-account { background:#f5f5f5; }
 .sidebar .block-account .block-content { padding:0; }
 .sidebar .block-account li { background:url(../images/bkg_dots.gif) repeat-x 0 100%; font-size:12px; padding-bottom:1px; }
 .sidebar .block-account li a { color:#666; text-decoration:none; display:block; padding:5px 13px 4px; }
