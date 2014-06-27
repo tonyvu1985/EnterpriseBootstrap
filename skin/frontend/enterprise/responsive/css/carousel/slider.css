@@ -30,4 +30,4 @@
   z-index: 2;
 }
 .carousel-inner .bg {background-repeat:no-repeat; background-size:cover;}
-.carousel-inner .item {height: 400px; background-position: center center; background-repeat:no-repeat}
+.carousel-inner .item {height: 500px; background-position: center center; background-repeat:no-repeat}
