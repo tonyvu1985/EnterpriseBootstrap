@@ -41,9 +41,11 @@
             <h5 class="title">customer cares</h5>
 		<table class="table">
 		    <tr><!-- row 1 -->
-			<td>
-			    <?php echo $this->getChildHtml('cms_footer_links') ?>
-			</td>
+			<?php if($this->getChildHtml('cms_footer_links')): ?>
+                        <td>
+                                <?php echo $this->getChildHtml('cms_footer_links') ?>
+                        </td>
+                        <?php endif; ?>
 		    </tr>
 		    <tr><!-- row 2 -->
 			<td>
