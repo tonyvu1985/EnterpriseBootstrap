@@ -810,7 +810,7 @@ ul.disc li { /*padding-left:10px;*/ }
 .sidebar .block-layered-nav dd li { margin:2px 0; }
 .sidebar .block-layered-nav dd a:hover { text-decoration:underline; }
 .sidebar .block-layered-nav .currently { padding:10px 10px 10px 17px; /*margin-bottom:-1px; background:#f4f4f4; */}
-.sidebar .block-layered-nav .currently .block-subtitle { display:block; margin-bottom:5px; }
+.sidebar .block-layered-nav .currently .block-subtitle { display:block; margin-bottom:5px; font-weight:normal }
 .sidebar .block-layered-nav .currently li { padding:5px 26px 5px 0; color:#444; position:relative; z-index:1; }
 .sidebar .block-layered-nav .currently li .btn-remove { position:absolute; right:-7px; top:4px; }
 .sidebar .block-layered-nav .currently li .btn-previous { position:absolute; right:12px; top:4px; }
@@ -895,8 +895,8 @@ ul.disc li { /*padding-left:10px;*/ }
 
 /* Block: Poll */
 .block-poll li { margin:5px 0; }
-.block-poll input.radio { float:left; margin:-2px 0px 0 0; vertical-align:top; }
-.block-poll label { display:block; margin-left:18px; }
+/*.block-poll input.radio { float:left; margin:-2px 0px 0 0; vertical-align:top; }
+.block-poll label { display:block; margin-left:18px; }*/
 .block-poll .answer {}
 .block-poll .votes { float:right; font-weight:bold; margin-left:10px; }
 
