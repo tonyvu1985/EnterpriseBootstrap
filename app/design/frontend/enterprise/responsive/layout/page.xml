@@ -85,9 +85,6 @@ Default layout, loads most of the pages
                     <action method="setElementClass"><value>top-container</value></action>
                 </block>
                 <block type="page/html_welcome" name="welcome" as="welcome"/>
-                
-		<!-- social network share -->
-		<block type="core/template" name="social.network" template="tvtheme/networkshare.phtml" />
             </block>
 
 

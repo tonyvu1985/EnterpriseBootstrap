@@ -34,13 +34,29 @@
         <div class="col-md-3 col-sm-6 col-xs-12">
             <?php echo $this->getChildHtml('newsletter') ?>
         </div>
-        <div class="footer-cms-links col-md-3 col-sm-6 col-xs-12">
-            <h5 class="title">cms links</h5>
-            <?php echo $this->getChildHtml('cms_footer_links') ?>
+        <div class="footer-social-share col-md-3 col-sm-6 col-xs-12">
+	    <?php echo $this->getChildHtml('social.network') ?>
         </div>
         <div class="footer-links col-md-3 col-sm-6 col-xs-12">
             <h5 class="title">customer cares</h5>
-            <?php echo $this->getChildHtml('footer_links')?>
+		<table class="table">
+		    <tr><!-- row 1 -->
+			<td>
+			    <?php echo $this->getChildHtml('cms_footer_links') ?>
+			</td>
+		    </tr>
+		    <tr><!-- row 2 -->
+			<td>
+			    <?php echo $this->getChildHtml('footer_links') ?>
+			</td>
+		    </tr>
+		    <tr><!-- row 3 -->
+			<td>
+			    <address><?php echo $this->getCopyright() ?></address>
+			    <img src="http://magento-demo.net/MAG171/skin/frontend/default/MAG090172/images/payment-img.png" alt="">
+			</td>
+		    </tr>
+		</table>
         </div>
     </div>
 </div>

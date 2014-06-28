@@ -77,6 +77,8 @@
                 <action method="setListModes"/>
                 <action method="setListCollection"/>
             </block>            
+	    <!-- scroll up to the top -->
+            <block type="core/template" name="scroll.up" template="tvtheme/scroll-up.phtml" />
         </reference>
     </catalogsearch_result_index>
 

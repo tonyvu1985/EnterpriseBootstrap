@@ -40,6 +40,8 @@ Default layout, loads most of the pages
             <block type="cms/block" name="cms_footer_links" as="cms_footer_links" after="footer_links">
                 <action method="setBlockId"><block_id>footer_links</block_id></action>
             </block>
+	    <!-- social network share -->
+            <block type="core/template" name="social.network" template="tvtheme/networkshare.phtml" />
         </reference>
     </default>
 

@@ -22,10 +22,13 @@
  * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://www.magentocommerce.com/license/enterprise-edition
  */
-/* Reset ================================================================================= */
+/* Tvcom css ================================================================================= */
 
 .usp .table tr td{border:0}
 #product-attribute-specs-table tbody tr td, #product-attribute-specs-table tbody tr th{border:0}
+#scroll-div {display: none; position: fixed; bottom: 20px; right: 5%; z-index: 100;}
+.footer-social-share{margin-bottom:15px}
+/* End Tvcom css ================================================================================= */
 * { margin:0; padding:0; }
 
 img           { border:0; vertical-align:top; }
@@ -2335,7 +2338,7 @@ p.link-widget-sku a { color:#999; }
 /*.footer ul,
 .footer ul.links { display:block; float:left; }*/
 .footer ul.links li,
-.footer ul li { display:block; }
+.footer ul li { display:inline; padding: 0 10px 0 0}
 .footer h5{text-transform: uppercase; margin-top: 0; font-weight: normal; font-size: 11px; color: #d12c01}
 address.copyright { margin-top:6px; }
 .footer-links{padding-bottom: 15px}
