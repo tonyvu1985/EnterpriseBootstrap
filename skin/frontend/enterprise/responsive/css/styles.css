@@ -801,7 +801,7 @@ ul.disc li { /*padding-left:10px;*/ }
 .sidebar .block-layered-nav .block-subtitle { display:none; }
 .sidebar .block-layered-nav .block-content { padding:0; }
 .sidebar .block-layered-nav dl { padding:10px 14px 17px 17px; }
-.sidebar .block-layered-nav dt {font-weight:bold; text-transform:uppercase; }
+.sidebar .block-layered-nav dt {font-weight:normal; text-transform:uppercase; }
 .sidebar .block-layered-nav dd { margin:0 0 13px; color:#666; }
 .sidebar .block-layered-nav dd.last { margin:0; }
 .sidebar .block-layered-nav dd li { margin:2px 0; }
