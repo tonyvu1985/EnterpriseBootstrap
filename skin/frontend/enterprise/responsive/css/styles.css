@@ -566,9 +566,6 @@ ul.disc li { /*padding-left:10px;*/ }
 #popId-languageSelect li{text-align: left}
 #popId-languageSelect li.current{padding: 3px 20px}
 #popId-languageSelect li.current span{color: #ccc}
-#invitation-send-link { background:url(../images/bkg_sep.gif) no-repeat 100% 50%; padding:0 6px 0 0; margin:0 4px 0 0; }
-#invitation-send-link a { background:url(../images/bkg_invitation-link.gif) no-repeat 3px 0px; padding-left:23px; display:inline-block; }
-.send-invitation-div{padding-right: 0; text-align: right}
 #invitation-send-link a, x:-moz-any-link { background-position:3px -2px; }/* FireFox 2 fix */
 #invitation-send-link a, x:-moz-any-link, x:default { background-position:3px 6px; }/* FireFox 3 restore */
 .invitation-row{margin-bottom: 10px}
@@ -1602,7 +1599,6 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 
 /* Shopping Cart ========================================================================= */
-.cart-empty { padding:20px; background:#fff; }
 .cart {}
 .cart .checkout-types {float:right; }
 .cart .checkout-types .paypal-or { margin:0 8px; line-height:2.3; }
@@ -1921,11 +1917,6 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .checkout-onepage-success .col-main p { margin:0 0 10px; }
 /********** Common Checkout Styles > */
 /* ======================================================================================= */
-
-
-/* Invitation page ======================================================================= */
-#invitationForm p.required { padding-bottom:20px; }
-#invitationForm .back-link{padding-left: 0}
 
 /* Compare popup ========================================================================= 
 .catalog-product-compare-index tr.last a,

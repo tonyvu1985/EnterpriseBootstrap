@@ -57,11 +57,11 @@
         </ul>
         <?php endif;?>
     </div>
-    <div class="buttons-set form-buttons row">
+    <div class="form-buttons row">
         <p class="back-link col-xs-6"><a href="<?php echo Mage::helper('enterprise_invitation')->getCustomerInvitationUrl() ?>"><small>&laquo; </small><?php  echo Mage::helper('enterprise_invitation')->__('Back to Invitations') ?></a></p>
-        <div class="col-xs-6 send-invitation-div">
-            <button class="button btn btn-default btn-sm" type="submit"><?php echo Mage::helper('enterprise_invitation')->__('Send Invitations') ?></button>
+        <div class="col-xs-6 text-right">
             <p class="required"><?php echo Mage::helper('enterprise_invitation')->__('* Required Fields') ?></p>
+            <button class="button btn btn-default" type="submit"><?php echo Mage::helper('enterprise_invitation')->__('Send Invitations') ?></button>
         </div>
     </div>
 
