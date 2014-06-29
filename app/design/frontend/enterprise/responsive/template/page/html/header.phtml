@@ -47,7 +47,7 @@
         <div class="branding col-sm-6 col-xs-12">
 	<!-- company logo -->
             <?php if(Mage::getStoreConfig('setting/header/logo', Mage::app()->getStore()->getId()) != ''): ?>
-            <a href="<?php echo $this->getBaseUrl(); ?>"><img class="img-responsive" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'logo/' . Mage::getStoreConfig('setting/header/logo') ?>" alt="<?php echo Mage::getStoreConfig('setting/header/logoalt') ?>"></a>
+            <a href="<?php echo $this->getBaseUrl(); ?>"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'logo/' . Mage::getStoreConfig('setting/header/logo') ?>" alt="<?php echo Mage::getStoreConfig('setting/header/logoalt') ?>"></a>
             <?php else: ?>
                 <a class="navbar-brand" href="<?php echo $this->getBaseUrl(); ?>">Logo Example Here</a>
             <?php endif; ?>
