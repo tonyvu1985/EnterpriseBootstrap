@@ -33,11 +33,13 @@
 /* Landscape phone to portrait tablet */
 @media (min-width:768px){
     .navbar-default .navbar-brand, .navbar-inverse .navbar-brand{display: none;}
-	.sort-by .input-group{display:inline-table; width:50%}
+	.sort-by .input-group{display:inline-table; width:65%}
 }
 @media (max-width: 767px) {
-	.sort-by .input-group{display:inline-table; width:90%}
+    .sort-by .input-group{display:inline-table; width:90%}
     .cart > form{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; border: 1px solid #dddddd; display: inline-block}
+    #product-review-table{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; border: 1px solid #dddddd; display: inline-block}
+    #reward-history{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; border: 1px solid #dddddd; display: inline-block}
     #checkout-review-table-wrapper #checkout-review-table{width: 100%; overflow-y: hidden; overflow-x: scroll; padding: 10px; border: 1px solid #dddddd; display: inline-block}
     .my-wishlist #wishlist-view-form {width: 100%; overflow-y: hidden; overflow-x: scroll;  display: inline-block}
     .cart-table .product-name{margin-top: 0}
@@ -70,4 +72,6 @@
    .usp .icon{display:none}
    .sorter .sort-by{padding-right: 0}
    .sorter .sort-by .input-group-addon{display:none}
+   /* product list */
+   .products-list .product-shop {margin-left: 0; clear: both;}
 }

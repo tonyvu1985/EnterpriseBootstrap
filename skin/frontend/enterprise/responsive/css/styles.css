@@ -2223,7 +2223,7 @@ p.wishlist-empty {border:1px solid #d0d0d0;}
 .my-rewards dl dt { font-weight:bold; font-size:13px; margin-top:10px; }
 .my-rewards dl dt span { color:#d12c01; }
 .my-rewards dl dd.last { margin:7px 0 0; }
-.my-rewards .form-list label { width:auto; }
+.my-rewards .form-list label { display:inline; }
 .my-rewards .form-list .control .input-box { position:static; margin:0 5px 0 0; }
 .my-rewards .data-table small { display:block; font-size:1em; color:#808080; }
 
