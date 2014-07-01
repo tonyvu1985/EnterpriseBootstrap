@@ -242,7 +242,7 @@ ul.add-row .btn-remove,
 .form-list .customer-dob label { float:none; width:auto; padding:0; font-size:11px; font-weight:normal; color:#777; }
 .form-list .customer-dob .input-box { float:left; width:auto; margin-right:8px; }
 .form-list .customer-dob .input-box .validation-advice { display:none !important; }
-.form-list .customer-dob input.input-text { float:none; display:block; margin-bottom:2px; }
+.form-list .customer-dob input.input-text, [title="Gender"] {float:none; margin-bottom:2px; display: block; height: 34px; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;}
 .form-list .customer-dob .dob-day,
 .form-list .customer-dob .dob-month,
 .form-list .customer-dob .dob-year { float:left; margin-right:8px; padding-right:0 !important; background:none !important; }
