@@ -6,23 +6,6 @@
  */
 ?>
 <?php
-    /* theme background */    
-    $theme_bgcolor = '#' . Mage::getStoreConfig('setting/themebg/bgcolor', Mage::app()->getStore()->getId());
-    $theme_bgimage = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'bgimage/' . Mage::getStoreConfig('setting/themebg/bgimage', Mage::app()->getStore()->getId());
-    $theme_bgpositionx = Mage::getStoreConfig('setting/themebg/bgpositionx', Mage::app()->getStore()->getId());
-    $theme_bgpositiony = Mage::getStoreConfig('setting/themebg/bgpositiony', Mage::app()->getStore()->getId());
-    $theme_bgpositionrepeat = Mage::getStoreConfig('setting/themebg/bgrepeat', Mage::app()->getStore()->getId());
-    
-    /* page background */
-    $is_transparent_pagegb = Mage::getStoreConfig('setting/pagebg/transparent', Mage::app()->getStore()->getId());
-    if ($is_transparent_pagegb == false){
-        $page_bgcolor = '#' . Mage::getStoreConfig('setting/pagebg/bgcolor', Mage::app()->getStore()->getId());
-        $page_bgimage = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'bgimage/' . Mage::getStoreConfig('setting/pagebg/bgimage', Mage::app()->getStore()->getId());
-        $page_bgpositionx = Mage::getStoreConfig('setting/pagebg/bgpositionx', Mage::app()->getStore()->getId());
-        $page_bgpositiony = Mage::getStoreConfig('setting/pagebg/bgpositiony', Mage::app()->getStore()->getId());
-        $page_bgpositionrepeat = Mage::getStoreConfig('setting/pagebg/bgrepeat', Mage::app()->getStore()->getId());
-    }
-
     /* full grid layout */
 	$fullgrid_header_bgcolor = '#' . Mage::getStoreConfig('setting/pagebg/fullgrid_header', Mage::app()->getStore()->getId());
 	$fullgrid_footer_bgcolor = '#' . Mage::getStoreConfig('setting/pagebg/fullgrid_footer', Mage::app()->getStore()->getId());
@@ -67,8 +50,6 @@
 
 <style type="text/css">
     
-body{ background:<?php echo $theme_bgcolor ?> url(<?php echo $theme_bgimage ?>) <?php echo $theme_bgpositionx ?> <?php echo $theme_bgpositiony ?> <?php echo $theme_bgpositionrepeat ?>; font-family: <?php echo $fontfm ?>; font-size:<?php echo $fontsize ?>; color: <?php echo $textcolor ?>; text-align:center}
-.page {background:<?php echo $page_bgcolor ?> url(<?php echo $page_bgimage ?>) <?php echo $page_bgpositionx ?> <?php echo $page_bgpositiony ?> <?php echo $page_bgpositionrepeat ?>;}
 .fullgrid-header{margin: 0 auto; background: <?php echo $fullgrid_header_bgcolor?>}
 .fullgrid-footer{margin: 0 auto; background: <?php echo $fullgrid_footer_bgcolor?>}
 .header{padding: 10px 0px;}
