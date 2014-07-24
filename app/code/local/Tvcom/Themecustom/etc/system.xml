@@ -19,22 +19,13 @@
             <show_in_store>1</show_in_store>
             <groups>
                 <pagebg translate="label"> <!-- page background -->
-                    <label>Page Background</label>
+                    <label>Full Grid background color</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>1</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <fullgrid translate="label">
-                            <label><![CDATA[<span style="color:red">Full Grid background color</span>]]></label>
-                            <frontend_type>label</frontend_type>
-                            <sort_order>40</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>                
-                        </fullgrid>
-                        
                         <fullgrid_header translate="label">
                             <label>Header</label>
                             <frontend_type>text</frontend_type>
