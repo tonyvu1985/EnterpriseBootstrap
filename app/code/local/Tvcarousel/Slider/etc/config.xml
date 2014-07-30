@@ -28,6 +28,13 @@
                 <class>Tvcarousel_Slider_Model</class>
             </slider>
         </models>
+
+       <blocks>
+                <slider>
+                        <class>Tvcarousel_Slider_Block</class>
+                </slider>
+       </blocks>
+
     </global>
     
     <adminhtml>

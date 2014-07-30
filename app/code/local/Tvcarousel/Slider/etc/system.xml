@@ -70,7 +70,18 @@
                                 <show_in_store>1</show_in_store>
                                 <comment><![CDATA[time between transition<br/><b>Example</b>: 1s = 1000]]></comment>
                         </interval>
-                        
+
+		       <banner translate="comment">
+                                <label>Add Link Banner</label>
+                                <frontend_model>slider/link</frontend_model>
+                                <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                                <sort_order>100</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <comment>Add Banner Link in HOMEPAGE</comment>
+                        </banner>
+ 
                     </fields>
                 </setting>
               </groups>

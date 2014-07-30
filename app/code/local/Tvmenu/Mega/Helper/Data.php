@@ -4,6 +4,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+require_once (Mage::getBaseDir().DS."app".DS."code".DS."core".DS."Mage".DS."Catalog".DS."Block".DS."Product.php");
 
 class Tvmenu_Mega_Helper_Data extends Mage_Core_Helper_Abstract{  
    public function getSubCategories($parent_id){
@@ -31,10 +32,7 @@ class Tvmenu_Mega_Helper_Data extends Mage_Core_Helper_Abstract{
     public function getProductBySku($arry_product_sku){        
          return Mage::getModel("catalog/product")
             ->getCollection()
-            ->addAttributeToSelect('name')
-            ->addAttributeToSelect('url_path')      
-            ->addAttributeToSelect('price')    
-            ->addAttributeToSelect('small_image')
+            ->addAttributeToSelect('*')
             ->addAttributeToFilter('status', 1)
             ->addAttributeToFilter('sku', array('in'=> $arry_product_sku))
                 ->load();
@@ -91,11 +89,12 @@ class Tvmenu_Mega_Helper_Data extends Mage_Core_Helper_Abstract{
         $html .= '</tr>';
         $html .= '</thead>';
         $html .= '<tbody>';
+	$product_block = new Mage_Catalog_Block_Product;
         foreach($products as $product){
            $html .= '<tr>';
            $html .= '<td align="left"><img src="' . Mage::helper('catalog/image')->init($product, 'small_image')->resize(40) . '" alt=""></td>';                             
            $html .= '<td><a href="' . Mage::getBaseUrl(). $product->getUrl_path() . '">' . $product->getName() . '</a></td>';
-           $html .= '<td>' . Mage::helper('core')->currency($product->getPrice()) . '</td>';               
+           $html .= '<td>' . $product_block->getPriceHtml($product) . '</td>';          
            $html .= '</tr>';
         }            
         $html .= '</tbody>';

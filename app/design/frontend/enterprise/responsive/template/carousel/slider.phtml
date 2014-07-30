@@ -34,6 +34,16 @@
     if($interval == null || $interval == 0){
         $interval = 5000;
     }
+
+    // get Banner Links
+$banner_arr = unserialize(Mage::getStoreConfig('carousel/setting/banner', Mage::app()->getStore()->getId()));
+if(!empty($banner_arr)){
+        $banner_list = array();
+        foreach($banner_arr as $banner){
+                $banner_list[trim($banner['image_name'])] = trim($banner['image_link']);
+        }
+}
+
 ?>
 <div id="tvcarousel" data-interval="<?php echo $interval ?>" data-wrap="<?php echo $is_loop ?>" class="carousel <?php echo $transition ?>" data-ride="carousel">
   <!-- Indicators -->
@@ -55,9 +65,10 @@
     <?php
         foreach (glob($path_folder) as $filename) {
             if($j == 0){
-               echo '<div class="item bg active" style="background-image:url(' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . ')" /><div class="carousel-caption"></div></div>' ;
+             //  echo '<div class="item bg active" style="background-image:url(' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . ')" /><a href="' . $banner_list[Mage::helper('slider/data')->getImageName($filename)].'"><div class="carousel-caption"></div></a></div>' ;
+               echo '<div class="item bg active"><a href="' . $banner_list[Mage::helper('slider/data')->getImageName($filename)].'"><img src="' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . '" /></a><div class="carousel-caption"></div></div>' ;
             }else{
-               echo '<div class="item bg" style="background-image:url(' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . ')" /><div class="carousel-caption"></div></div>' ;
+               echo '<div class="item"><a href="' . $banner_list[Mage::helper('slider/data')->getImageName($filename)].'"><img src="' . Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $filename . '" /></a><div class="carousel-caption"></div></div>' ;
             }   
             $j++;
         }
