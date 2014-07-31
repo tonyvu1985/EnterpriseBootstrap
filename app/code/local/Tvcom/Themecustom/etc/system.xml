@@ -3,14 +3,14 @@
 <config>
     <tabs> <!-- create a new tab in system / configuration -->
         <tvcomthemecustom translate="label" module="themecustom">
-            <label>TVcom Theme Custom</label>
+            <label>TVcom Theme</label>
             <sort_order>1</sort_order>
         </tvcomthemecustom>
     </tabs>
     
    <sections>        
         <setting translate="label" module="themecustom"> <!-- setting section -->
-            <label>Setting</label>
+            <label>General Setting</label>
             <tab>tvcomthemecustom</tab>
             <frontend_type>text</frontend_type>
             <sort_order>305</sort_order>

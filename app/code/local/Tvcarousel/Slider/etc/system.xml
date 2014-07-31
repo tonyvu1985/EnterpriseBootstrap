@@ -3,7 +3,7 @@
 <config>
     <sections>
         <carousel tranlate="label" module="slider">
-            <label>Carousel Config</label>
+            <label>Homepage Carousel</label>
             <tab>tvcomthemecustom</tab>
             <frontend_type>text</frontend_type>
             <sort_order>307</sort_order>
