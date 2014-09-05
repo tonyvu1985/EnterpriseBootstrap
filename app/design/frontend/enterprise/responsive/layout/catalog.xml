@@ -209,9 +209,7 @@ Product view
             <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
 	    <!-- script for jcarousel -->        
 	    <action method="addCss"><stylesheet>css/jcarousel/jcarousel.skeleton.css</stylesheet></action>
-   	    <block type="core/text" name="jcarousel">
-	        <action method="setText"><text><![CDATA[<script src="http://sorgalla.com/jcarousel/dist/jquery.jcarousel.min.js" defer="defer"></script>]]></text></action>
-	    </block>
+		<action method="addItem"><type>skin_js</type><name>js/jquery.jcarousel.min.js</name></action>
    	    <!-- end script for jcarousel -->
         </reference>
         <reference name="content">

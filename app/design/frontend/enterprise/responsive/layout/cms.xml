@@ -67,9 +67,7 @@ Default layout, loads most of the pages
 	 <reference name="head">
              <!-- script for jcarousel -->
             <action method="addCss"><stylesheet>css/jcarousel/jcarousel.skeleton.css</stylesheet></action>
-            <block type="core/text" name="jcarousel">
-                <action method="setText"><text><![CDATA[<script src="http://sorgalla.com/jcarousel/dist/jquery.jcarousel.min.js" defer="defer"></script>]]></text></action>
-            </block>
+		<action method="addItem"><type>skin_js</type><name>js/jquery.jcarousel.min.js</name></action>
             <!-- end script for jcarousel -->
         </reference>
 
